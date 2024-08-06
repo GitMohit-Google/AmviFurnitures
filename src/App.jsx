@@ -10,7 +10,7 @@ const App=()=> {
     <div className='overflow-auto'>
       <NavBar/>
       <Routes>
-        <Route path='/' element={<LandingPage/>}/>
+        <Route path='/*' element={<LandingPage/>}/>
         <Route path='/aboutus' element={<AboutUs/>}/>
         <Route path='/contactus' element={<ContactPage/>}/>
         <Route path='/blogs' element={<BlogPage/>}/>

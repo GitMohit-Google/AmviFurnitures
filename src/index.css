@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 .top-bar {
-    background-color: #e7f2ff !important;
+    background-color: #ee4d37 !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 40px;
+
 }
 
 .top-bar-container {
@@ -22,12 +23,12 @@
     display: flex !important;
     align-items: center !important;
     font-size: 12px !important;
-    color: #453737 !important;
+    color: #fdfdfd !important;
 }
 
 .top-bar-icon {
     margin-left: 10px;
-    color: #453737 !important;
+    color: #ffffff !important;
 }
 
 .social-media-icon-wrapper{
@@ -38,7 +39,7 @@
 }
 
 .logo {
-    height: 40px;
+    height: 43px;
     /* left:10px; */
     position: absolute;
 }
@@ -89,7 +90,7 @@
 
 
 .header-icon{
-    color: rgb(67, 67, 127);
+    color: rgb(255, 255, 255);
 }
 
 
