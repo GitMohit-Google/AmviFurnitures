@@ -17,11 +17,29 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 400,
+      md: 660,
+      lg: 1280,
+      xl: 1920,
+      custom1: 800,
+      custom2: 1100,
+    },
+  },
+});
 
 export const NavBar = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const isExtraSmall = useMediaQuery(theme.breakpoints.down('xs'));
+  const isTab = useMediaQuery(theme.breakpoints.down('md'));
 
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -32,10 +50,10 @@ export const NavBar = () => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2, mx:6 }}>
-        SOLOX
+        AMVI
       </Typography>
       <List>
-        {['DEMO', 'ABOUT', 'PAGES', 'SERVICES', 'SHOP', 'NEWS', 'CONTACT'].map((text) => (
+        {['ABOUT', 'PRODUCTS', 'SERVICES', 'NEWS', 'CONTACT US'].map((text) => (
           <ListItem button key={text}>
             <ListItemText primary={text} />
           </ListItem>
@@ -46,46 +64,53 @@ export const NavBar = () => {
 
   return (
     <>
+    {
+      !isTab ? (
       <AppBar position="static" color="default" elevation={0} className="top-bar">
+
         <Container className="top-bar-container">
           <Box display="flex" justifyContent="space-between" alignItems="center" width="100%">
-            <Box display="flex" alignItems="center">
+            <Box display="flex" alignItems="center" className="contact-wrapper">
               <Typography variant="body2" className="top-bar-item">
-                <EmailIcon fontSize="small" /> needhelp@company.com
+                <EmailIcon fontSize="small" className='header-icon' /> needhelp@company.com
               </Typography>
               <Typography variant="body2" className="top-bar-item">
-                <PhoneIcon fontSize="small" /> +92 8800 - 6830
+                <PhoneIcon fontSize="small"  className='header-icon'/> +92 8800 - 6830
               </Typography>
             </Box>
             <Typography variant="body2" className="top-bar-item">
-              Mon to Sat: 9:00am - 6:00pm Sun: Closed
+              Mon to Sat: 9:00am - 6:00pm, Sun: Closed
             </Typography>
-            {/* <Box display="flex" alignItems="center">
+            <Box display="flex" className="social-media-icon-wrapper" alignItems="center">
               <IconButton color="inherit" className="top-bar-icon">
-                <SearchIcon />
+                <WhatsAppIcon/>
               </IconButton>
               <IconButton color="inherit" className="top-bar-icon">
-                <ShoppingCartIcon />
+                <InstagramIcon/>
               </IconButton>
-            </Box> */}
+            </Box>
           </Box>
         </Container>
       </AppBar>
 
+      ) : (
+      <>
+        </>
+        )
+    }
+
       <AppBar position="static" className='navbar'>
         <Container maxWidth="lg">
-          <Toolbar disableGutters>
+          <Toolbar disableGutters >
             <img src="/path/to/logo.png" alt="Logo" className="logo" />
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml: 2 }}>
+            {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml: 2, color:"black" }}>
               SOLOX
-            </Typography>
+            </Typography> */}
             {!(isMobile || isExtraSmall) ? (
-              <Box display="flex" alignItems="center">
-                <Button color="inherit" className="nav-link">DEMO</Button>
+              <Box display="flex" alignItems="center" className="nav-btn-wrapper">
                 <Button color="inherit" className="nav-link">ABOUT</Button>
                 <Button color="inherit" className="nav-link">PAGES</Button>
                 <Button color="inherit" className="nav-link">SERVICES</Button>
-                <Button color="inherit" className="nav-link">SHOP</Button>
                 <Button color="inherit" className="nav-link">NEWS</Button>
                 <Button color="inherit" className="nav-link">CONTACT</Button>
                 <IconButton color="inherit">
@@ -94,7 +119,7 @@ export const NavBar = () => {
               </Box>
             ) : (
               <>
-                <IconButton edge="end" color="inherit" aria-label="menu" onClick={handleDrawerToggle} sx={{p:1,bgcolor:'#fcfbd8'}}>
+                <IconButton edge="end" color="inherit" aria-label="menu" onClick={handleDrawerToggle} sx={{p:1,bgcolor:'#fcfbd8'}} className='menu-icon-wrapper'>
                   <MenuIcon className='menu-icon'/>
                 </IconButton>
                 <Drawer
