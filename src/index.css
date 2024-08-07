@@ -142,7 +142,7 @@
 
 .dropdown:hover .submenu {
     opacity: 1;
-    top:40px;
+    top:45px;
     height: 552px;
 }
 
@@ -230,4 +230,8 @@
 
 .menu-products-wrapper{
     padding:0px 5px !important;
+}
+
+.successMessage{
+    color: green;
 }
