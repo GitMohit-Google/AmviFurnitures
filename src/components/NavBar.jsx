@@ -22,6 +22,16 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { navLinks } from "../constants/navLink";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import AddIcon from '@mui/icons-material/Add';
+import ProductExpansionPanel from "./ProductExpansionPanel";
+
+AOS.init({
+  duration: 1000,
+  offset: 120,
+  easing: 'ease-in-out'
+});
 
 const theme = createTheme({
   breakpoints: {
@@ -31,7 +41,6 @@ const theme = createTheme({
       md: 660,
       lg: 1280,
       xl: 1920,
-      custom1: 800,
       custom2: 1100,
     },
   },
@@ -49,23 +58,61 @@ export const NavBar = () => {
     setDrawerOpen(!drawerOpen);
   };
 
+const products = [
+  { name: "MID BACK CHAIRS", imgSrc: "https://via.placeholder.com/200" },
+  { name: "PREMIUM CHAIRS", imgSrc: "https://via.placeholder.com/200" },
+  { name: "COMFY CHAIRS", imgSrc: "https://via.placeholder.com/200" },
+  { name: "ARM LESS CHAIRS", imgSrc: "https://via.placeholder.com/200" },
+  { name: "BABY CHAIRS", imgSrc: "https://via.placeholder.com/200" },
+  { name: "DOUBLE TOP TABLE", imgSrc: "https://via.placeholder.com/200" },
+  { name: "TABLE", imgSrc: "https://via.placeholder.com/200" },
+  { name: "STOOLS", imgSrc: "https://via.placeholder.com/200" },
+  { name: "MULTIPURPOSE STOOL", imgSrc: "https://via.placeholder.com/200" },
+  { name: "SETUPS", imgSrc: "https://via.placeholder.com/200" }
+];
+
+  
+const items = document.querySelectorAll('.submenu-item');
+
+items.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const card = item.querySelector('.product-card');
+      // console.log(card);
+        card.style.display = 'block';
+    });
+    
+    item.addEventListener('mouseleave', () => {
+        const card = item.querySelector('.product-card');
+        card.style.display = 'none';
+    });
+});
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2, mx: 6 }}>
         AMVI
       </Typography>
       <List>
-        {navLinks.map((text) => (
-          <ListItem button key={text} component={Link} to={`/${text.toLowerCase().replace(/\s+/g, '')}`}>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        {navLinks.map((text) => 
+          
+            text=="PRODUCTS" ? (
+              <div>
+              <ProductExpansionPanel products={products}/>
+              </div>
+            ) : (
+              <div onClick={handleDrawerToggle} className="menu-btns">
+              <ListItem button key={text} component={Link} to={`/${text.toLowerCase().replace(/\s+/g, '')}`}>
+              <ListItemText primary={text} />
+              </ListItem>
+              </div>
+            )
+          
+        )}
       </List>
     </Box>
   );
 
   return (
-    <>
+    <div className="nav-bar-wrapper">
       {!isTab ? (
         <AppBar
           position="static"
@@ -118,24 +165,40 @@ export const NavBar = () => {
 
       <AppBar position="static" className="navbar">
         <Container maxWidth="lg">
-          <Toolbar disableGutters>
+          <Toolbar disableGutters sx={{position:"static"}}>
             <img src="/ambi logo.png" alt="Logo" className="logo" />
-            {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1, ml: 2, color:"black" }}>
-              SOLOX
-            </Typography> */}
+       
             {!(isMobile || isExtraSmall) ? (
               <Box
                 display="flex"
                 alignItems="center"
                 className="nav-btn-wrapper"
               >
-                {navLinks.map((link,index)=>{
-                  return(
+                 {navLinks.map((link, index) => (
+                  link === "PRODUCTS" ? (
+                      <div key={index} className="dropdown">
+                      <Button color="inherit" className="nav-link dropbtn">
+                        {link}
+                      </Button>
+                      <ul className="submenu">
+                        {products.map((product,index)=>(
+                          <li key={index} className="submenu-item">
+                            <a href="#" data-aos="fade-up" data-aos-delay={index * 100}>{product.name}</a>
+                            <div className="product-card">
+                              <img src={'demoImg.png'} alt={product.name} className="product-image" />
+                              <h4>{product.name}</h4>
+                              <p>Dummy data here</p>
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : (
                     <Button key={index} color="inherit" className="nav-link" component={Link} to={`/${link.toLowerCase().replace(/\s+/g, '')}`}>
                       {link}
                     </Button>
                   )
-                })}
+                ))}
               </Box>
             ) : (
               <>
@@ -161,6 +224,6 @@ export const NavBar = () => {
           </Toolbar>
         </Container>
       </AppBar>
-    </>
+    </div>
   );
 };

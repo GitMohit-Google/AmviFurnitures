@@ -9,12 +9,15 @@ const App=()=> {
   return (
     <div className='overflow-auto'>
       <NavBar/>
+      <div style={{marginTop:"120px"}}>
+
       <Routes>
-        <Route path='/*' element={<LandingPage/>}/>
+        <Route path='/' element={<LandingPage/>}/>
         <Route path='/aboutus' element={<AboutUs/>}/>
         <Route path='/contactus' element={<ContactPage/>}/>
         <Route path='/blogs' element={<BlogPage/>}/>
       </Routes>
+      </div>
     </div>
   )
 }
