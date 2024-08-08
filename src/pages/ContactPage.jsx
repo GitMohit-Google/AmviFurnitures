@@ -205,16 +205,18 @@ const ContactPage = () => {
           </Grid>
 
           <Box mt={4} display="flex" justifyContent="center">
-            <LoadScript googleMapsApiKey="YOUR_GOOGLE_MAPS_API_KEY">
-              <GoogleMap
-                mapContainerStyle={containerStyle}
-                center={center}
-                zoom={15}
-                onLoad={(map) => {
-                  mapRef.current = map;
-                }}
-              />
-            </LoadScript>
+            <div style={{ width: '100%', height: '450px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.3250105180564!2d77.48611079999999!3d28.7397117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf32bb5c5874d%3A0x5ad0907941d19992!2sAmul%20Polymer%20(India)%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1723138712431!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Amul Polymer Location"
+      ></iframe>
+    </div>
           </Box>
         </Paper>
       </Container>
