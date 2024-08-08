@@ -244,7 +244,7 @@
 .benefits-text{
     background: linear-gradient(to right, #a7a7cb, #a7bfda,rgb(187, 247, 220));
     -webkit-background-clip: text;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; */
     -webkit-text-fill-color: transparent;
 
 }

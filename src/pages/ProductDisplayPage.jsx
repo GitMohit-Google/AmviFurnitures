@@ -30,32 +30,34 @@ const ProductDisplayPage = () => {
         minHeight: '100vh',
         width: '100vw',
         height: '50vh',
-        backgroundImage: 'url(/backgroundImg2.jpg)',
+        // backgroundImage: 'url(/backgroundImg2.jpg)',
         overflowX: 'hidden',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     }}>
       <Grid container spacing={3} sx={{ mt: 4 }}>
-        <Grid item xs={12} md={6} data-aos="fade-down">
+        <Grid item xs={12} md={6} >
           <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
             <Typography
               variant="h3"
+              data-aos="fade-down"
               sx={{
                 color: textColor,
                 mb: 6,
                 fontSize: "3.5rem",
-                fontFamily: 'Roboto, sans-serif',
+                // fontFamily: 'Roboto, sans-serif',
               }}
             >
               {productData.title}
             </Typography>
             <Typography
               variant="body1"
+              data-aos="fade-right"
               sx={{
                 fontSize: '1.1rem',
                 color: textColor,
                 mb: 4,
-                fontFamily: 'Open Sans, sans-serif',
+                // fontFamily: 'Open Sans, sans-serif',
                 lineHeight: 1.6,
               }}
             >
@@ -79,7 +81,7 @@ const ProductDisplayPage = () => {
           textAlign: 'left',
           color: darkColor,
           fontSize: '25px',
-          fontFamily: 'Roboto, sans-serif',
+        //   fontFamily: 'Roboto, sans-serif',
           bgcolor: "rgba(209, 126, 107, 0.55)",
           borderRadius: 3,
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
@@ -94,7 +96,7 @@ const ProductDisplayPage = () => {
           sx={{
             fontWeight: 'bolder',
             color: 'rgb(52, 52, 84,0.9)',
-            fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
+            // fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
             fontSize: '25px',
             m: 2
           }}
@@ -115,7 +117,7 @@ const ProductDisplayPage = () => {
                 color: '#f0f0f0',
                 borderRadius: 2,
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-                fontFamily: 'Open Sans, sans-serif',
+                // fontFamily: 'Open Sans, sans-serif',
                 display: 'inline-block',
                 position: 'relative',
                 width: '500px',
@@ -175,7 +177,7 @@ const ProductDisplayPage = () => {
                 sx={{
                 //   fontWeight: 'bold',
                   color: "rgba(255, 255, 98, 0.655)",
-                  fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                //   fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                   fontSize: "1.5rem"
                 }}
               >
