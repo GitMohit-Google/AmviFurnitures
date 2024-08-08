@@ -76,7 +76,7 @@ function ImgCarousel() {
             sx={{
               position: 'relative',
               width: '100%',
-              height: isMobile ? 200 : isTablet ? 300 : 400,
+              height: isMobile ? 300 : isTablet ? 400 : "100%",
               overflow: 'hidden',
             }}
           >

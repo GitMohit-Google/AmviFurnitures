@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import {
   Container,
   Grid,
@@ -48,6 +48,11 @@ const ContactPage = () => {
     messageLoading,
     showMessage,
   } = useContext(HomeContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top when the component mounts
+  }, []);
+
 
   const handleAddressClick=()=>{
     const mapAddress = "https://maps.app.goo.gl/HLtyujuk7Rd894nc9";

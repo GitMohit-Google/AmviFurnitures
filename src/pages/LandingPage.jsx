@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import StatsBanner from "../components/StatsBanner";
 import ProductsSection from "../sections/ProductsSection";
 import ContactPage from "./ContactPage";
 
 const LandingPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top when the component mounts
+  }, []);
+
   return (
     <div className="overflow-auto p-5 px-8">
       {/* Title */}
