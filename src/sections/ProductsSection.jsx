@@ -13,7 +13,7 @@ const ProductsSection = () => {
       <Cards />
       <div className="flex flex-col w-full px-6 gap-10">
         <img src="/banners/Banner.png" alt="" className="rounded-lg shadow-lg"/>
-        <img src="/Demo.png" alt="" className="rounded-lg shadow-lg"/>
+        {/* <img src="/Demo.png" alt="" className="rounded-lg shadow-lg"/> */}
       </div>
       <ClientStats/>
     </div>
