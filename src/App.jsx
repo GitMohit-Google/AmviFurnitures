@@ -26,7 +26,7 @@ const App = () => {
         download
         style={{
           position: 'fixed',
-          bottom: '100px',
+          bottom: '40vh',
           right: '-50px',
           transform: 'rotate(90deg)',
           backgroundColor: '#2a2a2a',
