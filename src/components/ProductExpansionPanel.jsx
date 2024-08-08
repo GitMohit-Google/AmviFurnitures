@@ -20,7 +20,7 @@ export default function ProductExpansionPanel({products}) {
         <AccordionDetails className='menu-products-wrapper'>
        {products.map((product,index)=>(
             <li key={index} className="menu-product-item">
-            <a href="#" >{product.name}</a>
+            <a href={product.title} >{product.title}</a>
             </li>
             ))}
         </AccordionDetails>

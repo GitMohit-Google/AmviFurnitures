@@ -134,7 +134,7 @@
     opacity: 0;
     top: -1000px;
     height: 0;
-    overflow: visible;
+    overflow: hidden;
     z-index: 10000;
     transition: opacity 1s ease, height 1s ease;
     min-width: 200px;
@@ -237,3 +237,18 @@
 }
 
 
+.benefits{
+    background: linear-gradient(to right, #130000, #657c8d) !important;
+}
+
+.benefits-text{
+    background: linear-gradient(to right, #a7a7cb, #a7bfda,rgb(187, 247, 220));
+    -webkit-background-clip: text;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.test{
+    background-color:linear-gradient(to right, #373745, #25486f, rgb(160, 161, 161));
+}

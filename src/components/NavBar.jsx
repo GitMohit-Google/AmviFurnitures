@@ -24,8 +24,8 @@ import { navLinks } from "../constants/navLink";
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import AddIcon from '@mui/icons-material/Add';
 import ProductExpansionPanel from "./ProductExpansionPanel";
+import { products } from "../constants/productData";
 
 AOS.init({
   duration: 1000,
@@ -58,18 +58,18 @@ export const NavBar = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-const products = [
-  { name: "MID BACK CHAIRS", imgSrc: "https://via.placeholder.com/200" },
-  { name: "PREMIUM CHAIRS", imgSrc: "https://via.placeholder.com/200" },
-  { name: "COMFY CHAIRS", imgSrc: "https://via.placeholder.com/200" },
-  { name: "ARM LESS CHAIRS", imgSrc: "https://via.placeholder.com/200" },
-  { name: "BABY CHAIRS", imgSrc: "https://via.placeholder.com/200" },
-  { name: "DOUBLE TOP TABLE", imgSrc: "https://via.placeholder.com/200" },
-  { name: "TABLE", imgSrc: "https://via.placeholder.com/200" },
-  { name: "STOOLS", imgSrc: "https://via.placeholder.com/200" },
-  { name: "MULTIPURPOSE STOOL", imgSrc: "https://via.placeholder.com/200" },
-  { name: "SETUPS", imgSrc: "https://via.placeholder.com/200" }
-];
+// const products = [
+//   { name: "MID BACK CHAIRS", imgSrc: "https://via.placeholder.com/200" },
+//   { name: "PREMIUM CHAIRS", imgSrc: "https://via.placeholder.com/200" },
+//   { name: "COMFY CHAIRS", imgSrc: "https://via.placeholder.com/200" },
+//   { name: "ARM LESS CHAIRS", imgSrc: "https://via.placeholder.com/200" },
+//   { name: "BABY CHAIRS", imgSrc: "https://via.placeholder.com/200" },
+//   { name: "DOUBLE TOP TABLE", imgSrc: "https://via.placeholder.com/200" },
+//   { name: "TABLE", imgSrc: "https://via.placeholder.com/200" },
+//   { name: "STOOLS", imgSrc: "https://via.placeholder.com/200" },
+//   { name: "MULTIPURPOSE STOOL", imgSrc: "https://via.placeholder.com/200" },
+//   { name: "SETUPS", imgSrc: "https://via.placeholder.com/200" }
+// ];
 
   
 const items = document.querySelectorAll('.submenu-item');
@@ -183,10 +183,10 @@ items.forEach(item => {
                       <ul className="submenu">
                         {products.map((product,index)=>(
                           <li key={index} className="submenu-item">
-                            <a href="#" data-aos="fade-up" data-aos-delay={index * 100}>{product.name}</a>
+                            <a href={product.title} data-aos="fade-up" data-aos-delay={index * 250}>{product.title}</a>
                             <div className="product-card">
                               <img src={'demoImg.png'} alt={product.name} className="product-image" />
-                              <h4>{product.name}</h4>
+                              <h4>{product.title}</h4>
                               <p>Dummy data here</p>
                             </div>
                           </li>
