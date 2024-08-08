@@ -60,7 +60,7 @@ export const NavBar = () => {
   };
 
   const handleEmailClick = () => {
-    const email = "tablechair1010@gmail.com";
+    const email = "info@amvifurniture.com";
      const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
      window.open(mailtoLink, '_blank');
    };
@@ -163,15 +163,16 @@ items.forEach(item => {
         <></>
       )}
 
-      <AppBar position="static" className="navbar">
+      <AppBar position="static" className="navbar" sx={{height:"70px"}} >
         <Container maxWidth="lg">
           <Toolbar disableGutters sx={{position:"static"}}>
-            <img src="/ambi logo.png" alt="Logo" className="logo" />
+            <img src="/ambi logo.png" alt="Logo" className="logo" style={{height:"60px"}} />
        
             {!(isMobile || isExtraSmall) ? (
               <Box
                 display="flex"
                 alignItems="center"
+                sx={{pt:1}}
                 className="nav-btn-wrapper"
               >
                  {navLinks.map((link, index) => (
