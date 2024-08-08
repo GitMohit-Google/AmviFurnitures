@@ -14,10 +14,9 @@ const LandingPage = () => {
           <p className='text-8xl w-fit mb-4'>Find Your <span style={{color:"#ee4d37"}}>Signature</span> Seat</p>
           <p className='text-lg text-gray-700'>Embrace the harmony of form and funtion. Explore our range and discover the furniture that will become your sanctuary of relaxation.</p>
         </div>
-        <lottie-player src="https://lottie.host/d5c03e87-9907-4061-9c97-aa2f5d5b1199/kI9fyKRnxY.json" background="transparent" speed="1" style={{"width": "400px", "height": "400px"}} loop autoplay direction="1" mode="normal"></lottie-player>
+        <lottie-player src="https://lottie.host/d5c03e87-9907-4061-9c97-aa2f5d5b1199/kI9fyKRnxY.json" background="transparent" speed="0.5" style={{"width": "400px", "height": "400px"}} loop autoplay direction="1" mode="normal"></lottie-player>
         <img src="/banners/SignatureChair-Photoroom.png" alt="Banner" style={{ width: '450px', height: 'auto' }}/>
       </div>
-
       <StatsBanner/>
       <ProductsSection/>
       {/*  */}
