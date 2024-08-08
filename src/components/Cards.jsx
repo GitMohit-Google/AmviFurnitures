@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Cards = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center" >
       <div className='flex flex-row w-full p-3 px-5 items-center justify-evenly mt-10'>
       <Link to="/Plastic Dinner Table">
       <Card sx={{
@@ -108,7 +108,7 @@ const Cards = () => {
       </Card>
           </Link>
     </div>
-    <div className='flex flex-row w-full p-3 px-5 items-center justify-evenly mb-10'>
+    <div className='flex flex-row w-full p-3 px-5 items-center justify-evenly mb-10' >
     <Link to="/Plastic Dinner Table">
     <Card sx={{
         width: 320,
