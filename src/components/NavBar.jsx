@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import Container from "@mui/material/Container";
 import MenuIcon from "@mui/icons-material/Menu";
+import { ToastContainer, toast } from 'react-toastify';
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import EmailIcon from "@mui/icons-material/Email";
@@ -51,25 +52,23 @@ export const NavBar = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isExtraSmall = useMediaQuery(theme.breakpoints.down("xs"));
   const isTab = useMediaQuery(theme.breakpoints.down("md"));
-
+  
   const [drawerOpen, setDrawerOpen] = useState(false);
-
+  
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-// const products = [
-//   { name: "MID BACK CHAIRS", imgSrc: "https://via.placeholder.com/200" },
-//   { name: "PREMIUM CHAIRS", imgSrc: "https://via.placeholder.com/200" },
-//   { name: "COMFY CHAIRS", imgSrc: "https://via.placeholder.com/200" },
-//   { name: "ARM LESS CHAIRS", imgSrc: "https://via.placeholder.com/200" },
-//   { name: "BABY CHAIRS", imgSrc: "https://via.placeholder.com/200" },
-//   { name: "DOUBLE TOP TABLE", imgSrc: "https://via.placeholder.com/200" },
-//   { name: "TABLE", imgSrc: "https://via.placeholder.com/200" },
-//   { name: "STOOLS", imgSrc: "https://via.placeholder.com/200" },
-//   { name: "MULTIPURPOSE STOOL", imgSrc: "https://via.placeholder.com/200" },
-//   { name: "SETUPS", imgSrc: "https://via.placeholder.com/200" }
-// ];
+  const handleEmailClick = () => {
+    const email = "tablechair1010@gmail.com";
+     const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`;
+     window.open(mailtoLink, '_blank');
+   };
+
+   const handleCopyContact = () => {
+    navigator.clipboard.writeText("+91 78xxxxxxxx");
+    toast.success('Contact number copied to clipboard!');
+  };
 
   
 const items = document.querySelectorAll('.submenu-item');
@@ -113,6 +112,7 @@ items.forEach(item => {
 
   return (
     <div className="nav-bar-wrapper">
+      <ToastContainer/>
       {!isTab ? (
         <AppBar
           position="static"
@@ -132,11 +132,11 @@ items.forEach(item => {
                 alignItems="center"
                 className="contact-wrapper"
               >
-                <Typography variant="body2" className="top-bar-item">
-                  <EmailIcon fontSize="small" className="header-icon" style={{ marginRight: '8px' }}/>{" "}
+                <Typography onClick={handleEmailClick} variant="body2" className="top-bar-item" sx={{cursor:"pointer"}}>
+                  <EmailIcon  fontSize="small" className="header-icon" style={{ marginRight: '8px' }}/>{" "}
                   info@amvifurniture.com
                 </Typography>
-                <Typography variant="body2" className="top-bar-item">
+                <Typography variant="body2" className="top-bar-item" onClick={handleCopyContact} sx={{ cursor: 'pointer' }}>
                   <PhoneIcon fontSize="small" className="header-icon" style={{ marginRight: '8px' }}/> 
                   +91 78xxxxxxxx
                 </Typography>

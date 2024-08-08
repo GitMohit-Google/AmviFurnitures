@@ -32,6 +32,7 @@ const center = {
   lng: 77.209, // Longitude for Noida
 };
 
+
 const ContactPage = () => {
   const mapRef = useRef(null);
   const {
@@ -47,6 +48,11 @@ const ContactPage = () => {
     messageLoading,
     showMessage,
   } = useContext(HomeContext);
+
+  const handleAddressClick=()=>{
+    const mapAddress = "https://maps.app.goo.gl/HLtyujuk7Rd894nc9";
+    window.open(mapAddress, '_blank');
+  }
 
   return (
     <>
@@ -85,7 +91,7 @@ const ContactPage = () => {
                   <IconButton disabled>
                     <LocationOnOutlined fontSize="large" color="primary" />
                   </IconButton>
-                  <Box ml={1}>
+                  <Box ml={1} onClick={handleAddressClick} sx={{cursor:"pointer"}}>
                     <Typography variant="h5" sx={{ fontWeight: "600" }}>
                       Address
                     </Typography>
