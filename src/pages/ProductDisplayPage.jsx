@@ -26,7 +26,8 @@ const ProductDisplayPage = () => {
   return (
     <Box sx={{ 
         padding: { xs: 2, md: 3 },
-        mx:"20px",
+        // mx:"20px",
+        mx: { xs: 0, md: "20px" },
         background: 'linear-gradient(to bottom, #ffffff, #f0f0f0)',
         minHeight: '100vh',
         width: '100vw',
@@ -34,7 +35,7 @@ const ProductDisplayPage = () => {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     }}>
-      <Grid container spacing={3} sx={{ mt: 4 }}>
+      <Grid container spacing={3} sx={{ mt: 4 }} flexWrap="wrap-reverse">
         {/* Left half of the screen */}
         <Grid item xs={12} md={6}>
           {/* Heading */}

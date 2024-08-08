@@ -2,7 +2,7 @@ export const products = [
   {
     title: "Comfy Chair",
     description:
-      "Discover the ultimate in relaxation with our Comfy Chair, designed to provide unmatched comfort and style. Ideal for reading, watching TV, or simply unwinding, our Comfy Chair features soft cushions, supportive backs, and sturdy frames. Crafted by Amul Polymer India Pvt Ltd, known for high-quality plastic furniture, this chair blends contemporary design with exceptional durability, making it perfect for both indoor and outdoor use.",
+      "Experience relaxation with our Comfy Chair, designed for ultimate comfort and style. Ideal for both indoor and outdoor use, this chair features soft cushions, supportive backs, and a durable frame, perfect for any space.",
     benefits: [
       "Luxurious comfort with soft cushions and ergonomic design",
       "Supports correct posture and provides excellent elbow support",
@@ -42,7 +42,7 @@ export const products = [
   {
     title: "Premium Chair",
     description:
-      "Elevate your home decor with our Premium Chair, where style, comfort, and durability converge. Crafted by Amul Polymer India Pvt Ltd, these chairs boast high-quality plastic, sleek curves, and innovative designs. Perfect for both home and office settings, our Premium Chairs are budget-friendly yet uncompromising in comfort and sophistication.",
+      "Enhance your decor with our Premium Chair, where style meets comfort. Made from high-quality plastic, this chair is perfect for both home and office, offering sleek design and lasting durability at an affordable price.",
     benefits: [
       "Elegant design with sleek curves and robust armrests",
       "Water-resistant quality protects color from fading",
@@ -82,7 +82,7 @@ export const products = [
   {
     title: "Mid-Back Chair",
     description:
-      "Do you have a desk job or study for hours and have the problem of back pain? Our mid-back chairs have come to your rescue. Mid-back chairs are a popular choice for office seating due to their balance between support and flexibility. They provide adequate support for the lower and middle back, allowing the user to maintain good posture while remaining comfortable for extended periods.\n\nWith a range of styles, materials, and features, mid-back chairs can be customized to suit individual needs and preferences. A good chair looks elegant and friendly to the back and posture. Plastic chairs offered by Amul Polymer India Pvt Ltd are of high quality and durability. Transform your living space with our stylish and comfortable chair in home collection, perfect for adding a touch of elegance and comfort to any room.",
+      "Our Mid-Back Chair offers balanced support and flexibility, perfect for office or study use. Designed for comfort and good posture, it's an ideal choice for long sitting sessions.",
     benefits: [
       "Mid-back chair has a height that is between the neck and the shoulders.",
       "A wide backrest that supports your back comfortably.",
@@ -117,7 +117,7 @@ export const products = [
   {
     title: "Armless Chair",
     description:
-      "Experience the blend of style and functionality with our Armless Chair, designed for modern workspaces and home offices. These sleek chairs offer a minimalist look and are perfect for environments requiring versatile and space-efficient seating. Crafted by Amul Polymer India Pvt Ltd, our armless chairs are built with high-quality plastic to ensure comfort and durability while maintaining an affordable price.",
+      "Our Armless Chair offers a sleek, space-saving design for modern workspaces and homes. Built with high-quality plastic, it ensures comfort, durability, and easy mobility, perfect for versatile seating needs.",
     benefits: [
       "Space-saving design perfect for compact areas",
       "High-quality plastic for durability and strength",
@@ -157,7 +157,7 @@ export const products = [
   {
     title: "Baby Chair",
     description:
-      "Amul Polymer India Pvt Ltd presents the perfect blend of safety, comfort, and style with our Baby Chair collection. Designed with infants and toddlers in mind, our chairs offer unparalleled durability and security, making them a trusted choice for parents. Available in vibrant colors and innovative designs, these chairs ensure that your little ones sit comfortably and safely while you manage your day.",
+      "Our Baby Chair ensures safety, comfort, and fun for your little ones. Available in vibrant colors, these chairs offer durability and security, making them a top choice for parents.",
     benefits: [
       "Secure design with built-in safety features",
       "Vibrant color options to engage and delight kids",
@@ -192,7 +192,7 @@ export const products = [
   {
     title: "Double-Top Table",
     description:
-      "Introducing our modern Double-Top Table, designed to be a standout piece in your living room or any other space. This versatile table can serve as a centerpiece in your living room, dining room, balcony, or kitchen. Unlike wooden or glass tables, our plastic double-top table is easy to clean and maintain, offering both elegance and practicality at an affordable price.",
+      "Our Double-Top Table combines style and functionality, perfect for any space. With a practical lower compartment and easy maintenance, it’s an affordable, versatile centerpiece for your home.",
     benefits: [
       "Super durable and lightweight",
       "Space-saving design that fits well in various rooms",
@@ -227,7 +227,7 @@ export const products = [
   {
     title: "Plastic Dinner Table",
     description:
-      "Introducing our Plastic Dinner Table, designed to combine elegance, durability, and space efficiency. Perfect for family meals, this table serves as a stylish centerpiece in your living room or dining area. Made from high-quality plastic, it offers durability and easy maintenance, making it an ideal choice for both indoor and outdoor settings. Elevate your home decor with our affordable and stylish plastic table options.",
+      "Our Plastic Dinner Table is perfect for family meals, combining elegance and durability. Ideal for both indoor and outdoor use, it’s easy to maintain and fits seamlessly into any decor.",
     benefits: [
       "Super stable and strong",
       "Elegant design and smooth texture",
@@ -262,7 +262,7 @@ export const products = [
   {
     title: "Plastic Stools",
     description:
-      "Our plastic stools are versatile, durable, and designed to fit seamlessly into any home or office setting. Perfect for everyday tasks, these stools offer stability and strength while being compact and easy to move. Ideal for children, schools, and various other uses, our stools come in a variety of designs and colors to suit your needs and preferences.",
+      "Our plastic stools are durable, versatile, and compact, ideal for any setting. Available in various designs and colors, they offer stability and ease of movement for everyday use.",
     benefits: [
       "Compact and space-efficient",
       "Strong and sturdy construction",
@@ -297,7 +297,7 @@ export const products = [
   {
     title: "Multipurpose Stool",
     description:
-      "Introducing our innovative multipurpose stool, designed to offer both seating and storage solutions. This stool features a hidden storage compartment, allowing you to keep your space neat and organized while providing a comfortable seating option. With its elegant design and high durability, this stool combines functionality with style.",
+      "Our multipurpose stool offers both seating and hidden storage in one elegant design. Combining style with practicality, it's an affordable solution for organized and comfortable living.",
     benefits: [
       "Elegant and sophisticated design",
       "Hidden storage compartment for extra organization",
@@ -338,7 +338,7 @@ export const products = [
   {
     title: "Versatile Table and Chair Set",
     description:
-      "Discover our versatile table and chair set, perfect for both your dining room and office. This set combines functionality and style, offering a blend of form and function for any space. Crafted from durable plastic, this set is ideal for gatherings, work, or casual meals. The set includes an elegantly designed double-top table and matching chairs, providing a cohesive look that enhances any environment.",
+      "Our Versatile Table and Chair Set is perfect for both dining and workspaces. Made from durable plastic, it offers a cohesive look that’s both functional and stylish, enhancing any room.",
     benefits: [
       "Highly durable plastic material",
       "Cost-effective when purchased as a set",

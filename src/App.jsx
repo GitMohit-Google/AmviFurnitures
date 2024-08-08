@@ -7,7 +7,7 @@ import ProductDisplayPage from "./pages/ProductDisplayPage";
 
 const App = () => {
   return (
-    <div className="overflow-auto">
+    <div className="overflow-hidden" style={{background:"linear-gradient(to bottom, #ffffff, #f0f0f0)"}}>
       <HomeState>
         <NavBar />
         <div style={{ marginTop: "100px" }}>
@@ -21,6 +21,26 @@ const App = () => {
           </Routes>
         </div>
         <Footer />
+        <a
+        href="/brochure.pdf"
+        download
+        style={{
+          position: 'fixed',
+          bottom: '100px',
+          right: '-50px',
+          transform: 'rotate(90deg)',
+          backgroundColor: '#2a2a2a',
+          color: 'white',
+          padding: '10px 20px',
+          borderRadius: '5px',
+          textDecoration: 'none',
+          boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
+          cursor: 'pointer',
+          zIndex: 1000,
+        }}
+      >
+        Download Brochure
+      </a>
       </HomeState>
     </div>
   );
