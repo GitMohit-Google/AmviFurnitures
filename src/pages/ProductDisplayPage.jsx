@@ -6,7 +6,7 @@ import ImgCarousel from '../components/ImgCarousel';
 import { products } from '../constants/productData';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import StatsBanner from '../components/StatsBanner';
+import { Footer } from '../components/Footer';
 
 const ProductDisplayPage = () => {
   const { productName } = useParams();
@@ -18,186 +18,140 @@ const ProductDisplayPage = () => {
     window.scrollTo(0, 0); // Scroll to top when the component mounts
   }, [productName]);
 
+  const headingBackgroundColor = '#f0f0f0'; // Light grey background for the heading
+  const headingBorderColor = '#ee4d37'; // Border color for the heading
   const textColor = '#333';
-  const highlightColor = '#1976d2';
-  const backgroundGradient = 'linear-gradient(to bottom, #ffffff, #f0f0f0)';
-  const darkColor = '#444'; // Darker color for the heading
+  const darkColor = '#444'; // Darker color for text
 
   return (
     <Box sx={{ 
         padding: { xs: 2, md: 3 },
-        background: backgroundGradient,
+        mx:"20px",
+        background: 'linear-gradient(to bottom, #ffffff, #f0f0f0)',
         minHeight: '100vh',
         width: '100vw',
-        height: '50vh',
-        // backgroundImage: 'url(/backgroundImg2.jpg)',
         overflowX: 'hidden',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     }}>
       <Grid container spacing={3} sx={{ mt: 4 }}>
-        <Grid item xs={12} md={6} >
-          <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
+        {/* Left half of the screen */}
+        <Grid item xs={12} md={6}>
+          {/* Heading */}
+          <Box
+            sx={{
+              backgroundColor: headingBackgroundColor,
+              border: `2px solid ${headingBorderColor}`,
+              borderRadius: 2,
+              padding: 2,
+              mb: 4,
+            }}
+          >
             <Typography
-              variant="h3"
-              data-aos="fade-down"
+              variant="h5"
               sx={{
+                fontWeight: 'bold',
                 color: textColor,
-                mb: 6,
-                fontSize: "3.5rem",
-                // fontFamily: 'Roboto, sans-serif',
+                fontSize: '1.75rem',
+                textAlign: 'left',
               }}
             >
-              {productData.title}
-            </Typography>
-            <Typography
-              variant="body1"
-              data-aos="fade-right"
-              sx={{
-                fontSize: '1.1rem',
-                color: textColor,
-                mb: 4,
-                // fontFamily: 'Open Sans, sans-serif',
-                lineHeight: 1.6,
-              }}
-            >
-              {productData.description}
+              Why Our <Box sx={{color:"#ee4d37", display:"inline",whiteSpace: 'nowrap'}}>{productData.title}</Box> is a Versatile Seating Solution?
             </Typography>
           </Box>
+
+          {/* Description */}
+          <Typography
+            variant="body1"
+            sx={{
+              fontSize: '1.1rem',
+              color: "black",
+              fontWeight:"600",
+              mb: 4,
+              ml:2,
+              lineHeight: 1.6,
+            }}
+          >
+            {productData.description}
+          </Typography>
+
+          {/* Accordions */}
+          <Box sx={{
+            ml:1
+          }}>
+          {productData.additional_info?.map((info, index) => (
+              <Accordion
+              key={index}
+              sx={{
+                  mb: 2,
+                  backgroundColor: headingBackgroundColor,
+                  // #ee4d37
+                color: '#f0f0f0',
+                boxShadow:"none",
+                borderRadius: 2,
+              }}
+            >
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon sx={{ color: '#ee4d37' }} />}
+                aria-controls={`panel${index}-content`}
+                id={`panel${index}-header`}
+              >
+                <Typography
+                  sx={{
+                    color: "black",
+                    fontSize: "1.2rem"
+                  }}
+                >
+                  {info.title}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography
+                  sx={{
+                    fontSize: '1.1rem',
+                    color: "rgba(50,50,50)",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  {info.content}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+              </Box>
+            
         </Grid>
 
+        {/* Right half of the screen */}
         <Grid item xs={12} md={6} data-aos="fade-left">
-          <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', borderRadius: 2 }}>
+          {/* Title */}
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: 'bold',
+              color: darkColor,
+              mb: 4,
+            //   fontSize:"2rem",
+              textAlign: 'center',
+            }}
+          >
+            {productData.title}
+          </Typography>
+
+          {/* Image Carousel */}
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            //   height: '100%',
+              borderRadius: 2,
+            }}
+          >
             <ImgCarousel />
           </Box>
         </Grid>
       </Grid>
-
-      <Box
-        sx={{
-          mt: 10,
-          mb: 2,
-          ml: '20px',
-          textAlign: 'left',
-          color: darkColor,
-          fontSize: '25px',
-        //   fontFamily: 'Roboto, sans-serif',
-          bgcolor: "rgba(209, 126, 107, 0.55)",
-          borderRadius: 3,
-          boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-          padding: 1.5,
-          display: "flex",
-          justifyContent: "center",
-          width: 'auto',
-        }}
-      >
-        <Typography
-          variant="h5"
-          sx={{
-            fontWeight: 'bolder',
-            color: 'rgb(52, 52, 84,0.9)',
-            // fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
-            fontSize: '25px',
-            m: 2
-          }}
-        >
-          Why Our {productData.title} is a Versatile Seating Solution
-        </Typography>
-      </Box>
-
-      <Grid container spacing={2} justifyContent="center" sx={{ mt: 4 }}>
-        {productData.benefits?.map((benefit, index) => (
-          <Grid item xs={12} key={index} >
-            <Box
-            // data-aos="fade"
-              className="benefits"
-              sx={{
-                padding: 2,
-                background: 'linear-gradient(to right, #770303, #030249)',
-                color: '#f0f0f0',
-                borderRadius: 2,
-                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-                // fontFamily: 'Open Sans, sans-serif',
-                display: 'inline-block',
-                position: 'relative',
-                width: '500px',
-                marginLeft: '20px',
-                maxWidth: '90%',
-                clipPath: 'polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%)',
-                '&:before': {
-                  content: '""',
-                  position: 'absolute',
-                  top: 0,
-                  right: 0,
-                  width: 0,
-                  minWidth: '250px',
-                  height: 0,
-                  borderTop: '15px solid #570303',
-                  borderBottom: '20px solid transparent',
-                  borderLeft: '20px solid transparent',
-                },
-              }}
-            >
-              <Typography
-                variant="body1"
-                className="benefits-text"
-                sx={{
-                  fontSize: '18px',
-                  fontWeight: '600',
-                }}
-              >
-                {benefit}
-              </Typography>
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
-
-      <Box sx={{ mt: 15 }}>
-        {productData.additional_info?.map((info, index) => (
-          <Accordion
-            key={index}
-            sx={{
-              ml: 2,
-              mr: 0,
-              my: 1,
-              background: ' linear-gradient(to right, #373745, #25486f, rgb(160, 161, 161))',
-              color: '#f0f0f0',
-              borderRadius: 2,
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
-            }}
-            // data-aos="fade-up"
-          >
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon sx={{ color: '#f0f0f0' }} />}
-              aria-controls={`panel${index}-content`}
-              id={`panel${index}-header`}
-            >
-              <Typography
-                sx={{
-                //   fontWeight: 'bold',
-                  color: "rgba(255, 255, 98, 0.655)",
-                //   fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-                  fontSize: "1.5rem"
-                }}
-              >
-                {info.title}
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography
-                sx={{
-                  fontSize: '1.1rem',
-                  color: "beige",
-                  lineHeight: 1.6
-                }}
-              >
-                {info.content}
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-        ))}
-      </Box>
     </Box>
   );
 };
