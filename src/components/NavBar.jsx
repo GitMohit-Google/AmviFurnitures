@@ -178,7 +178,7 @@ items.forEach(item => {
                   link === "PRODUCTS" ? (
                       <div key={index} className="dropdown">
                       <Button color="inherit" className="nav-link dropbtn">
-                        {link}
+                        {link} +
                       </Button>
                       <ul className="submenu">
                         {products.map((product,index)=>(

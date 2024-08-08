@@ -6,6 +6,7 @@ import ImgCarousel from '../components/ImgCarousel';
 import { products } from '../constants/productData';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import StatsBanner from '../components/StatsBanner';
 
 const ProductDisplayPage = () => {
   const { productName } = useParams();

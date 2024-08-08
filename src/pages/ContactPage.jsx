@@ -51,7 +51,7 @@ const ContactPage = () => {
   return (
     <>
       <ToastContainer />
-      <Container maxWidth="lg" sx={{ my: 8 }}>
+      <Container maxWidth="lg" sx={{ mt: 16,mb:8 }}>
         <Paper elevation={3} sx={{ p: 4, borderRadius: 4 }}>
           <Typography
             variant="h4"
@@ -59,7 +59,7 @@ const ContactPage = () => {
             gutterBottom
             sx={{ fontWeight: "600", color: "rgba(0, 0, 0, 0.67)" }}
           >
-            We're always eager to hear from you!
+            We're <span style={{ color: '#ee4d37 ' }}>always eager</span> to hear from you!
           </Typography>
           <Typography
             variant="body1"
