@@ -1,9 +1,9 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 import { NavBar } from "./components/NavBar";
 import { AboutUs, BlogPage, ContactPage, LandingPage } from "./pages";
-import { Footer } from "./components/Footer";
 import HomeState from "./context/Home/HomeState";
 import ProductDisplayPage from "./pages/ProductDisplayPage";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
             <Route path="*" element={<Navigate to="/home" replace />} /> Fallback route for invalid paths
           </Routes>
         </div>
-        <Footer />
+        <Footer/>
         <a
         href="/brochure.pdf"
         download
