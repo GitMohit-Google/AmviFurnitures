@@ -53,7 +53,7 @@ const ClientTestimonials= () => {
         },
       }}
     >
-      <Typography variant="h4" sx={{ fontWeight: 'bold', textAlign: 'center', marginBottom: '20px' }}>
+      <Typography variant="h4" sx={{ fontWeight: 'bold', textAlign: 'center', marginBottom: '40px' }}>
         Client's Testimonial
       </Typography>
       <Slider {...settings}>

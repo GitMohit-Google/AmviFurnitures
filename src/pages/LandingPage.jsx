@@ -44,7 +44,7 @@ const LandingPage = () => {
         />
       </div>
       <StatsBanner />
-      <div className="flex w-full items-center justify-center">
+      <div className="flex w-full items-center justify-center my-10">
       <img src="/Online.png" alt="" />
       </div>
       <ProductsSection />
