@@ -44,6 +44,9 @@ const LandingPage = () => {
         />
       </div>
       <StatsBanner />
+      <div className="flex w-full items-center justify-center">
+      <img src="/Online.png" alt="" />
+      </div>
       <ProductsSection />
       <IndiaMap />
       <div style={{ marginTop: "-100px" }}>
