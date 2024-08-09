@@ -9,12 +9,7 @@ import { useTheme } from '@mui/material/styles';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const images = [
-  'demoImg.png',
-  'demoImg.png',
-  'demoImg.png',
-  'demoImg.png',
-];
+
 
 function CustomArrow(props) {
   const { className, style, onClick, icon } = props;
@@ -42,11 +37,12 @@ function CustomArrow(props) {
   );
 }
 
-function ImgCarousel() {
+function ImgCarousel(images) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
-
+console.log(images.images);
+const Imgs=images.images
   const [activeStep, setActiveStep] = useState(0);
 
   const settings = {
@@ -70,7 +66,7 @@ function ImgCarousel() {
       }}
     >
       <Slider {...settings}>
-        {images.map((imgPath, index) => (
+        {Imgs.map((img, index) => (
           <Box
             key={index}
             sx={{
@@ -87,7 +83,7 @@ function ImgCarousel() {
                 height: '100%',
                 objectFit: 'contain', // Ensure image fits within container without cropping
               }}
-              src={imgPath}
+              src={img.src}
               alt={`Slide ${index + 1}`}
             />
           </Box>
@@ -101,7 +97,7 @@ function ImgCarousel() {
           flexWrap: 'wrap',
         }}
       >
-        {images.map((imgPath, index) => (
+        {Imgs?.map((img, index) => (
           <Box
             key={index}
             onClick={() => setActiveStep(index)}
@@ -120,7 +116,7 @@ function ImgCarousel() {
                 borderRadius: 1,
                 border: activeStep === index ? '2px solid black' : 'none',
               }}
-              src={imgPath}
+              src={img.src}
               alt={`Thumbnail ${index + 1}`}
             />
           </Box>

@@ -8,6 +8,7 @@ import {
   AccordionDetails,
   Card,
 } from "@mui/material";
+import { ProductCarouselImgs } from "../constants/ProductCarouselImgs";
 import { productImages } from "../constants/images";
 import AspectRatio from "@mui/joy/AspectRatio";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -22,9 +23,9 @@ const ProductDisplayPage = () => {
   const { productName } = useParams();
   const product = products.find((p) => p.title === productName);
   const productData = product || {};
-
+  const productImgs = ProductCarouselImgs.filter((img)=>img.title==productName);
   const images = productImages.filter((item)=>item.title==productName);
-
+    
   useEffect(() => {
     AOS.init({ duration: 1000 });
     window.scrollTo(0, 0); // Scroll to top when the component mounts
@@ -179,7 +180,7 @@ const ProductDisplayPage = () => {
               borderRadius: 2,
             }}
           >
-            <ImgCarousel />
+            <ImgCarousel images={productImgs}/>
           </Box>
         </Grid>
       </Grid>
