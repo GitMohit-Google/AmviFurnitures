@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Slider from 'react-slick';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
@@ -8,8 +8,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
 
 function CustomArrow(props) {
   const { className, style, onClick, icon } = props;
@@ -23,10 +21,9 @@ function CustomArrow(props) {
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         position: 'absolute',
         top: '50%',
-        margin:"10px",
+        margin: "10px",
         transform: 'translateY(-50%)',
         zIndex: 1,
-
         height: 40,
         width: 40,
       }}
@@ -37,13 +34,13 @@ function CustomArrow(props) {
   );
 }
 
-function ImgCarousel(images) {
+function ImgCarousel({ images }) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const isTablet = useMediaQuery(theme.breakpoints.between('sm', 'md'));
-console.log(images.images);
-const Imgs=images.images
   const [activeStep, setActiveStep] = useState(0);
+
+  const sliderRef = useRef(null);
 
   const settings = {
     dots: true,
@@ -51,9 +48,14 @@ const Imgs=images.images
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <CustomArrow className="" icon={<KeyboardArrowRight />} />,
+    nextArrow: <CustomArrow icon={<KeyboardArrowRight />} />,
     prevArrow: <CustomArrow icon={<KeyboardArrowLeft />} />,
     beforeChange: (current, next) => setActiveStep(next),
+  };
+
+  const handleThumbnailClick = (index) => {
+    setActiveStep(index);
+    sliderRef.current.slickGoTo(index);
   };
 
   return (
@@ -65,8 +67,8 @@ const Imgs=images.images
         margin: '0 auto',
       }}
     >
-      <Slider {...settings}>
-        {Imgs.map((img, index) => (
+      <Slider ref={sliderRef} {...settings}>
+        {images.map((img, index) => (
           <Box
             key={index}
             sx={{
@@ -97,14 +99,14 @@ const Imgs=images.images
           flexWrap: 'wrap',
         }}
       >
-        {Imgs?.map((img, index) => (
+        {images?.map((img, index) => (
           <Box
             key={index}
-            onClick={() => setActiveStep(index)}
+            onClick={() => handleThumbnailClick(index)}
             sx={{
               cursor: 'pointer',
               mx: 0.5,
-              border: activeStep === index ? '2px solid black' : 'none',
+              border: activeStep === index ? '1px solid #ee4d37' : 'none',
             }}
           >
             <Box
@@ -114,7 +116,7 @@ const Imgs=images.images
                 width: 70,
                 objectFit: 'contain', // Ensure thumbnail fits within its container
                 borderRadius: 1,
-                border: activeStep === index ? '2px solid black' : 'none',
+                border: activeStep === index ? '2px solid #ee4d37' : 'none',
               }}
               src={img.src}
               alt={`Thumbnail ${index + 1}`}
