@@ -5,8 +5,8 @@ import ClientStats from "./ClientStats";
 const ProductsSection = () => {
   return (
     <div className="flex w-full items-center py-3 flex-col">
-      <div className="flex w-full items-center justify-center text-6xl p-3">
-        <p className="w-[750px] text-center font-medium">
+      <div className="flex w-full items-center justify-center text-5xl p-3">
+        <p className="w-[750px] text-center font-medium" >
           Quality and Guaranteed Products Here
         </p>
       </div>
