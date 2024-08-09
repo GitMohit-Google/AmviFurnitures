@@ -1,6 +1,7 @@
 import React from "react";
 import Cards from "../components/Cards";
 import ClientStats from "./ClientStats";
+import ClientTestimonials from "../components/ClientTestimonial";
 
 const ProductsSection = () => {
   return (
@@ -15,6 +16,7 @@ const ProductsSection = () => {
         <img src="/banners/Banner.png" alt="" className="rounded-lg shadow-lg"/>
         {/* <img src="/Demo.png" alt="" className="rounded-lg shadow-lg"/> */}
       </div>
+      <ClientTestimonials/>
       <ClientStats/>
     </div>
   );
