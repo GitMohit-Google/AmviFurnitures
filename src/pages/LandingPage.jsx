@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import StatsBanner from "../components/StatsBanner";
 import ProductsSection from "../sections/ProductsSection";
 import ContactPage from "./ContactPage";
+import IndiaMap from "../components/Maps";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -44,7 +45,8 @@ const LandingPage = () => {
       </div>
       <StatsBanner />
       <ProductsSection />
-      <div style={{marginTop:"-100px"}}>
+      <IndiaMap />
+      <div style={{ marginTop: "-100px" }}>
         <ContactPage />
       </div>
       {/*  */}
