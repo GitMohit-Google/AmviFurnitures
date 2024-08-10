@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import IndiaMap from "../components/Maps";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
+    useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top when the component mounts
+  }, []);
+
+
   return (
     <div className="overflow-auto p-5 px-8 items-center">
       {/* About Us Heading Section */}
@@ -19,9 +25,12 @@ const AboutUs = () => {
             guarantee, underscoring our confidence in the durability and quality
             of our offerings
           </p>
+          
+          <Link to="contactus">
           <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd]">
             Connect Now
           </button>
+          </Link>
         </div>
         <img
           src="banners/About.png"
@@ -53,9 +62,12 @@ const AboutUs = () => {
             plastic furniture, enhancing everyday living with innovative design
             and environmental responsibility.
           </p>
+          <Link to="contactus">
+
           <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd]">
             Connect Now
           </button>
+          </Link>
         </div>
       </div>
 
