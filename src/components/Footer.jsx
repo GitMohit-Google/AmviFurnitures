@@ -6,40 +6,42 @@ import { products } from "../constants/productData";
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
       <div className="w-full h-full bg-[#f4f4f4] flex flex-row p-10 px-20 justify-evenly items-start">
-        <div className="flex flex-col gap-3">
+         <Link to="home"><div className="flex flex-col gap-3">
           <img src="/ambi logo.png" alt="" className="w-40 h-[80px]" />
           <p className="text-gray-600 w-56">
             <span className="text-[#ee4d37]">AMVI India Limited </span>
             {`(leading plastic furniture manufacturer)`}
           </p>
         </div>
+          </Link>
         <div className="flex flex-col justify-center items-start gap-2">
           <p className="text-gray-700">More To Explore</p>
-          <p>Home</p>
-          <p>About Us</p>
-          <p>Blogs</p>
-          <p>Resources</p>
+          <Link to="home"><p>Home</p></Link>
+          <Link to="aboutus"><p>About Us</p></Link>
+          <Link to="blogs"><p>Blogs</p></Link>
+          <Link to="resources"><p>Resources</p></Link>
         </div>
         <div className="flex flex-col justify-center items-start gap-2">
           <p className="text-gray-700">Chairs</p>
           {products.slice(0, 5).map((product, index) => {
-            return <p>{product.title}</p>;
+            return <Link to={product.title}><p>{product.title}</p></Link>;
           })}
         </div>
         <div className="flex flex-col justify-center items-start gap-2">
           <p className="text-gray-700">Others</p>
           {products.slice(6, 10).map((product, index) => {
-            return <p>{product.title}</p>;
+            return <Link to={product.title}><p>{product.title}</p></Link>;
           })}
         </div>
         <div className="flex flex-col justify-center items-start gap-2">
           <p className="text-gray-700">Support</p>
-          <p>Contact Us</p>
+         <Link to="contactus"> <p>Contact Us</p></Link>
           <div className="flex flex-col items-start justify-center mt-5">
             <p className="text-xl text-[#ee4d37]">Address</p>
             <p className="w-72">
