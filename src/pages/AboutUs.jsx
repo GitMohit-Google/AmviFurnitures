@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top when the component mounts
+    // window.scrollTo(0, 0); // Scroll to top when the component mounts
   }, []);
 
   return (
@@ -74,54 +74,23 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Why Choose US */}
-      <div className="flex flex-col-reverse lg:flex-row w-full items-center justify-evenly my-10 gap-8 lg:gap-0">
-        <div className="flex flex-col bg-white items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[48%] lg:w-[23%] rounded-md h-auto gap-3 order-2 lg:order-1">
-          <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
-            MUTUAL CONTRACTS
-          </p>
-          <p className="text-center text-sm md:text-base lg:text-lg">
-            Our support teams are available to you through various digital
-            channels at your earliest convenience---no telemarketers or sales
-            reps from us. Just our friendly, neighborhood BrandCurb support
-            specialists ready and able to give guidance and help where and when
-            you want it.
-          </p>
-        </div>
-        <div className="flex flex-col items-center gap-3 w-full md:w-[48%] lg:w-[35%] text-center order-1 lg:order-2">
-          <p className="p-1 bg-white shadow-2xl font-bold rounded-md px-3 text-gray-700">
-            YOUR PARTNER IN SUCCESS
-          </p>
-          <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            Why AMVI <span className="text-[#ee4d37]">?</span>
-          </p>
-          <p className="w-full text-gray-600 text-sm md:text-base lg:text-lg">
-            At AMVI FURNITURE, formerly known as Amul Polymer India Pvt Ltd, we
-            are dedicated to establishing ourselves as leaders in the furniture
-            industry by excelling in product categories, market penetration, and
-            consumer engagement. Our commitment to innovation drives us to
-            integrate cutting-edge technology with a compassionate approach,
-            positioning us as a highly admired, cost-effective, and
-            design-focused company. We aspire to significantly grow our presence
-            in the market, promoting plastic furniture as a sustainable
-            alternative to wooden options. By doing so, we aim to minimize
-            environmental impact and offer solutions that are both
-            environmentally friendly and stylish.
-          </p>
-        </div>
-        <div className="flex flex-col bg-[#ee4d37] items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[48%] lg:w-[23%] rounded-md text-white h-auto gap-3 order-3 lg:order-3">
-          <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
-            ECONOMICAL, EFFICIENT
-          </p>
-          <p className="text-center text-sm md:text-base lg:text-lg">
-            Sure you can find a cheaper freelance service, but why not go
-            straight to working with a team of professionals, who are experts in
-            their respective fields? Anybody can make content for your website,
-            but with BrandCurb, you get POP and BUMP-UP, hassle-free!
-          </p>
-        </div>
+      {/* Why Choose Us Section */}
+      <div className="flex flex-col lg:flex-row w-full items-center justify-evenly my-10 gap-8 lg:gap-0">
+        <div className="flex flex-col bg-white items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[48%] lg:w-[23%] rounded-md h-auto gap-3 order-2 lg:order-1"> <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center"> Perfect Quality </p> <p className="text-center text-sm md:text-base lg:text-lg"> The plastic furniture from Amul Polymer India Pvt Ltd has excellent quality that will last for a long time because of top notch quality raw material. </p> </div> <div className="flex flex-col items-center gap-3 w-full md:w-[48%] lg:w-[35%] text-center order-1 lg:order-2"> <p className="p-1 bg-white shadow-2xl font-bold rounded-md px-3 text-gray-700"> YOUR PARTNER IN SUCCESS </p> <p className="text-4xl md:text-5xl lg:text-6xl font-bold"> Why AMVI <span className="text-[#ee4d37]">?</span> </p> <p className="w-full text-gray-600 text-sm md:text-base lg:text-lg"> At AMVI FURNITURE, formerly known as Amul Polymer India Pvt Ltd, we are dedicated to establishing ourselves as leaders in the furniture industry by excelling in product categories, market penetration, and consumer engagement. Our commitment to innovation drives us to integrate cutting-edge technology with a compassionate approach, positioning us as a highly admired, cost-effective, and design-focused company. We aspire to significantly grow our presence in the market, promoting plastic furniture as a sustainable alternative to wooden options. By doing so, we aim to minimize environmental impact and offer solutions that are both environmentally friendly and stylish. </p> </div> <div className="flex flex-col bg-[#ee4d37] items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[48%] lg:w-[23%] rounded-md text-white h-auto gap-3 order-3 lg:order-3"> <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center"> Excellent design </p> <p className="text-center text-sm md:text-base lg:text-lg"> We offer chairs, tables and stools in elegant designs that add a perfect charm to your interiors. Enjoy maximum comfort when you shop with us. </p> </div> </div>
+
+      {/* Value for Money Section */}
+      <div className="flex flex-col bg-black items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 lg:w-[91%] mx-auto rounded-md text-white h-auto gap-3">
+        <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
+          Value for Money
+        </p>
+        <p className="text-center text-sm md:text-base lg:text-lg">
+          With the aid of conscious designs, we have taken every effort to
+          prevent pain and health risks while educating our clients on the need
+          for good posture in order to address all issues.
+        </p>
       </div>
-      <div className="flex w-full items-center justify-center">
+
+      <div className="flex w-full items-center justify-center mt-[50px]">
         <p className="w-full md:w-3/4 lg:w-[45%] text-center text-sm md:text-base lg:text-lg">
           Available throughout{" "}
           <span className="text-[#ee4d37]">North India</span>, serving over{" "}
