@@ -3,79 +3,84 @@ import IndiaMap from "../components/Maps";
 import { Link } from "react-router-dom";
 
 const AboutUs = () => {
-    useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0); // Scroll to top when the component mounts
   }, []);
 
-
   return (
-    <div className="overflow-auto p-5 px-8 items-center">
+    <div className="overflow-auto p-5 md:px-8 items-center">
       {/* About Us Heading Section */}
-      <div className="flex w-full items-center justify-between mt-2 flex-row pr-56 pl-24 p-2 pb-10 gap-4">
+      <div className="flex flex-col md:flex-row w-full items-center justify-between mt-2 md:pr-20 lg:pr-56 md:pl-10 lg:pl-24 p-2 pb-10 gap-4">
         <div className="flex flex-col gap-4 w-full items-start justify-center">
-          <p className="text-6xl font-bold">
+          <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
             About <span className="text-[#ee3d47]">AMVI FURNITURE</span>
           </p>
-          <p className="text-xl w-full">
+          <p className="text-base md:text-lg lg:text-xl w-full">
             AMVI stands at the forefront of the molded furniture industry
             through its prestigious AMVI FURNITURE brand. Renowned for its
             commitment to excellence, AMVI offers an unparalleled selection of
             furniture products, distinguished by a comprehensive range that
             caters to diverse needs. Select items come with a three-year
             guarantee, underscoring our confidence in the durability and quality
-            of our offerings
+            of our offerings.
           </p>
-          
           <Link to="contactus">
-          <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd]">
-            Connect Now
-          </button>
+            <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd]">
+              Connect Now
+            </button>
           </Link>
         </div>
         <img
           src="banners/About.png"
           alt=""
-          className="rounded-lg w-[450px] h-[450px]"
+          className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px]"
         />
       </div>
 
       {/* Banner */}
       <div className="flex w-full items-center justify-center mt-2">
-        <img src="/Banner_Style-Photoroom.png" alt="" className="rounded-lg" />
+        <img
+          src="/Banner_Style-Photoroom.png"
+          alt=""
+          className="rounded-lg w-full md:w-3/4"
+        />
       </div>
 
       {/* Our Mission Section */}
-      <div className="flex w-full items-center justify-between mt-2 flex-row pr-36 pl-24 p-2 gap-8">
+      <div className="flex flex-col-reverse md:flex-row w-full items-center justify-between mt-2 md:pr-10 lg:pr-36 md:pl-10 lg:pl-24 p-2 gap-8">
         <img
           src="banners/OurMission-Photoroom.png"
           alt=""
-          className="rounded-lg w-[450px] h-[450px]"
+          className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px]"
         />
-        <div className="flex flex-col gap-4 w-full items-start justify-center my-20">
-          <p className="text-6xl font-bold">Our Mission & Vision</p>
-          <p className="text-xl w-full">
+        <div className="flex flex-col gap-4 w-full items-start justify-center md:my-20">
+          <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
+            Our Mission & Vision
+          </p>
+          <p className="text-base md:text-lg lg:text-xl w-full">
             To revolutionize comfort and durability in every home with
             innovative, eco-friendly plastic furniture solutions.
           </p>
-          <p className="text-xl w-full">
+          <p className="text-base md:text-lg lg:text-xl w-full">
             To be the leading provider of stylish, sustainable, and durable
             plastic furniture, enhancing everyday living with innovative design
             and environmental responsibility.
           </p>
           <Link to="contactus">
-
-          <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd]">
-            Connect Now
-          </button>
+            <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd]">
+              Connect Now
+            </button>
           </Link>
         </div>
       </div>
 
       {/* Why Choose US */}
-      <div className="flex flex-col sm:flex-row w-full items-center justify-evenly my-10">
-        <div className="flex flex-col bg-white items-center justify-center py-16 px-10 w-[23%] rounded-md h-auto gap-3">
-          <p className="text-3xl font-bold text-center">MUTUAL CONTRACTS</p>
-          <p className="text-center">
+      <div className="flex flex-col-reverse lg:flex-row w-full items-center justify-evenly my-10 gap-8 lg:gap-0">
+        <div className="flex flex-col bg-white items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[48%] lg:w-[23%] rounded-md h-auto gap-3 order-2 lg:order-1">
+          <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
+            MUTUAL CONTRACTS
+          </p>
+          <p className="text-center text-sm md:text-base lg:text-lg">
             Our support teams are available to you through various digital
             channels at your earliest convenience---no telemarketers or sales
             reps from us. Just our friendly, neighborhood BrandCurb support
@@ -83,20 +88,20 @@ const AboutUs = () => {
             you want it.
           </p>
         </div>
-        <div className="flex flex-col items-center gap-3 w-[35%]">
+        <div className="flex flex-col items-center gap-3 w-full md:w-[48%] lg:w-[35%] text-center order-1 lg:order-2">
           <p className="p-1 bg-white shadow-2xl font-bold rounded-md px-3 text-gray-700">
             YOUR PARTNER IN SUCCESS
           </p>
-          <p className="text-6xl font-bold">
+          <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
             Why AMVI <span className="text-[#ee4d37]">?</span>
           </p>
-          <p className="w-full text-center text-gray-600">
+          <p className="w-full text-gray-600 text-sm md:text-base lg:text-lg">
             At AMVI FURNITURE, formerly known as Amul Polymer India Pvt Ltd, we
             are dedicated to establishing ourselves as leaders in the furniture
             industry by excelling in product categories, market penetration, and
             consumer engagement. Our commitment to innovation drives us to
             integrate cutting-edge technology with a compassionate approach,
-            positioning us as a highly admired, cost- effective, and
+            positioning us as a highly admired, cost-effective, and
             design-focused company. We aspire to significantly grow our presence
             in the market, promoting plastic furniture as a sustainable
             alternative to wooden options. By doing so, we aim to minimize
@@ -104,11 +109,11 @@ const AboutUs = () => {
             environmentally friendly and stylish.
           </p>
         </div>
-        <div className="flex flex-col bg-[#ee4d37] items-center justify-center py-16 px-10 w-[23%] rounded-md text-white h-auto gap-3">
-          <p className="text-3xl font-bold text-center">
+        <div className="flex flex-col bg-[#ee4d37] items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[48%] lg:w-[23%] rounded-md text-white h-auto gap-3 order-3 lg:order-3">
+          <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
             ECONOMICAL, EFFICIENT
           </p>
-          <p className="text-center">
+          <p className="text-center text-sm md:text-base lg:text-lg">
             Sure you can find a cheaper freelance service, but why not go
             straight to working with a team of professionals, who are experts in
             their respective fields? Anybody can make content for your website,
@@ -117,12 +122,15 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="flex w-full items-center justify-center">
-      <p className="w-[45%] text-center">
-        Available throughout <span className="text-[#ee4d37]">North India</span>, serving over <span className="text-[#ee4d37]">50 million people</span> and
-        present in more than <span className="text-[#ee4d37]">1,900 outlets</span> nationwide
-      </p>
+        <p className="w-full md:w-3/4 lg:w-[45%] text-center text-sm md:text-base lg:text-lg">
+          Available throughout{" "}
+          <span className="text-[#ee4d37]">North India</span>, serving over{" "}
+          <span className="text-[#ee4d37]">50 million people</span> and present
+          in more than <span className="text-[#ee4d37]">1,900 outlets</span>{" "}
+          nationwide
+        </p>
       </div>
-      <IndiaMap/>
+      <IndiaMap />
     </div>
   );
 };
