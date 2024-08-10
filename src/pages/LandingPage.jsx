@@ -49,12 +49,25 @@ const LandingPage = () => {
       </div>
       <ProductsSection />
       <div className="flex w-full items-center justify-center">
-      <p className="w-[45%] text-center">
-        Available throughout <span className="text-[#ee4d37]">North India</span>, serving over <span className="text-[#ee4d37]">50 million people</span> and
-        present in more than <span className="text-[#ee4d37]">1,900 outlets</span> nationwide
-      </p>
+        <p className="w-[45%] text-center">
+          Available throughout{" "}
+          <span className="text-[#ee4d37]">North India</span>, serving over{" "}
+          <span className="text-[#ee4d37]">50 million people</span> and present
+          in more than <span className="text-[#ee4d37]">1,900 outlets</span>{" "}
+          nationwide
+        </p>
       </div>
-      <IndiaMap />
+      <div className="flex w-full items-center justify-center mt-[50px]">
+        <img
+          src="/IndiaMap.png"
+          alt="India Map"
+          style={{
+            maxWidth: "800px",
+            width: "100%",
+          }}
+          className="w-[1/2] lg:w-[90%] rounded-lg"
+        />
+      </div>
       <div style={{ marginTop: "-100px" }}>
         <ContactPage />
       </div>
