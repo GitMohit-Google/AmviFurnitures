@@ -66,7 +66,7 @@ export const NavBar = () => {
   };
 
   const handleCopyContact = () => {
-    navigator.clipboard.writeText("+91 78xxxxxxxx");
+    navigator.clipboard.writeText("+91 7497036847");
     toast.success("Contact number copied to clipboard!");
   };
 
