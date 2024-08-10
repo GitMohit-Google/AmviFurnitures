@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { markers } from "../constants/statesData";
+import { Tooltip } from "@mui/material";
 // Import India TopoJSON data (assuming it's in the public folder or an imported JSON file)
 const indiaTopoJson = "./in.json"; 
   
 
 const IndiaMap = () => {
+  const [content, setContent] = useState(""); // State to hold tooltip content
+
+  const handleMouseOver = (name) => {
+    setContent(name); // Update tooltip content on hover
+  };
+
   return (
     <ComposableMap
       projection="geoMercator"
@@ -34,7 +41,7 @@ const IndiaMap = () => {
                   outline: "none",
                 },
                 pressed: {
-                  fill: "#E42",
+                  fill: "black",
                   outline: "none",
                 },
               }}
@@ -44,10 +51,11 @@ const IndiaMap = () => {
       </Geographies>
 
       {markers?.map(({ name, coordinates }) => (
-        <Marker key={name} coordinates={coordinates}>
-          <FaMapMarkerAlt className="text-red-800"/>
+        <Marker key={name} coordinates={coordinates} onMouseOver={() => handleMouseOver(name)}>
+          <FaMapMarkerAlt className="text-red-800" />
         </Marker>
       ))}
+      <Tooltip content={content} />
     </ComposableMap>
   );
 };
