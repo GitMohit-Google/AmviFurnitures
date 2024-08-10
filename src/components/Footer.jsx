@@ -66,7 +66,7 @@ const Footer = () => {
 
       {/* Foot */}
       <div className="w-full h-full bg-[#2E2E2E] p-2 flex justify-between items-center">
-        <p className="text-white w-full flex justify-end items-center">
+        <p className="text-white w-full flex justify-end items-center gap-1">
           Powered By <span className="text-[#ee4d37]"> IT Sagar Solutions</span>
         </p>
         <div className="flex flex-row w-[70%] justify-end items-center gap-5 p-1">
