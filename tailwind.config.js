@@ -1,12 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
+    screens: {
+      sm: "640px",
+      md: "800px", // Changed the default md breakpoint to 1100px
+      lg: "1100px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
   },
   plugins: [],
-}
-
+};
