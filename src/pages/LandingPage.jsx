@@ -5,9 +5,9 @@ import ContactPage from "./ContactPage";
 import IndiaMap from "../components/Maps";
 
 const LandingPage = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top when the component mounts
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0); // Scroll to top when the component mounts
+  // }, []);
 
   return (
     <div className="overflow-auto p-5 px-8">
@@ -45,9 +45,15 @@ const LandingPage = () => {
       </div>
       <StatsBanner />
       <div className="flex w-full items-center justify-center my-10">
-      <img src="/Online.png" alt="" />
+        <img src="/Online.png" alt="" />
       </div>
       <ProductsSection />
+      <div className="flex w-full items-center justify-center">
+      <p className="w-[45%] text-center">
+        Available throughout <span className="text-[#ee4d37]">North India</span>, serving over <span className="text-[#ee4d37]">50 million people</span> and
+        present in more than <span className="text-[#ee4d37]">1,900 outlets</span> nationwide
+      </p>
+      </div>
       <IndiaMap />
       <div style={{ marginTop: "-100px" }}>
         <ContactPage />

@@ -158,7 +158,7 @@ export const NavBar = () => {
                     className="header-icon"
                     style={{ marginRight: "8px" }}
                   />
-                  +91 78xxxxxxxx
+                   +91 7497036847
                 </Typography>
               </Box>
               <Box variant="body2" className="top-bar-item">
