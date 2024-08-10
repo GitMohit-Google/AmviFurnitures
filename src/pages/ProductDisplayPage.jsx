@@ -18,14 +18,17 @@ import { products } from "../constants/productData";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaStar } from "react-icons/fa";
+import ContactPage from "./ContactPage";
 
 const ProductDisplayPage = () => {
   const { productName } = useParams();
   const product = products.find((p) => p.title === productName);
   const productData = product || {};
-  const productImgs = ProductCarouselImgs.filter((img)=>img.title==productName);
-  const images = productImages.filter((item)=>item.title==productName);
-    
+  const productImgs = ProductCarouselImgs.filter(
+    (img) => img.title == productName
+  );
+  const images = productImages.filter((item) => item.title == productName);
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
     window.scrollTo(0, 0); // Scroll to top when the component mounts
@@ -42,13 +45,14 @@ const ProductDisplayPage = () => {
         padding: { xs: 2, md: 3 },
         // mx:"20px",
         mx: { xs: 0, md: "20px" },
-        background: 'linear-gradient(to bottom, #ffffff, #f0f0f0)',
-        minHeight: '100vh',
-        width: '100vw',
-        overflowX: 'hidden',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-    }}>
+        background: "linear-gradient(to bottom, #ffffff, #f0f0f0)",
+        minHeight: "100vh",
+        width: "100vw",
+        overflowX: "hidden",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <Grid container spacing={3} sx={{ mt: 4 }} flexWrap="wrap-reverse">
         {/* Left half of the screen */}
         <Grid item xs={12} md={6}>
@@ -84,7 +88,14 @@ const ProductDisplayPage = () => {
               is a Versatile Seating Solution?
             </Typography>
           </Box>
-          <Box sx={{ display: "flex", flexDirection: "horizontal", mx:"16px",mb:"10px"}}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "horizontal",
+              mx: "16px",
+              mb: "10px",
+            }}
+          >
             <FaStar className="text-yellow-400" />
             <FaStar className="text-yellow-400" />
             <FaStar className="text-yellow-400" />
@@ -180,74 +191,86 @@ const ProductDisplayPage = () => {
               borderRadius: 2,
             }}
           >
-            <ImgCarousel images={productImgs}/>
+            <ImgCarousel images={productImgs} />
           </Box>
         </Grid>
       </Grid>
 
-      
-   <Grid 
-  container 
-  spacing={2} 
-  justifyContent="flex-start"
-  sx={{ 
-     mt:10,
-    flexWrap: 'wrap',
-  }}
->
-  {images?.length > 0 && images.map((img, index) => (
-    <Grid 
-      item 
-      key={index}
-      sx={{ 
-        flex: {
-          xs: '0 1 100%', // Full width on extra small screens (mobile)
-          sm: '0 1 calc(50%)', // Half width on small screens
-          md: '0 1 calc(33.33% - 16px)', // One-third width on medium and larger screens
-        },
-        display: 'flex', 
-        justifyContent: 'center',
-      }}
-    >
-      <Card
+      <Grid
+        container
+        spacing={2}
+        justifyContent="flex-start"
         sx={{
-          width: '100%', // Ensure the card takes up the full width of the grid item
-          p: 2,
-          borderRadius: 5,
-          backgroundColor: "#2a2a2a",
-          transition: "opacity 0.3s ease",
-          "&:hover": {
-            border:"3px solid #ee4d37"
-          },
+          mt: 10,
+          flexWrap: "wrap",
         }}
       >
-        {/* <AspectRatio minHeight="400px" maxHeight="500px" > */}
-          <img
-            src={img.src}
-            loading="lazy"
-            alt=""
-            className="bg-[#2a2a2a]"
-          />
-        {/* </AspectRatio> */}
-        <div style={{ textAlign: "center" }}>
-          <Typography
-            sx={{ color: "white", fontSize: "30px" }}
-            variant="h6"
-          >
-            {img.src.split('/')[2].split('-')[1]}
-          </Typography>
-            <Typography sx={{ color: "white", mb:1,fontSize:"14px" }} variant="body2">
-                Dimensions :  <span style={{whiteSpace: "nowrap",}}>L : {img.dimensions.L}mm</span> | <span style={{whiteSpace: "nowrap",}}>W : {img.dimensions.W}mm</span> | <span style={{whiteSpace: "nowrap",}}>H : {img.dimensions.H}mm</span> 
-            </Typography>
-        </div>
-      </Card>
-    </Grid>
-  ))}
-</Grid>
+        {images?.length > 0 &&
+          images.map((img, index) => (
+            <Grid
+              item
+              key={index}
+              sx={{
+                flex: {
+                  xs: "0 1 100%", // Full width on extra small screens (mobile)
+                  sm: "0 1 calc(50%)", // Half width on small screens
+                  md: "0 1 calc(33.33% - 16px)", // One-third width on medium and larger screens
+                },
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Card
+                sx={{
+                  width: "100%", // Ensure the card takes up the full width of the grid item
+                  p: 2,
+                  borderRadius: 5,
+                  backgroundColor: "#2a2a2a",
+                  transition: "opacity 0.3s ease",
+                  "&:hover": {
+                    border: "3px solid #ee4d37",
+                  },
+                }}
+              >
+                {/* <AspectRatio minHeight="400px" maxHeight="500px" > */}
+                <img
+                  src={img.src}
+                  loading="lazy"
+                  alt=""
+                  className="bg-[#2a2a2a]"
+                />
+                {/* </AspectRatio> */}
+                <div style={{ textAlign: "center" }}>
+                  <Typography
+                    sx={{ color: "white", fontSize: "30px" }}
+                    variant="h6"
+                  >
+                    {img.src.split("/")[2].split("-")[1]}
+                  </Typography>
+                  <Typography
+                    sx={{ color: "white", mb: 1, fontSize: "14px" }}
+                    variant="body2"
+                  >
+                    Dimensions :{" "}
+                    <span style={{ whiteSpace: "nowrap" }}>
+                      L : {img.dimensions.L}mm
+                    </span>{" "}
+                    |{" "}
+                    <span style={{ whiteSpace: "nowrap" }}>
+                      W : {img.dimensions.W}mm
+                    </span>{" "}
+                    |{" "}
+                    <span style={{ whiteSpace: "nowrap" }}>
+                      H : {img.dimensions.H}mm
+                    </span>
+                  </Typography>
+                </div>
+              </Card>
+            </Grid>
+          ))}
+      </Grid>
 
-
-   
-
+      <ContactPage />
     </Box>
   );
 };

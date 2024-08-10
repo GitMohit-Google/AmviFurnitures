@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import ClientStats from "../sections/ClientStats";
+import ContactPage from "./ContactPage";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -129,7 +131,7 @@ const AboutUs = () => {
           for good posture in order to address all issues.
         </p>
       </div>
-
+      <ClientStats />
       {/* Full-Width IndiaMap Image */}
       <div className="flex w-full items-center justify-center mt-[50px]">
         <img
@@ -142,6 +144,7 @@ const AboutUs = () => {
           className="w-[1/2] lg:w-[90%] rounded-lg"
         />
       </div>
+      <ContactPage />
     </div>
   );
 };
