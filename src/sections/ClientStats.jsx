@@ -7,12 +7,12 @@ const ClientStats = () => {
     <div className="flex flex-col  xs:w-[100%] md:w-[95%] mx-[auto] my-8 px-5 p-3 gap-16 ">
       <div className="flex w-full flex-col p-3 justify-center items-center gap-1">
         <p className="text-lg text-gray-500">OUR CERTIFICATIONS</p>
-        <p className="text-4xl ">Trusted by over 2 Cr+ clients</p>
-        <p className="text-xl text-gray-700">
+        <p className="text-4xl text-center">Trusted by over 2 Cr+ clients</p>
+        <p className="text-xl text-gray-700 text-center">
           Our clients are our top priority, and we are committed to providing
           them{" "}
         </p>
-        <p className="text-xl text-gray-700">
+        <p className="text-xl text-gray-700 text-center">
           with the highest level of service
         </p>
       </div>

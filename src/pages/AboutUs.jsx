@@ -55,14 +55,17 @@ const AboutUs = () => {
           className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px]"
         />
         <div className="flex flex-col gap-4 w-full items-start justify-center md:my-20">
-          <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            Our Mission & Vision
+          <p className="text-4xl md:text-4xl lg:text-5xl font-bold">
+            Mission
           </p>
-          <p className="text-base md:text-lg lg:text-xl w-full">
+          <p className="text-base md:text-lg lg:text-xl w-full mb-5">
             To revolutionize comfort and durability in every home with
             innovative, eco-friendly plastic furniture solutions.
           </p>
-          <p className="text-base md:text-lg lg:text-xl w-full">
+          <p className="text-4xl md:text-4xl lg:text-5xl font-bold">
+            Vision
+          </p>
+          <p className="text-base md:text-lg lg:text-xl w-full mb-5">
             To be the leading provider of stylish, sustainable, and durable
             plastic furniture, enhancing everyday living with innovative design
             and environmental responsibility.
@@ -92,7 +95,7 @@ const AboutUs = () => {
             YOUR PARTNER IN SUCCESS
           </p>
           <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            Why AMVI <span className="text-[#ee4d37]">?</span>
+            Message from <span className="text-[#ee4d37]"> Chairman ?</span>
           </p>
           <p className="w-full text-gray-600 text-sm md:text-base lg:text-lg">
             At AMVI FURNITURE, formerly known as Amul Polymer India Pvt Ltd, we
