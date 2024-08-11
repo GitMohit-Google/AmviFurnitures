@@ -7,12 +7,11 @@ import { FaStar } from 'react-icons/fa';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 const testimonials = [
-  { name: 'Ravi Kumar', comment: 'Their extensive product range, competitive pricing, and strong support system have helped us expand our customer base significantly.' },
-  { name: 'Suvojit Kar', comment: 'Avro furniture is a very good and well-known brand. Chairs are solid and strong, quality is superb and looks very good, size is big and comfortable. Thanks Avro Furniture and Amazon.' },
-  { name: 'Shirin Sheroff', comment: 'These chairs are very comfortable, sturdy and the colour is good so dust and dirt doesn\'t immediately show. I am very glad I purchased them.' },
-  { name: 'Ravi Kumar', comment: 'Their extensive product range, competitive pricing, and strong support system have helped us expand our customer base significantly.' },
-  { name: 'Suvojit Kar', comment: 'Avro furniture is a very good and well-known brand. Chairs are solid and strong, quality is superb and looks very good, size is big and comfortable. Thanks Avro Furniture and Amazon.' },
-  { name: 'Shirin Sheroff', comment: 'These chairs are very comfortable, sturdy and the colour is good so dust and dirt doesn\'t immediately show. I am very glad I purchased them.' },
+  { name: 'Sunil Goyal', comment: 'Their extensive product range, competitive pricing, and strong support system have helped us expand our customer base significantly.' },
+  { name: 'Vinod', comment: 'Avro furniture is a very good and well-known brand. Chairs are solid and strong, quality is superb and looks very good, size is big and comfortable. Thanks Avro Furniture and Amazon.' },
+  { name: 'Anil Sahu', comment: 'These chairs are very comfortable, sturdy and the colour is good so dust and dirt doesn\'t immediately show. I am very glad I purchased them.' },
+  { name: 'Ramesh Dua', comment: 'Their extensive product range, competitive pricing, and strong support system have helped us expand our customer base significantly.' },
+  { name: 'Gaurav Jaswal', comment: 'Avro furniture is a very good and well-known brand. Chairs are solid and strong, quality is superb and looks very good, size is big and comfortable. Thanks Avro Furniture and Amazon.' },
   // Add more testimonials as needed
 ];
 

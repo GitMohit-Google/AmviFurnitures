@@ -34,6 +34,10 @@ const Mosaic = () => {
                 objectFit: 'cover',
               }}
             />
+            <div className="flex flex-col gap-2 w-full justify-center items-start my-2 bg-gray-100 rounded-md px-2 py-2 shadow-lg">
+            <p className='text-xl font-medium'>{item.title}</p>
+            <p className='text-lg font-normal text-gray-700'>{item.desc}</p>
+            </div>
           </div>
         ))}
       </Masonry>
@@ -44,71 +48,34 @@ const Mosaic = () => {
 export default Mosaic;
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
+    img: '/News/AskMe.png',
+    title: 'AskMe invests $20 mn in online furniture marketplace MebelKart',
+    desc:"Firm aims to acquire a significant market share in the fast growing furniture market"
   },
   {
-    img: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f',
-    title: 'Snacks',
+    img: '/News/PepperFry.jpeg',
+    title: 'Pepperfry cuts losses by 32% in 2017-18, ',
+    desc:"The company plans to achieve overall profitability over the next 12-18 months"
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
+    img: '/News/Supreme.png',
+    title: 'Supreme Industries soars 10%',
+    desc:"Shares of Supreme Industries soared 10 per cent to Rs 4,830 on the BSE in Monday's intra-day trade on strong business outlook as the management said the company's entire range of plastics products are poised to grow this year"
   },
   {
-    img: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383',
-    title: 'Tower',
+    img: '/News/Wipro.jpg',
+    title: 'Wipro',
+    desc:"Wipro to expand furniture business"
+  },
+
+  {
+    img: '/News/Nilkamal.jpeg',
+    title: 'Nilkamal Consolidated June 2023 Net Sales at Rs 783.08 crore, up 5.83% Y-o-Y',
+    desc:"Net Sales at Rs 783.08 crore in June 2023 up 5.83% from Rs. 739.94 crore in June 2022, Quarterly Net Profit at Rs. 32.43 crore in June 2023 up 13.15% from Rs. 28.66 crore in June 2022"
   },
   {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1627328715728-7bcc1b5db87d',
-    title: 'Tree',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1627000086207-76eabf23aa2e',
-    title: 'Camping Car',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1627328561499-a3584d4ee4f7',
-    title: 'Mountain',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
+    img: '/News/download.jpeg',
+    title: 'Luxury furniture brand Stanley Lifestyles gains 30% on trade debut',
+    desc:"Shares worth over Rs 1,300 crore changed hands on both the National Stock Exchange (NSE) and the BSE. The good listing day performance follows strong demand for Stanley Lifestyles’ shares during its Rs 537 crore initial public offering (IPO)."
   },
 ];
