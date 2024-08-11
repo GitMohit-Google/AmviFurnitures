@@ -44,9 +44,9 @@ const LandingPage = () => {
         />
       </div>
       <StatsBanner />
-      <div className="flex w-full items-center justify-center my-10">
+      {/* <div className="flex w-full items-center justify-center my-10">
         <img src="/Online.png" alt="" />
-      </div>
+      </div> */}
       <ProductsSection />
       <div className="flex w-full items-center justify-center">
         <p className="w-[45%] text-center">

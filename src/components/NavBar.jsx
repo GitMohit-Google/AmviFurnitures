@@ -158,7 +158,7 @@ export const NavBar = () => {
                     className="header-icon"
                     style={{ marginRight: "8px" }}
                   />
-                   +91 7497036847
+                  +91 7497036847
                 </Typography>
               </Box>
               <Box variant="body2" className="top-bar-item">
@@ -185,9 +185,11 @@ export const NavBar = () => {
                 className="social-media-icon-wrapper"
                 alignItems="center"
               >
-                <IconButton color="inherit" className="top-bar-icon">
-                  <WhatsAppIcon />
-                </IconButton>
+                <a href="https://wa.me/7497036847" target="_blank">
+                  <IconButton color="inherit" className="top-bar-icon">
+                    <WhatsAppIcon />
+                  </IconButton>
+                </a>
                 <IconButton color="inherit" className="top-bar-icon">
                   <InstagramIcon />
                 </IconButton>

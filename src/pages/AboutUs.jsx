@@ -55,14 +55,14 @@ const AboutUs = () => {
           className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px]"
         />
         <div className="flex flex-col gap-4 w-full items-start justify-center md:my-20">
-          <p className="text-4xl md:text-4xl lg:text-5xl font-bold">
+          <p className="text-4xl md:text-4xl lg:text-5xl font-bold text-[#ee4d37]">
             Mission
           </p>
           <p className="text-base md:text-lg lg:text-xl w-full mb-5">
             To revolutionize comfort and durability in every home with
             innovative, eco-friendly plastic furniture solutions.
           </p>
-          <p className="text-4xl md:text-4xl lg:text-5xl font-bold">
+          <p className="text-4xl md:text-4xl lg:text-5xl font-bold text-[#ee4d37]">
             Vision
           </p>
           <p className="text-base md:text-lg lg:text-xl w-full mb-5">
@@ -80,15 +80,10 @@ const AboutUs = () => {
 
       {/* Why Choose Us Section */}
       <div className="flex flex-col lg:flex-row w-full items-center justify-evenly my-10 gap-8 lg:gap-0">
-        <div className="flex flex-col bg-white items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[90%] lg:w-[23%] rounded-md h-auto gap-3 order-2 lg:order-1">
-          <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
-            Perfect Quality
-          </p>
-          <p className="text-center text-sm md:text-base lg:text-lg">
-            The plastic furniture from Amul Polymer India Pvt Ltd has excellent
-            quality that will last for a long time because of top notch quality
-            raw material.
-          </p>
+        <div className="flex flex-col items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[90%] lg:w-[23%] rounded-md h-auto gap-4 order-2 lg:order-1">
+          <img src="/AMVIOwner-Photoroom.png" alt="Owner" className="w-96 h-60"/>
+          <p className="text-2xl font-bold">Mr. Yogesh Goyal</p>
+          <p className="text-lg font-semibold text-[#ee4d37]">Director/CEO</p>
         </div>
         <div className="flex flex-col items-center gap-3 w-full md:w-[90%] lg:w-[35%] text-center order-1 lg:order-2">
           <p className="p-1 bg-white shadow-2xl font-bold rounded-md px-3 text-gray-700">
