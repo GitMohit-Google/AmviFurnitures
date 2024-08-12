@@ -57,8 +57,8 @@ const ContactPage = () => {
 
   const handleAddressClick = () => {
     const mapAddress = "https://maps.app.goo.gl/HLtyujuk7Rd894nc9";
-    window.open(mapAddress, "_blank");
-  };
+    window.open(mapAddress, '_blank');
+  }
   useEffect(() => {
     const observerX = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -192,13 +192,14 @@ const ContactPage = () => {
                 autoComplete="off"
                 sx={{
                   borderRadius: 2,
-                  p: 3,
+                  px: { xs: 2, sm: 2, md: 3, lg: 4, xl: 4 }, // Added consistent breakpoints
+                  py: 1,
                   boxShadow: 3,
-                  maxWidth: { lg: "550px", sm: "200px" },
+                  maxWidth: {lg:"550px",sm:"200px"},
                   width: "100%",
                   margin: {
                     xs: "0 auto", // Center on smaller screens
-                    md: "0 0 0 auto", // Align right on larger screens
+                    md: "0 0 0 auto",
                   },
                 }}
               >
