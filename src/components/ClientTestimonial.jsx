@@ -66,7 +66,7 @@ const ClientTestimonials = () => {
         margin: "0 auto",
         padding: "40px 20px",
         maxWidth: {
-          xs: "400px", // Mobile screen width
+          xs: "350px", // Mobile screen width
           sm: "700px", // Tablet screen width
           md: "1200px", // Laptop screen width
         },

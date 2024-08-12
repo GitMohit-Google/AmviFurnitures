@@ -1,4 +1,3 @@
-import AspectRatio from "@mui/joy/AspectRatio";
 import Card from "@mui/joy/Card";
 import Typography from "@mui/joy/Typography";
 import React from "react";
@@ -7,12 +6,11 @@ import { Link } from "react-router-dom";
 const Cards = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full">
-      <div className="flex flex-col sm:flex-row w-full p-3 px-5 items-center justify-evenly mt-10 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full p-3 px-5 mt-10">
         <Link to="/Plastic Dinner Table">
           <Card
             className="hiddenblur"
             sx={{
-              width: 320,
               backgroundColor: "#2a2a2a",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
@@ -32,14 +30,18 @@ const Cards = () => {
                 Office
               </Typography>
             </div>
-            <AspectRatio minHeight="300px" maxHeight="500px">
+            <div style={{ overflow: "hidden", height: "300px" }}>
               <img
                 src="/banners/Table-Photoroom.png"
                 loading="lazy"
-                alt=""
-                className="bg-[#2a2a2a]"
+                alt="Premium Tables"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
               />
-            </AspectRatio>
+            </div>
           </Card>
         </Link>
 
@@ -47,7 +49,6 @@ const Cards = () => {
           <Card
             className="hiddenblur"
             sx={{
-              width: 320,
               backgroundColor: "#2a2a2a",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
@@ -67,21 +68,25 @@ const Cards = () => {
                 Office
               </Typography>
             </div>
-            <AspectRatio minHeight="300px" maxHeight="500px">
+            <div style={{ overflow: "hidden", height: "300px" }}>
               <img
                 src="/banners/SignatureChair-Photoroom.png"
                 loading="lazy"
-                alt=""
-                className="bg-[#2a2a2a]"
+                alt="Signature Chairs"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
               />
-            </AspectRatio>
+            </div>
           </Card>
         </Link>
+
         <Link to="/Multipurpose Stool">
           <Card
             className="hiddenblur"
             sx={{
-              width: 320,
               backgroundColor: "#2a2a2a",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
@@ -101,21 +106,25 @@ const Cards = () => {
                 Office
               </Typography>
             </div>
-            <AspectRatio minHeight="300px" maxHeight="500px">
+            <div style={{ overflow: "hidden", height: "300px" }}>
               <img
                 src="/banners/Stool-Photoroom.png"
                 loading="lazy"
-                alt=""
-                className="bg-[#2a2a2a]"
+                alt="Multipurpose Stools"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
               />
-            </AspectRatio>
+            </div>
           </Card>
         </Link>
+
         <Link to="/Armless Chair">
           <Card
             className="hiddenblur"
             sx={{
-              width: 320,
               backgroundColor: "#2a2a2a",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
@@ -135,23 +144,25 @@ const Cards = () => {
                 Office
               </Typography>
             </div>
-            <AspectRatio minHeight="300px" maxHeight="500px">
+            <div style={{ overflow: "hidden", height: "300px" }}>
               <img
                 src="/banners/Armless-Chair-Photoroom.png"
                 loading="lazy"
-                alt=""
-                className="bg-[#2a2a2a]"
+                alt="Armless Chairs"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
               />
-            </AspectRatio>
+            </div>
           </Card>
         </Link>
-      </div>
-      <div className="flex flex-col sm:flex-row w-full p-3 px-5 items-center justify-evenly mb-10 gap-2">
+
         <Link to="/Comfy Chair">
           <Card
             className="hiddenblur"
             sx={{
-              width: 320,
               backgroundColor: "#2a2a2a",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
@@ -171,14 +182,18 @@ const Cards = () => {
                 Office
               </Typography>
             </div>
-            <AspectRatio minHeight="300px" maxHeight="500px">
+            <div style={{ overflow: "hidden", height: "300px" }}>
               <img
                 src="/banners/Alpha-Chair-Photoroom.png"
                 loading="lazy"
-                alt=""
-                className="bg-[#2a2a2a]"
+                alt="Comfy Chairs"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
               />
-            </AspectRatio>
+            </div>
           </Card>
         </Link>
 
@@ -186,7 +201,6 @@ const Cards = () => {
           <Card
             className="hiddenblur"
             sx={{
-              width: 320,
               backgroundColor: "#2a2a2a",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
@@ -206,21 +220,25 @@ const Cards = () => {
                 Office
               </Typography>
             </div>
-            <AspectRatio minHeight="300px" maxHeight="500px">
+            <div style={{ overflow: "hidden", height: "300px" }}>
               <img
                 src="/banners/Mid-Back-Photoroom.png"
                 loading="lazy"
-                alt=""
-                className="bg-[#2a2a2a]"
+                alt="Mid-Back Chairs"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
               />
-            </AspectRatio>
+            </div>
           </Card>
         </Link>
+
         <Link to="/Double-Top Table">
           <Card
             className="hiddenblur"
             sx={{
-              width: 320,
               backgroundColor: "#2a2a2a",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
@@ -240,21 +258,25 @@ const Cards = () => {
                 Office
               </Typography>
             </div>
-            <AspectRatio minHeight="300px" maxHeight="500px">
+            <div style={{ overflow: "hidden", height: "300px" }}>
               <img
                 src="/banners/DoubleTable-Photoroom.png"
                 loading="lazy"
-                alt=""
-                className="bg-[#2a2a2a]"
+                alt="Double Tap Table"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
               />
-            </AspectRatio>
+            </div>
           </Card>
         </Link>
+
         <Link to="/Baby Chair">
           <Card
             className="hiddenblur"
             sx={{
-              width: 320,
               backgroundColor: "#2a2a2a",
               cursor: "pointer",
               transition: "opacity 0.3s ease",
@@ -274,14 +296,18 @@ const Cards = () => {
                 Office
               </Typography>
             </div>
-            <AspectRatio minHeight="300px" maxHeight="500px">
+            <div style={{ overflow: "hidden", height: "300px" }}>
               <img
                 src="/banners/Teddy-Chair-Photoroom.png"
                 loading="lazy"
-                alt=""
-                className="bg-[#2a2a2a]"
+                alt="Baby Chairs"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "contain",
+                }}
               />
-            </AspectRatio>
+            </div>
           </Card>
         </Link>
       </div>

@@ -24,7 +24,6 @@ const ProductsSection = () => {
       <div className="mt-8 mb-5">
         <ClientTestimonials />
       </div>
-      <ClientStats />
     </div>
   );
 };

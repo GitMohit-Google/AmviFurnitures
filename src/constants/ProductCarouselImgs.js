@@ -64,6 +64,10 @@ export const ProductCarouselImgs = [
     src: "/productImages/doubleTop/DoubleTop-img1-Photoroom.jpg",
   },
   {
+    title: "Double-Top Table",
+    src: "/productImages/doubleTop/DoubleTop-img1-Photoroom.jpg",
+  },
+  {
     title: "Plastic Dinner Table",
     src: "/productImages/dinnerTable/DinnerTable-img1-Photoroom.jpg",
   },
