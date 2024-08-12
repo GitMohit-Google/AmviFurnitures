@@ -44,12 +44,9 @@ const LandingPage = () => {
         />
       </div>
       <StatsBanner />
-      {/* <div className="flex w-full items-center justify-center my-10">
-        <img src="/Online.png" alt="" />
-      </div> */}
       <ProductsSection />
       <div className="flex w-full items-center justify-center">
-        <p className="w-[45%] text-center">
+        <p className="w-[75%] sm:w-[45%] text-center">
           Available throughout{" "}
           <span className="text-[#ee4d37]">North India</span>, serving over{" "}
           <span className="text-[#ee4d37]">50 million people</span> and present
