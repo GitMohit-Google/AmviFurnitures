@@ -30,6 +30,49 @@ const ProductDisplayPage = () => {
   const images = productImages.filter((item) => item.title == productName);
 
   useEffect(() => {
+    const observerX = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("showX");
+        } else {
+          entry.target.classList.remove("showX");
+        }
+      });
+    });
+
+    const observerY = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("showY");
+        } else {
+          entry.target.classList.remove("showY");
+        }
+      });
+    });
+
+    const hiddenElementsBlur = document.querySelectorAll(".hiddenblur");
+    hiddenElementsBlur.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsRight = document.querySelectorAll(".hiddenRight");
+    hiddenElementsRight.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsLeft = document.querySelectorAll(".hiddenLeft");
+    hiddenElementsLeft.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsDown = document.querySelectorAll(".hiddenDown");
+    hiddenElementsDown.forEach((el) => observerY.observe(el));
+
+    const hiddenElementsTop = document.querySelectorAll(".hiddenTop");
+    hiddenElementsTop.forEach((el) => observerY.observe(el));
+
+    // Cleanup observers on component unmount
+    return () => {
+      observerX.disconnect();
+      observerY.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
     AOS.init({ duration: 1000 });
     window.scrollTo(0, 0); // Scroll to top when the component mounts
   }, [productName]);
@@ -65,6 +108,7 @@ const ProductDisplayPage = () => {
               padding: 2,
               mb: 4,
             }}
+            class="hiddenblur"
           >
             <Typography
               variant="h5"
@@ -122,6 +166,7 @@ const ProductDisplayPage = () => {
             sx={{
               ml: 1,
             }}
+            className="hiddenLeft"
           >
             {productData.additional_info?.map((info, index) => (
               <Accordion
@@ -209,6 +254,7 @@ const ProductDisplayPage = () => {
           images.map((img, index) => (
             <Grid
               item
+              className="hiddenblur"
               key={index}
               sx={{
                 flex: {

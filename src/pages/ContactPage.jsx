@@ -13,6 +13,7 @@ import {
   LocationOnOutlined,
   PhoneOutlined,
   EmailOutlined,
+  WindowSharp,
 } from "@mui/icons-material";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import HomeContext from "../context/Home/HomeContext";
@@ -32,7 +33,6 @@ const center = {
   lng: 77.209, // Longitude for Noida
 };
 
-
 const ContactPage = () => {
   const mapRef = useRef(null);
   const {
@@ -50,27 +50,71 @@ const ContactPage = () => {
   } = useContext(HomeContext);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top when the component mounts
+    window.scrollTo(0, 0);
+    // window.location.reload();
+    // Scroll to top when the component mounts
   }, []);
 
-
-  const handleAddressClick=()=>{
+  const handleAddressClick = () => {
     const mapAddress = "https://maps.app.goo.gl/HLtyujuk7Rd894nc9";
-    window.open(mapAddress, '_blank');
-  }
+    window.open(mapAddress, "_blank");
+  };
+  useEffect(() => {
+    const observerX = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("showX");
+        } else {
+          entry.target.classList.remove("showX");
+        }
+      });
+    });
 
+    const observerY = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("showY");
+        } else {
+          entry.target.classList.remove("showY");
+        }
+      });
+    });
+
+    const hiddenElementsBlur = document.querySelectorAll(".hiddenblur");
+    hiddenElementsBlur.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsRight = document.querySelectorAll(".hiddenRight");
+    hiddenElementsRight.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsLeft = document.querySelectorAll(".hiddenLeft");
+    hiddenElementsLeft.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsDown = document.querySelectorAll(".hiddenDown");
+    hiddenElementsDown.forEach((el) => observerY.observe(el));
+
+    const hiddenElementsTop = document.querySelectorAll(".hiddenTop");
+    hiddenElementsTop.forEach((el) => observerY.observe(el));
+
+    // Cleanup observers on component unmount
+    return () => {
+      observerX.disconnect();
+      observerY.disconnect();
+    };
+  }, []);
   return (
     <>
       <ToastContainer />
-      <Container maxWidth="lg" sx={{ mt: 16,mb:8 }}>
+      <Container maxWidth="lg" sx={{ mt: 16, mb: 8 }}>
         <Paper elevation={3} sx={{ p: 4, borderRadius: 4 }}>
           <Typography
             variant="h4"
             align="center"
             gutterBottom
+            className="hiddenTop"
             sx={{ fontWeight: "600", color: "rgba(0, 0, 0, 0.67)" }}
           >
-            We're <span style={{ color: '#ee4d37 ' }}>always eager</span> to hear from you!
+            We're <span style={{ color: "#ee4d37 " }}>always eager</span> to
+            hear from you!
           </Typography>
           <Typography
             variant="body1"
@@ -96,7 +140,11 @@ const ContactPage = () => {
                   <IconButton disabled>
                     <LocationOnOutlined fontSize="large" color="primary" />
                   </IconButton>
-                  <Box ml={1} onClick={handleAddressClick} sx={{cursor:"pointer"}}>
+                  <Box
+                    ml={1}
+                    onClick={handleAddressClick}
+                    sx={{ cursor: "pointer" }}
+                  >
                     <Typography variant="h5" sx={{ fontWeight: "600" }}>
                       Address
                     </Typography>
@@ -146,7 +194,7 @@ const ContactPage = () => {
                   borderRadius: 2,
                   p: 3,
                   boxShadow: 3,
-                  maxWidth: {lg:"550px",sm:"200px"},
+                  maxWidth: { lg: "550px", sm: "200px" },
                   width: "100%",
                   margin: {
                     xs: "0 auto", // Center on smaller screens
@@ -210,18 +258,26 @@ const ContactPage = () => {
           </Grid>
 
           <Box mt={4} display="flex" justifyContent="center">
-            <div style={{ width: '100%', height: '450px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.3250105180564!2d77.48611079999999!3d28.7397117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf32bb5c5874d%3A0x5ad0907941d19992!2sAmul%20Polymer%20(India)%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1723138712431!5m2!1sen!2sin"
-        width="100%"
-        height="450"
-        style={{ border: 0 }}
-        allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title="Amul Polymer Location"
-      ></iframe>
-    </div>
+            <div
+              style={{
+                width: "100%",
+                height: "450px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.3250105180564!2d77.48611079999999!3d28.7397117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf32bb5c5874d%3A0x5ad0907941d19992!2sAmul%20Polymer%20(India)%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1723138712431!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Amul Polymer Location"
+              ></iframe>
+            </div>
           </Box>
         </Paper>
       </Container>

@@ -5,13 +5,52 @@ import ContactPage from "./ContactPage";
 
 const AboutUs = () => {
   useEffect(() => {
-    // window.scrollTo(0, 0); // Scroll to top when the component mounts
+    const observerX = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("showX");
+        } else {
+          entry.target.classList.remove("showX");
+        }
+      });
+    });
+
+    const observerY = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("showY");
+        } else {
+          entry.target.classList.remove("showY");
+        }
+      });
+    });
+
+    const hiddenElementsBlur = document.querySelectorAll(".hiddenblur");
+    hiddenElementsBlur.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsRight = document.querySelectorAll(".hiddenRight");
+    hiddenElementsRight.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsLeft = document.querySelectorAll(".hiddenLeft");
+    hiddenElementsLeft.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsDown = document.querySelectorAll(".hiddenDown");
+    hiddenElementsDown.forEach((el) => observerY.observe(el));
+
+    const hiddenElementsTop = document.querySelectorAll(".hiddenTop");
+    hiddenElementsTop.forEach((el) => observerY.observe(el));
+
+    // Cleanup observers on component unmount
+    return () => {
+      observerX.disconnect();
+      observerY.disconnect();
+    };
   }, []);
 
   return (
-    <div className="overflow-auto p-5 md:px-8 items-center">
+    <div className="overflow-auto p-5 md:px-8 items-center overflowXhide">
       {/* About Us Heading Section */}
-      <div className="flex flex-col md:flex-row w-full items-center justify-between mt-2 md:pr-20 lg:pr-56 md:pl-10 lg:pl-24 p-2 pb-10 gap-4">
+      <div className="flex flex-col md:flex-row w-full items-center justify-between mt-2 md:pr-20 lg:pr-56 md:pl-10 lg:pl-24 p-2 pb-10 gap-4 hiddenblur">
         <div className="flex flex-col gap-4 w-full items-start justify-center">
           <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
             About <span className="text-[#ee3d47]">AMVI FURNITURE</span>
@@ -54,7 +93,7 @@ const AboutUs = () => {
           alt="Our Mission"
           className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px]"
         />
-        <div className="flex flex-col gap-4 w-full items-start justify-center md:my-20">
+        <div className="flex flex-col gap-4 w-full items-start justify-center md:my-20 hiddenRight">
           <p className="text-4xl md:text-4xl lg:text-5xl font-bold text-[#ee4d37]">
             Mission
           </p>
@@ -80,12 +119,16 @@ const AboutUs = () => {
 
       {/* Why Choose Us Section */}
       <div className="flex flex-col lg:flex-row w-full items-center justify-evenly my-10 gap-8 lg:gap-0">
-        <div className="flex flex-col items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[90%] lg:w-[23%] rounded-md h-auto gap-4 order-2 lg:order-1">
-          <img src="/AMVIOwner-Photoroom.png" alt="Owner" className="w-96 h-60"/>
+        <div className="flex flex-col items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[90%] lg:w-[23%] rounded-md h-auto gap-4 order-2 lg:order-1 hiddenLeft">
+          <img
+            src="/AMVIOwner-Photoroom.png"
+            alt="Owner"
+            className="w-96 h-60"
+          />
           <p className="text-2xl font-bold">Mr. Yogesh Goyal</p>
           <p className="text-lg font-semibold text-[#ee4d37]">Director/CEO</p>
         </div>
-        <div className="flex flex-col items-center gap-3 w-full md:w-[90%] lg:w-[35%] text-center order-1 lg:order-2">
+        <div className="flex flex-col items-center gap-3 w-full md:w-[90%] lg:w-[35%] text-center order-1 lg:order-2 hiddenblur">
           <p className="p-1 bg-white shadow-2xl font-bold rounded-md px-3 text-gray-700">
             YOUR PARTNER IN SUCCESS
           </p>
@@ -106,7 +149,7 @@ const AboutUs = () => {
             environmentally friendly and stylish.
           </p>
         </div>
-        <div className="flex flex-col bg-[#ee4d37] items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[90%] lg:w-[23%] rounded-md text-white h-auto gap-3 order-3 lg:order-3">
+        <div className="flex flex-col bg-[#ee4d37] items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 w-full md:w-[90%] lg:w-[23%] rounded-md text-white h-auto gap-3 order-3 lg:order-3 hiddenRight">
           <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
             Excellent design
           </p>
@@ -119,7 +162,7 @@ const AboutUs = () => {
       </div>
 
       {/* Value for Money Section */}
-      <div className="flex flex-col bg-[#2a2a2a] items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 lg:w-[91%] md:w-[90%] mx-auto rounded-md text-white h-auto gap-3">
+      <div className="flex flex-col bg-[#2a2a2a] items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 lg:w-[91%] md:w-[90%] mx-auto rounded-md text-white h-auto gap-3 hiddenLeft">
         <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
           Value for Money
         </p>

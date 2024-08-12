@@ -253,3 +253,47 @@
 .test{
     background-color:linear-gradient(to right, #373745, #25486f, rgb(160, 161, 161));
 }
+
+
+.hiddenRight{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.hiddenLeft {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.hiddenblur {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+.hiddenTop {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+.hiddenDown {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+.showX{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.showY{
+    opacity:1;
+    filter:blur(0);
+    transform: translateY(0);
+}
+.overflowXhide {
+    overflow-x: hidden;
+}

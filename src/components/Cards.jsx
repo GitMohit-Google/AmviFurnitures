@@ -10,6 +10,7 @@ const Cards = () => {
       <div className="flex flex-col sm:flex-row w-full p-3 px-5 items-center justify-evenly mt-10 gap-2">
         <Link to="/Plastic Dinner Table">
           <Card
+            className="hiddenblur"
             sx={{
               width: 320,
               backgroundColor: "#2a2a2a",
@@ -44,6 +45,7 @@ const Cards = () => {
 
         <Link to="/Premium Chair">
           <Card
+            className="hiddenblur"
             sx={{
               width: 320,
               backgroundColor: "#2a2a2a",
@@ -77,6 +79,7 @@ const Cards = () => {
         </Link>
         <Link to="/Multipurpose Stool">
           <Card
+            className="hiddenblur"
             sx={{
               width: 320,
               backgroundColor: "#2a2a2a",
@@ -110,6 +113,7 @@ const Cards = () => {
         </Link>
         <Link to="/Armless Chair">
           <Card
+            className="hiddenblur"
             sx={{
               width: 320,
               backgroundColor: "#2a2a2a",
@@ -141,11 +145,11 @@ const Cards = () => {
             </AspectRatio>
           </Card>
         </Link>
-        
       </div>
       <div className="flex flex-col sm:flex-row w-full p-3 px-5 items-center justify-evenly mb-10 gap-2">
         <Link to="/Comfy Chair">
           <Card
+            className="hiddenblur"
             sx={{
               width: 320,
               backgroundColor: "#2a2a2a",
@@ -180,6 +184,7 @@ const Cards = () => {
 
         <Link to="/Mid-Back Chair">
           <Card
+            className="hiddenblur"
             sx={{
               width: 320,
               backgroundColor: "#2a2a2a",
@@ -213,6 +218,7 @@ const Cards = () => {
         </Link>
         <Link to="/Double-Top Table">
           <Card
+            className="hiddenblur"
             sx={{
               width: 320,
               backgroundColor: "#2a2a2a",
@@ -246,6 +252,7 @@ const Cards = () => {
         </Link>
         <Link to="/Baby Chair">
           <Card
+            className="hiddenblur"
             sx={{
               width: 320,
               backgroundColor: "#2a2a2a",

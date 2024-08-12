@@ -4,10 +4,16 @@ import { AboutUs, BlogPage, ContactPage, LandingPage } from "./pages";
 import HomeState from "./context/Home/HomeState";
 import ProductDisplayPage from "./pages/ProductDisplayPage";
 import Footer from "./components/Footer";
+import { useEffect } from "react";
 
 const App = () => {
+  // Empty dependency array ensures this effect runs only once
+
   return (
-    <div className="overflow-hidden" style={{background:"linear-gradient(to bottom, #ffffff, #f0f0f0)"}}>
+    <div
+      className="overflow-hidden"
+      style={{ background: "linear-gradient(to bottom, #ffffff, #f0f0f0)" }}
+    >
       <HomeState>
         <NavBar />
         <div style={{ marginTop: "100px" }}>
@@ -17,30 +23,30 @@ const App = () => {
             <Route path="/contactus" element={<ContactPage />} />
             <Route path="/blogs" element={<BlogPage />} />
             <Route path="/:productName" element={<ProductDisplayPage />} />
-            <Route path="*" element={<Navigate to="/home" replace />} /> Fallback route for invalid paths
+            <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </div>
-        <Footer/>
+        <Footer />
         <a
-        href="/brochure.pdf"
-        download
-        style={{
-          position: 'fixed',
-          bottom: '40vh',
-          right: '-50px',
-          transform: 'rotate(90deg)',
-          backgroundColor: '#2a2a2a',
-          color: 'white',
-          padding: '10px 20px',
-          borderRadius: '5px',
-          textDecoration: 'none',
-          boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',
-          cursor: 'pointer',
-          zIndex: 1000,
-        }}
-      >
-        Download Brochure
-      </a>
+          href="/brochure.pdf"
+          download
+          style={{
+            position: "fixed",
+            bottom: "40vh",
+            right: "-50px",
+            transform: "rotate(90deg)",
+            backgroundColor: "#2a2a2a",
+            color: "white",
+            padding: "10px 20px",
+            borderRadius: "5px",
+            textDecoration: "none",
+            boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.5)",
+            cursor: "pointer",
+            zIndex: 1000,
+          }}
+        >
+          Download Brochure
+        </a>
       </HomeState>
     </div>
   );

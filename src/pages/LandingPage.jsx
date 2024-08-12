@@ -5,15 +5,54 @@ import ContactPage from "./ContactPage";
 import IndiaMap from "../components/Maps";
 
 const LandingPage = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0); // Scroll to top when the component mounts
-  // }, []);
+  useEffect(() => {
+    const observerX = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("showX");
+        } else {
+          entry.target.classList.remove("showX");
+        }
+      });
+    });
+
+    const observerY = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("showY");
+        } else {
+          entry.target.classList.remove("showY");
+        }
+      });
+    });
+
+    const hiddenElementsBlur = document.querySelectorAll(".hiddenblur");
+    hiddenElementsBlur.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsRight = document.querySelectorAll(".hiddenRight");
+    hiddenElementsRight.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsLeft = document.querySelectorAll(".hiddenLeft");
+    hiddenElementsLeft.forEach((el) => observerX.observe(el));
+
+    const hiddenElementsDown = document.querySelectorAll(".hiddenDown");
+    hiddenElementsDown.forEach((el) => observerY.observe(el));
+
+    const hiddenElementsTop = document.querySelectorAll(".hiddenTop");
+    hiddenElementsTop.forEach((el) => observerY.observe(el));
+
+    // Cleanup observers on component unmount
+    return () => {
+      observerX.disconnect();
+      observerY.disconnect();
+    };
+  }, []);
 
   return (
     <div className="overflow-auto p-5 px-8">
       {/* Title */}
 
-      <div className="flex flex-row bg-[#f4f4f4] rounded-md shadow-lg w-full p-3 px-5">
+      <div className="flex flex-row bg-[#f4f4f4] rounded-md shadow-lg w-full p-3 px-5 hiddenblur">
         <div className="flex flex-col w-full p-10 pt-16 gap-4">
           <p className="text-gray-500 text-lg">
             Transform and Redesign your Home
@@ -46,7 +85,7 @@ const LandingPage = () => {
       <StatsBanner />
       <ProductsSection />
       <div className="flex w-full items-center justify-center">
-        <p className="w-[75%] sm:w-[45%] text-center">
+        <p className="w-[75%] sm:w-[45%] text-center hiddenblur">
           Available throughout{" "}
           <span className="text-[#ee4d37]">North India</span>, serving over{" "}
           <span className="text-[#ee4d37]">50 million people</span> and present

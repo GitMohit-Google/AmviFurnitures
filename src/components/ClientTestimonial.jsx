@@ -1,21 +1,41 @@
-import React from 'react';
-import Slider from 'react-slick';
-import { Box, Typography, Card, CardContent } from '@mui/material';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { FaStar } from 'react-icons/fa';
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import React from "react";
+import Slider from "react-slick";
+import { Box, Typography, Card, CardContent } from "@mui/material";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { FaStar } from "react-icons/fa";
+import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 
 const testimonials = [
-  { name: 'Sunil Goyal', comment: 'Their extensive product range, competitive pricing, and strong support system have helped us expand our customer base significantly.' },
-  { name: 'Vinod', comment: 'Avro furniture is a very good and well-known brand. Chairs are solid and strong, quality is superb and looks very good, size is big and comfortable. Thanks Avro Furniture and Amazon.' },
-  { name: 'Anil Sahu', comment: 'These chairs are very comfortable, sturdy and the colour is good so dust and dirt doesn\'t immediately show. I am very glad I purchased them.' },
-  { name: 'Ramesh Dua', comment: 'Their extensive product range, competitive pricing, and strong support system have helped us expand our customer base significantly.' },
-  { name: 'Gaurav Jaswal', comment: 'Avro furniture is a very good and well-known brand. Chairs are solid and strong, quality is superb and looks very good, size is big and comfortable. Thanks Avro Furniture and Amazon.' },
+  {
+    name: "Sunil Goyal",
+    comment:
+      "Their extensive product range, competitive pricing, and strong support system have helped us expand our customer base significantly.",
+  },
+  {
+    name: "Vinod",
+    comment:
+      "Avro furniture is a very good and well-known brand. Chairs are solid and strong, quality is superb and looks very good, size is big and comfortable. Thanks Avro Furniture and Amazon.",
+  },
+  {
+    name: "Anil Sahu",
+    comment:
+      "These chairs are very comfortable, sturdy and the colour is good so dust and dirt doesn't immediately show. I am very glad I purchased them.",
+  },
+  {
+    name: "Ramesh Dua",
+    comment:
+      "Their extensive product range, competitive pricing, and strong support system have helped us expand our customer base significantly.",
+  },
+  {
+    name: "Gaurav Jaswal",
+    comment:
+      "Avro furniture is a very good and well-known brand. Chairs are solid and strong, quality is superb and looks very good, size is big and comfortable. Thanks Avro Furniture and Amazon.",
+  },
   // Add more testimonials as needed
 ];
 
-const ClientTestimonials= () => {
+const ClientTestimonials = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -43,33 +63,85 @@ const ClientTestimonials= () => {
   return (
     <Box
       sx={{
-        margin: '0 auto',
-        padding: '40px 20px',
+        margin: "0 auto",
+        padding: "40px 20px",
         maxWidth: {
-          xs: '400px', // Mobile screen width
-          sm: '700px', // Tablet screen width
-          md: '1200px', // Laptop screen width
+          xs: "400px", // Mobile screen width
+          sm: "700px", // Tablet screen width
+          md: "1200px", // Laptop screen width
         },
       }}
     >
-      <Typography variant="h4" sx={{ fontWeight: 'bold', textAlign: 'center', marginBottom: '40px' }}>
+      <Typography
+        variant="h4"
+        sx={{ fontWeight: "bold", textAlign: "center", marginBottom: "40px" }}
+      >
         Client's Testimonial
       </Typography>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
-          <Box key={index} sx={{ padding: '0 15px' }}>
-            <Card sx={{ padding: '20px', paddingLeft: '60px', boxShadow: '0px 3px 10px rgba(0, 0, 0, 0.1)', borderRadius: '10px', margin: '0 auto', height:{xs:"300px",sm:"330px",md:"280px"}, position: 'relative' }}>
+          <Box key={index} sx={{ padding: "0 15px" }} className="hiddenblur">
+            <Card
+              sx={{
+                padding: "20px",
+                paddingLeft: "60px",
+                boxShadow: "0px 3px 10px rgba(0, 0, 0, 0.1)",
+                borderRadius: "10px",
+                margin: "0 auto",
+                height: { xs: "300px", sm: "330px", md: "280px" },
+                position: "relative",
+              }}
+            >
               <CardContent>
-                <FormatQuoteIcon sx={{transform:"rotate(180deg)", position: 'absolute', top: '10px', left: '10px', fontSize: '45px', color: 'lightgray' }} />
-                <Typography variant="h6" sx={{ fontWeight: 'bold', marginBottom: '10px' }}>
+                <FormatQuoteIcon
+                  sx={{
+                    transform: "rotate(180deg)",
+                    position: "absolute",
+                    top: "10px",
+                    left: "10px",
+                    fontSize: "45px",
+                    color: "lightgray",
+                  }}
+                />
+                <Typography
+                  variant="h6"
+                  sx={{ fontWeight: "bold", marginBottom: "10px" }}
+                  className="hiddenDown"
+                >
                   {testimonial.name}
                 </Typography>
-                <Typography variant="body2" sx={{ color: 'text.secondary', position: 'relative', paddingRight: '10px' }}>
-                  <FormatQuoteIcon sx={{ transform: 'scaleX(-1)', position: 'absolute', top: "-7px", left: '-25px', fontSize: '20px' }} />
-                  {testimonial.comment}
-                  <FormatQuoteIcon sx={{ fontSize: '20px', marginLeft: '5px' }} />
+                <Typography
+                  variant="body2"
+                  sx={{
+                    color: "text.secondary",
+                    position: "relative",
+                    paddingRight: "10px",
+                  }}
+                >
+                  <FormatQuoteIcon
+                    sx={{
+                      transform: "scaleX(-1)",
+                      position: "absolute",
+                      top: "-7px",
+                      left: "-25px",
+                      fontSize: "20px",
+                    }}
+                  />
+                  <span className="hiddenblur">{testimonial.comment}</span>
+                  <FormatQuoteIcon
+                    sx={{ fontSize: "20px", marginLeft: "5px" }}
+                  />
                 </Typography>
-                <Box sx={{ display: "flex", flexDirection: "row", height: "50px", width: "70px", mt: 2 }}>
+                <Box
+                  className="hiddenTop"
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    height: "50px",
+                    width: "70px",
+                    mt: 2,
+                  }}
+                >
                   <FaStar className="text-yellow-400" />
                   <FaStar className="text-yellow-400" />
                   <FaStar className="text-yellow-400" />
