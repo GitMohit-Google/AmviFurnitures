@@ -34,7 +34,7 @@ const AboutUs = () => {
         <img
           src="banners/About.png"
           alt="About AMVI Furniture"
-          className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px]"
+          className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px] hidden sm:flex"
         />
       </div>
 
@@ -48,7 +48,7 @@ const AboutUs = () => {
       </div>
 
       {/* Our Mission Section */}
-      <div className="flex flex-col-reverse md:flex-row w-full items-center justify-between mt-2 md:pr-10 lg:pr-36 md:pl-10 lg:pl-24 p-2 gap-8">
+      <div className="flex flex-col md:flex-row w-full items-center justify-between mt-2 md:pr-10 lg:pr-36 md:pl-10 lg:pl-24 p-2 gap-8">
         <img
           src="banners/OurMission-Photoroom.png"
           alt="Our Mission"

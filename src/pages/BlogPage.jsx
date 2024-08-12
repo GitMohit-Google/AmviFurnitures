@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Mosaic from '../components/mosaic'
 
 const BlogPage = () => {

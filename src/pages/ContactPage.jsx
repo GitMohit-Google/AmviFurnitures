@@ -89,7 +89,7 @@ const ContactPage = () => {
                 display="flex"
                 flexDirection="column"
                 justifyContent="space-evenly"
-                gap="10px"
+                gap="30px"
                 height="100%"
               >
                 <Box display="flex" alignItems="center" mb={0}>
@@ -146,7 +146,7 @@ const ContactPage = () => {
                   borderRadius: 2,
                   p: 3,
                   boxShadow: 3,
-                  maxWidth: "550px",
+                  maxWidth: {lg:"550px",sm:"200px"},
                   width: "100%",
                   margin: {
                     xs: "0 auto", // Center on smaller screens
@@ -158,7 +158,7 @@ const ContactPage = () => {
                   align="center"
                   sx={{
                     padding: "2rem",
-                    fontSize: "2rem",
+                    fontSize: { xs: "1.2rem", sm: "1.5rem", md: "2rem" },
                     fontWeight: "600",
                     color: "rgba(0, 0, 0, 0.77)",
                   }}
