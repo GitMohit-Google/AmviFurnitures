@@ -64,7 +64,7 @@ const AboutUs = () => {
             guarantee, underscoring our confidence in the durability and quality
             of our offerings.
           </p>
-          <Link to="contactus">
+          <Link to="/contactus">
             <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd]">
               Connect Now
             </button>
@@ -109,7 +109,7 @@ const AboutUs = () => {
             plastic furniture, enhancing everyday living with innovative design
             and environmental responsibility.
           </p>
-          <Link to="contactus">
+          <Link to="/contactus">
             <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd]">
               Connect Now
             </button>
