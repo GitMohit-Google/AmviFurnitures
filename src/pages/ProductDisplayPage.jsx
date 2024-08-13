@@ -87,6 +87,7 @@ const ProductDisplayPage = () => {
       sx={{
         padding: { xs: 2, md: 3 },
         // mx:"20px",
+        mt: { xs: -10, md: -4, lg: 0 },
         mx: { xs: 0, md: "20px" },
         background: "linear-gradient(to bottom, #ffffff, #f0f0f0)",
         minHeight: "100vh",
