@@ -80,7 +80,12 @@ const Footer = () => {
       </div>
       <div className="flex w-full flex-row justify-center items-center bg-[#f4f4f4] pb-6 text-2xl gap-3">
         <FaFacebook />
-        <FaInstagram />
+        <Link
+          to="https://www.instagram.com/amvi_ltd?igsh=MWdjdzllZmNiZmE4bA=="
+          target="_blank"
+        >
+          <FaInstagram />
+        </Link>
         <FaLinkedin />
       </div>
 
