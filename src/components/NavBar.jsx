@@ -185,14 +185,19 @@ export const NavBar = () => {
                 className="social-media-icon-wrapper"
                 alignItems="center"
               >
-                <a href="https://wa.me/7497036847" target="_blank">
+                <Link to="https://wa.me/7497036847" target="_blank">
                   <IconButton color="inherit" className="top-bar-icon">
                     <WhatsAppIcon />
                   </IconButton>
-                </a>
-                <IconButton color="inherit" className="top-bar-icon">
-                  <InstagramIcon />
-                </IconButton>
+                </Link>
+                <Link
+                  to="https://www.instagram.com/amvi_ltd?igsh=MWdjdzllZmNiZmE4bA=="
+                  target="_blank"
+                >
+                  <IconButton color="inherit" className="top-bar-icon">
+                    <InstagramIcon />
+                  </IconButton>
+                </Link>
               </Box>
             </Box>
           </Container>
