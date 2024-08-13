@@ -28,7 +28,7 @@ const App = () => {
         </div>
         <Footer />
         <a
-          href="/brochure.pdf"
+          href="/AMVI CATALOGUE.pdf"
           download
           style={{
             position: "fixed",
@@ -45,7 +45,7 @@ const App = () => {
             zIndex: 1000,
           }}
         >
-          Download Brochure
+          Download Catalogue
         </a>
       </HomeState>
     </div>

@@ -13,9 +13,9 @@ const ProductsSection = () => {
         </p>
       </div>
       <Cards />
-      <div className="flex flex-col w-full px-1 sm:px-9 gap-10">
+      <div className="flex flex-col w-full px-1 sm:px-5 gap-10 mt-12">
         <img
-          src="/banners/Banner.png"
+          src="/banners/Bannerr.png"
           alt=""
           className="rounded-lg shadow-lg"
         />

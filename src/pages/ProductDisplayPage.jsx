@@ -273,9 +273,6 @@ const ProductDisplayPage = () => {
                   borderRadius: 5,
                   backgroundColor: "#2a2a2a",
                   transition: "opacity 0.3s ease",
-                  "&:hover": {
-                    border: "3px solid #ee4d37",
-                  },
                 }}
               >
                 {/* <AspectRatio minHeight="400px" maxHeight="500px" > */}

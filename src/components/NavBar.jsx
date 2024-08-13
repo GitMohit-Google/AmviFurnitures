@@ -227,22 +227,13 @@ export const NavBar = () => {
                       <ul className="submenu">
                         {products.map((product, index) => (
                           <li key={index} className="submenu-item">
-                            <a
-                              href={product.title}
+                            <Link
+                              to={product.title}
                               data-aos="fade-up"
                               data-aos-delay={index * 250}
                             >
                               {product.title}
-                            </a>
-                            <div className="product-card">
-                              <img
-                                src={"demoImg.png"}
-                                alt={product.name}
-                                className="product-image"
-                              />
-                              <h4>{product.title}</h4>
-                              <p>Dummy data here</p>
-                            </div>
+                            </Link>
                           </li>
                         ))}
                       </ul>

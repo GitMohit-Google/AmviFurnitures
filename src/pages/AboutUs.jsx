@@ -174,7 +174,7 @@ const AboutUs = () => {
       </div>
       <ClientStats />
       {/* Full-Width IndiaMap Image */}
-      <div className="flex w-full items-center justify-center mt-[50px]">
+      {/* <div className="flex w-full items-center justify-center mt-[50px]">
         <img
           src="/IndiaMap.png"
           alt="India Map"
@@ -184,7 +184,7 @@ const AboutUs = () => {
           }}
           className="w-[1/2] lg:w-[90%] rounded-lg"
         />
-      </div>
+      </div> */}
       <ContactPage />
     </div>
   );

@@ -149,8 +149,8 @@ const ContactPage = () => {
                       Address
                     </Typography>
                     <Typography variant="body2" color="textSecondary">
-                      H-49, Sector 63, H Block, Sector 62, Noida, Uttar Pradesh
-                      201301
+                      Khasra No. 682 Behind HLM College Meerut Road Industrial
+                      Area, Duhai, Ghaziabad, Uttar Pradesh 201003
                     </Typography>
                   </Box>
                 </Box>
@@ -164,7 +164,7 @@ const ContactPage = () => {
                       Contact
                     </Typography>
                     <Typography variant="body2" color="textSecondary">
-                      Mobile : (+91-7838257909)
+                      Mobile : (+91 7497036847)
                     </Typography>
                   </Box>
                 </Box>
@@ -178,7 +178,7 @@ const ContactPage = () => {
                       Mail
                     </Typography>
                     <Typography variant="body2" color="textSecondary">
-                      support@dealnsoucoupons.in
+                      info@amvifurniture.com
                     </Typography>
                   </Box>
                 </Box>
