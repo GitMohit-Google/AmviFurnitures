@@ -50,7 +50,7 @@ const AboutUs = () => {
   return (
     <div className="overflow-auto p-5 md:px-8 items-center overflowXhide">
       {/* About Us Heading Section */}
-      <div className="flex flex-col md:flex-row w-full items-center justify-between mt-2 md:pr-20 lg:pr-56 md:pl-10 lg:pl-24 p-2 pb-10 gap-4 hiddenblur">
+      <div className="flex flex-col md:flex-row w-full items-center justify-between mt-2 md:pr-20 lg:pr-56 md:pl-10 lg:pl-24 p-2 pb-2 gap-4 hiddenblur">
         <div className="flex flex-col gap-4 w-full items-start justify-center">
           <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
             About <span className="text-[#ee3d47]">AMVI FURNITURE</span>
@@ -70,15 +70,16 @@ const AboutUs = () => {
             </button>
           </Link>
         </div>
-        <img
-          src="banners/About.png"
+        {/* <img
+          src="/vision.png"
           alt="About AMVI Furniture"
           className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px] hidden sm:flex"
-        />
+        /> */}
+        <lottie-player src="https://lottie.host/e37c7a5a-0684-4d82-b1be-4ff9d3fcca0f/fMWXrN3bCG.json" background="##FFFFFF" speed="1" style={{"width": "600px", "height": "500px"}} loop autoplay direction="1" mode="normal"></lottie-player>
       </div>
 
       {/* Banner */}
-      <div className="flex w-full items-center justify-center mt-2">
+      <div className="w-full items-center justify-center mt-2 hidden sm:flex">
         <img
           src="/Banner_Style-Photoroom.png"
           alt="Banner"
@@ -88,11 +89,12 @@ const AboutUs = () => {
 
       {/* Our Mission Section */}
       <div className="flex flex-col md:flex-row w-full items-center justify-between mt-2 md:pr-10 lg:pr-36 md:pl-10 lg:pl-24 p-2 gap-8">
-        <img
-          src="banners/OurMission-Photoroom.png"
+        {/* <img
+          src="/target.png"
           alt="Our Mission"
           className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px]"
-        />
+        /> */}
+        <lottie-player src="https://lottie.host/f1afa1dc-ecc9-46d1-8088-614c622a641f/vrhYJkFtzr.json" background="##FFFFFF" speed="1" style={{"width": "700px", "height": "400px"}} loop autoplay direction="1" mode="normal"></lottie-player>
         <div className="flex flex-col gap-4 w-full items-start justify-center md:my-20 hiddenRight">
           <p className="text-4xl md:text-4xl lg:text-5xl font-bold text-[#ee4d37]">
             Mission

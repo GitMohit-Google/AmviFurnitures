@@ -13,14 +13,15 @@ const ProductsSection = () => {
         </p>
       </div>
       <Cards />
-      <div className="flex flex-col w-full px-1 sm:px-5 gap-10 mt-12">
+      <div className="flex-col w-full px-1 sm:px-5 gap-10 mt-12 hidden sm:flex">
         <img
           src="/banners/Bannerr.png"
           alt=""
-          className="rounded-lg shadow-lg"
+          className="rounded-lg shadow-lg w-full h-96"
         />
         {/* <img src="/Demo.png" alt="" className="rounded-lg shadow-lg"/> */}
       </div>
+      
       <div className="mt-8 mb-5">
         <ClientTestimonials />
       </div>

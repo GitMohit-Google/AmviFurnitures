@@ -18,7 +18,7 @@ const Mosaic = () => {
   return (
     <Box sx={{ width: "100%", minHeight: 829, padding: 2 }}>
       <Masonry
-        columns={{ xs: 1, sm: 2, md: 3, lg: 3 }}
+        columns={{ xs: 1, sm: 2, md: 2, lg: 2 }}
         spacing={{ xs: 1, sm: 2, md: 2 }}
       >
         {itemData.map((item, index) => (
@@ -75,4 +75,9 @@ const itemData = [
     title: "Luxury furniture brand Stanley Lifestyles gains 30% on trade debut",
     desc: "Shares worth over Rs 1,300 crore changed hands on both the National Stock Exchange (NSE) and the BSE. The good listing day performance follows strong demand for Stanley Lifestyles’ shares during its Rs 537 crore initial public offering (IPO).",
   },
+  {
+    img: "/Fabb.jpg",
+    title: "Nick Scali outlines Fabb acquisition progress ",
+    desc: "Australia's Nick Scali Ltd has reported its results for the year ended 30th June 2024, the period in which it acquired UK retail chain",
+  }
 ];

@@ -8,27 +8,27 @@ import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 
 const testimonials = [
   {
-    name: "Amit Sharma",
+    name: "Sunil Goyal",
     comment:
       "I was amazed by the quality and durability of the furniture I purchased. It’s lightweight, easy to move around, and looks fantastic in my garden.",
   },
   {
-    name: "Priya Desai",
+    name: "Vinod",
     comment:
       "The chairs and table I bought are perfect for my balcony. They’re stylish, comfortable, and weather-resistant. I couldn’t have asked for a better set!",
   },
   {
-    name: "Rajesh Patel",
+    name: "Anil Sahu",
     comment:
       "I was initially skeptical, but this company has completely changed my mind. The designs are modern, and the material is surprisingly sturdy. Great value for money!",
   },
   {
-    name: "Sneha Iyer",
+    name: "Ramesh Dua",
     comment:
       "The furniture is both functional and attractive. It’s perfect for both indoor and outdoor use, and I love how easy it is to clean and maintain.",
   },
   {
-    name: "Vikram Singh",
+    name: "Gaurav Jasval",
     comment:
       "The dining set I bought is fantastic! It’s durable, sleek, and surprisingly comfortable. It’s perfect for my small apartment, and I’m very happy with my purchase.",
   },
@@ -74,7 +74,7 @@ const ClientTestimonials = () => {
     <Box
       sx={{
         margin: "0 auto",
-        padding: "40px 20px",
+        padding: "30px 10px",
         maxWidth: {
           xs: "350px", // Mobile screen width
           sm: "700px", // Tablet screen width
@@ -82,12 +82,9 @@ const ClientTestimonials = () => {
         },
       }}
     >
-      <Typography
-        variant="h4"
-        sx={{ fontWeight: "bold", textAlign: "center", marginBottom: "40px" }}
-      >
-        Client's Testimonial
-      </Typography>
+      <div className="flex w-full items-center justify-center mb-10">
+        <p className="text-4xl">Clients Testimonials</p>
+      </div>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (
           <Box key={index} sx={{ padding: "0 15px" }} className="hiddenblur">

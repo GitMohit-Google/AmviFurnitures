@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import { ProductCarouselImgs } from "../constants/ProductCarouselImgs";
 import { productImages } from "../constants/images";
-import AspectRatio from "@mui/joy/AspectRatio";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useParams } from "react-router-dom";
 import ImgCarousel from "../components/ImgCarousel";
@@ -259,9 +258,9 @@ const ProductDisplayPage = () => {
               key={index}
               sx={{
                 flex: {
-                  xs: "0 1 100%", // Full width on extra small screens (mobile)
-                  sm: "0 1 calc(50%)", // Half width on small screens
-                  md: "0 1 calc(33.33% - 16px)", // One-third width on medium and larger screens
+                  xs: "0 1 100%",
+                  sm: "0 1 calc(50%)", 
+                  md: "0 1 calc(33.33% - 16px)", 
                 },
                 display: "flex",
                 justifyContent: "center",

@@ -92,9 +92,9 @@ const Footer = () => {
       {/* Foot */}
       <div className="w-full h-full bg-[#2E2E2E] p-2 flex justify-between items-center">
         <p className="text-white w-full flex justify-center sm:justify-end items-center gap-1 sm:text-base text-sm">
-          Powered By <span className="text-[#ee4d37]"> IT Sagar Solutions</span>
+          @ 2024 <span className="text-[#ee4d37]"> Amvi India Ltd.</span>
         </p>
-        <div className="sm:flex sm:flex-row hidden w-[70%] justify-end items-center gap-5 p-1">
+        <div className="sm:flex sm:flex-row hidden w-[80%] justify-end items-center gap-5 p-1">
           <RiVisaLine className="text-white text-xl" />
           <FaPaypal className="text-white text-xl" />
           <SiMastercard className="text-white text-xl" />
