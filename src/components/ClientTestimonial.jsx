@@ -8,30 +8,40 @@ import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 
 const testimonials = [
   {
-    name: "Sunil Goyal",
+    name: "Amit Sharma",
     comment:
-      "Their extensive product range, competitive pricing, and strong support system have helped us expand our customer base significantly.",
+      "I was amazed by the quality and durability of the furniture I purchased. It’s lightweight, easy to move around, and looks fantastic in my garden.",
   },
   {
-    name: "Vinod",
+    name: "Priya Desai",
     comment:
-      "Avro furniture is a very good and well-known brand. Chairs are solid and strong, quality is superb and looks very good, size is big and comfortable. Thanks Avro Furniture and Amazon.",
+      "The chairs and table I bought are perfect for my balcony. They’re stylish, comfortable, and weather-resistant. I couldn’t have asked for a better set!",
   },
   {
-    name: "Anil Sahu",
+    name: "Rajesh Patel",
     comment:
-      "These chairs are very comfortable, sturdy and the colour is good so dust and dirt doesn't immediately show. I am very glad I purchased them.",
+      "I was initially skeptical, but this company has completely changed my mind. The designs are modern, and the material is surprisingly sturdy. Great value for money!",
   },
   {
-    name: "Ramesh Dua",
+    name: "Sneha Iyer",
     comment:
-      "Their extensive product range, competitive pricing, and strong support system have helped us expand our customer base significantly.",
+      "The furniture is both functional and attractive. It’s perfect for both indoor and outdoor use, and I love how easy it is to clean and maintain.",
   },
   {
-    name: "Gaurav Jaswal",
+    name: "Vikram Singh",
     comment:
-      "Avro furniture is a very good and well-known brand. Chairs are solid and strong, quality is superb and looks very good, size is big and comfortable. Thanks Avro Furniture and Amazon.",
+      "The dining set I bought is fantastic! It’s durable, sleek, and surprisingly comfortable. It’s perfect for my small apartment, and I’m very happy with my purchase.",
   },
+  // {
+  //   name: "Neha Kapoor",
+  //   comment:
+  //     "I’m so impressed with the quality. The color hasn’t faded at all, even after months of outdoor use, and it still looks as good as new.",
+  // },
+  // {
+  //   name: "Anjali Menon",
+  //   comment:
+  //     "I was looking for affordable yet stylish furniture, and this company delivered! The chairs and tables are perfect for my patio, and they’ve held up beautifully against the elements.",
+  // },
   // Add more testimonials as needed
 ];
 
