@@ -9,26 +9,31 @@ import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 const testimonials = [
   {
     name: "Sunil Goyal",
+    firm:"Goyal Distributor, Agra",
     comment:
       "I was amazed by the quality and durability of the furniture I purchased. It’s lightweight, easy to move around, and looks fantastic in my garden.",
   },
   {
     name: "Vinod",
+    firm:"VK Enterprises, Ghaziabad",
     comment:
       "The chairs and table I bought are perfect for my balcony. They’re stylish, comfortable, and weather-resistant. I couldn’t have asked for a better set!",
   },
   {
     name: "Anil Sahu",
+    firm:"Citizen Sales, Allahabad",
     comment:
       "I was initially skeptical, but this company has completely changed my mind. The designs are modern, and the material is surprisingly sturdy. Great value for money!",
   },
   {
     name: "Ramesh Dua",
+    firm:"Dua Steel furniture, Palwal",
     comment:
       "The furniture is both functional and attractive. It’s perfect for both indoor and outdoor use, and I love how easy it is to clean and maintain.",
   },
   {
     name: "Gaurav Jasval",
+    firm:"Rangoli furniture, Banaras",
     comment:
       "The dining set I bought is fantastic! It’s durable, sleek, and surprisingly comfortable. It’s perfect for my small apartment, and I’m very happy with my purchase.",
   },
@@ -112,10 +117,17 @@ const ClientTestimonials = () => {
                 />
                 <Typography
                   variant="h6"
-                  sx={{ fontWeight: "bold", marginBottom: "10px" }}
+                  sx={{ fontWeight: "bold",color:"#ee4d37" }}
                   className="hiddenDown"
                 >
                   {testimonial.name}
+                </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{ marginBottom: "10px",color:"#616161" }}
+                  className="hiddenDown"
+                >
+                  {testimonial.firm}
                 </Typography>
                 <Typography
                   variant="body2"

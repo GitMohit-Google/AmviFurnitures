@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   Typography,
@@ -7,6 +7,8 @@ import {
   AccordionSummary,
   AccordionDetails,
   Card,
+  Modal,
+  IconButton,
 } from "@mui/material";
 import { ProductCarouselImgs } from "../constants/ProductCarouselImgs";
 import { productImages } from "../constants/images";
@@ -18,8 +20,21 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaStar } from "react-icons/fa";
 import ContactPage from "./ContactPage";
+import CloseIcon from "@mui/icons-material/Close";
 
 const ProductDisplayPage = () => {
+  const [open, setOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleOpen = (img) => {
+    setSelectedImage(img);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+    setSelectedImage(null);
+  };
   const { productName } = useParams();
   const product = products.find((p) => p.title === productName);
   const productData = product || {};
@@ -259,12 +274,13 @@ const ProductDisplayPage = () => {
               sx={{
                 flex: {
                   xs: "0 1 100%",
-                  sm: "0 1 calc(50%)", 
-                  md: "0 1 calc(33.33% - 16px)", 
+                  sm: "0 1 calc(50%)",
+                  md: "0 1 calc(33.33% - 16px)",
                 },
                 display: "flex",
                 justifyContent: "center",
               }}
+              onClick={() => handleOpen(img)}
             >
               <Card
                 sx={{
@@ -272,7 +288,11 @@ const ProductDisplayPage = () => {
                   p: 2,
                   borderRadius: 5,
                   backgroundColor: "#2a2a2a",
-                  transition: "opacity 0.3s ease",
+                  transition: "transform 0.3s ease, opacity 0.3s ease",
+                  cursor: "pointer",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
                 }}
               >
                 {/* <AspectRatio minHeight="400px" maxHeight="500px" > */}
@@ -312,7 +332,37 @@ const ProductDisplayPage = () => {
             </Grid>
           ))}
       </Grid>
-
+      <Modal open={open} onClose={handleClose}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            position: "relative",
+          }}
+        >
+          <IconButton
+            onClick={handleClose}
+            sx={{
+              position: "absolute",
+              top: "20px",
+              right: "20px",
+              color: "white",
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+          {selectedImage && (
+            <img
+              src={selectedImage.src}
+              alt="Selected"
+              style={{ maxWidth: "90%", maxHeight: "90%" }}
+            />
+          )}
+        </div>
+      </Modal>
       <ContactPage />
     </Box>
   );
