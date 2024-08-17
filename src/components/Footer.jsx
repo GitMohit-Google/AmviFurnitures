@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
         </Link>
         <div className="flex flex-col justify-center items-start gap-2">
-          <p className="text-gray-700">More To Explore</p>
+          <p className="text-gray-700 font-bold">More To Explore</p>
           <Link to="home">
             <p>Home</p>
           </Link>
@@ -35,7 +35,7 @@ const Footer = () => {
           {/* <Link to="resources"><p>Resources</p></Link> */}
         </div>
         <div className="flex flex-col justify-center items-start gap-2">
-          <p className="text-gray-700">Chairs</p>
+          <p className="text-gray-700 font-bold">Chairs</p>
           {products.slice(0, 5).map((product, index) => {
             return (
               <Link to={product.title}>
@@ -45,7 +45,7 @@ const Footer = () => {
           })}
         </div>
         <div className="flex flex-col justify-center items-start gap-2">
-          <p className="text-gray-700">Others</p>
+          <p className="text-gray-700 font-bold">Others</p>
           {products.slice(6, 10).map((product, index) => {
             return (
               <Link to={product.title}>
@@ -55,7 +55,7 @@ const Footer = () => {
           })}
         </div>
         <div className="flex flex-col justify-center items-start gap-2">
-          <p className="text-gray-700">Support</p>
+          <p className="text-gray-700 font-bold">Support</p>
           <Link to="contactus">
             {" "}
             <p>Contact Us</p>
