@@ -53,7 +53,7 @@ const LandingPage = () => {
   return (
     <div className="overflow-auto p-5 sm:px-8 overflowXhide">
       {/* Title Section */}
-      <div className="flex flex-col md:flex-row bg-[#f4f4f4] rounded-md shadow-lg w-full p-3 sm:px-5 hiddenblur sm:h-[450px]">
+      <div className="flex flex-col md:flex-row bg-[#f3e9e1] rounded-md shadow-lg w-full p-3 sm:px-5 hiddenblur sm:h-[450px] border-2 border-[#dcb0aa]">
         <div className="flex flex-col w-full p-6 sm:p-10 pt-8 sm:pt-16 gap-4">
           <p className="text-gray-500 text-base sm:text-lg">
             Transform and Redesign your Home
@@ -139,7 +139,7 @@ const LandingPage = () => {
         <div className="items-center gap-4 flex-row flex sm:hidden">
           {/* <img src="/Premium.jpg" alt="Amvi Furniture" /> */}
           <img src="/Since.jpg" alt="" className="w-16 h-16 rounded-full" />
-          <img src="/PriceLow.png" alt="" className="w-16 h-16" />
+          <img src="/3yr.png" alt="" className="w-16 h-16 rounded-full" />
           <img
             src="/Premium.jpg"
             alt="Amvi Furniture"
@@ -188,7 +188,7 @@ const LandingPage = () => {
             <p className="text-sm text-center">
               3 yrs guarantee,
               <br />
-              on selected products
+              on selected
             </p>
           </div>
         </div>

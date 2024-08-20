@@ -65,7 +65,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Double-Top Table",
-    src: "Double Top Table/image.png",
+    src: "Double Top Table/image3.png",
   },
   {
     title: "Double-Top Table",
@@ -117,10 +117,10 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Versatile Table and Chair Set",
-    src: "productImages/setup/Screenshot 2024-08-20 174946.png",
+    src: "Double Top Table/image3.png",
   },
   {
     title: "Versatile Table and Chair Set",
-    src: "/productImages/setup/Setup-img2-Photoroom.jpg",
+    src: "/image2.png",
   },
 ];
