@@ -57,6 +57,9 @@ const ClientTestimonials = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true, // Enable auto-scroll
+    autoplaySpeed: 1500, // Auto-scroll every 2 seconds
+    pauseOnHover: true, 
     responsive: [
       {
         breakpoint: 1024,
@@ -88,7 +91,7 @@ const ClientTestimonials = () => {
       }}
     >
       <div className="flex w-full items-center justify-center mb-10">
-        <p className="text-4xl">Clients Testimonials</p>
+        <p className="text-4xl border-b-2 border-[#ee4d37] inline-block py-3">Clients Testimonials</p>
       </div>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (

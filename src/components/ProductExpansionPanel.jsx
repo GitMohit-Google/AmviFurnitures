@@ -16,7 +16,7 @@ export default function ProductExpansionPanel({ products }) {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          PRODUCTS
+          Products
         </AccordionSummary>
         <AccordionDetails className="menu-products-wrapper">
           {products.map((product, index) => (

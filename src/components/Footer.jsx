@@ -16,21 +16,21 @@ const Footer = () => {
           <div className="flex flex-col gap-3">
             <img src="/ambi logo.png" alt="" className="w-40 h-[80px]" />
             <p className="text-gray-600 w-56">
-              <span className="text-[#ee4d37]">AMVI India Limited </span>
-              {`(leading plastic furniture manufacturer)`}
+              <span className="text-[#ee4d37]">AMVI India Limited <br /></span>
+              {`(Amul Polymer India Pvt. Ltd.)`}
             </p>
           </div>
         </Link>
         <div className="flex flex-col justify-center items-start gap-2">
           <p className="text-gray-700 font-bold">More To Explore</p>
           <Link to="home">
-            <p>Home</p>
+            <p className="hover:text-[#ee4d37] hover:font-medium">Home</p>
           </Link>
           <Link to="aboutus">
-            <p>About Us</p>
+            <p className="hover:text-[#ee4d37] hover:font-medium">About Us</p>
           </Link>
           <Link to="blogs">
-            <p>Blogs</p>
+            <p className="hover:text-[#ee4d37] hover:font-medium">Blogs</p>
           </Link>
           {/* <Link to="resources"><p>Resources</p></Link> */}
         </div>
@@ -39,7 +39,7 @@ const Footer = () => {
           {products.slice(0, 5).map((product, index) => {
             return (
               <Link to={product.title}>
-                <p>{product.title}</p>
+                <p className="hover:text-[#ee4d37] hover:font-medium">{product.title}</p>
               </Link>
             );
           })}
@@ -49,7 +49,7 @@ const Footer = () => {
           {products.slice(6, 10).map((product, index) => {
             return (
               <Link to={product.title}>
-                <p>{product.title}</p>
+                <p className="hover:text-[#ee4d37] hover:font-medium">{product.title}</p>
               </Link>
             );
           })}
@@ -58,7 +58,7 @@ const Footer = () => {
           <p className="text-gray-700 font-bold">Support</p>
           <Link to="contactus">
             {" "}
-            <p>Contact Us</p>
+            <p className="hover:text-[#ee4d37] hover:font-medium">Contact Us</p>
           </Link>
           <div className="flex flex-col items-start justify-center mt-5">
             <p className="text-xl text-[#ee4d37]">Address</p>

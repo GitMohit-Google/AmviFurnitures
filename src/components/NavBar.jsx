@@ -58,6 +58,10 @@ export const NavBar = () => {
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
   };
+  const capitalizeFirstLetter=(str)=> {
+    if (!str) return ""; // Handle empty string or null cases
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  }
 
   const handleEmailClick = () => {
     const email = "info@amvifurniture.com";
@@ -71,7 +75,7 @@ export const NavBar = () => {
   };
 
   const items = document.querySelectorAll(".submenu-item");
-
+  
   items.forEach((item) => {
     item.addEventListener("mouseenter", () => {
       const card = item.querySelector(".product-card");
@@ -91,7 +95,7 @@ export const NavBar = () => {
       </Typography>
       <List>
         {navLinks.map((text) =>
-          text == "PRODUCTS" ? (
+          text == "Products" ? (
             <div>
               <ProductExpansionPanel products={products} />
             </div>
@@ -161,7 +165,7 @@ export const NavBar = () => {
                   +91 7497036847
                 </Typography>
               </Box>
-              <Box variant="body2" className="top-bar-item">
+              {/* <Box variant="body2" className="top-bar-item">
                 <div className="flex flex-row items-center gap-2">
                   <p>Shop Now</p>
                   <a href="https://www.amazon.com" target="_blank">
@@ -179,7 +183,7 @@ export const NavBar = () => {
                     />
                   </a>
                 </div>
-              </Box>
+              </Box> */}
               <Box
                 display="flex"
                 className="social-media-icon-wrapper"
@@ -224,7 +228,7 @@ export const NavBar = () => {
                 className="nav-btn-wrapper"
               >
                 {navLinks.map((link, index) =>
-                  link === "PRODUCTS" ? (
+                  link === "Products" ? (
                     <div key={index} className="dropdown">
                       <Button color="inherit" className="nav-link dropbtn">
                         {link} +

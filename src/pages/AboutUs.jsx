@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ClientStats from "../sections/ClientStats";
 import ContactPage from "./ContactPage";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -64,18 +65,27 @@ const AboutUs = () => {
             guarantee, underscoring our confidence in the durability and quality
             of our offerings.
           </p>
-          <Link to="/contactus">
-            <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd]">
-              Connect Now
+          <a href="/brochure.pdf" download>
+            <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd] flex flex-row items-center gap-2">
+              Access Product Guide <MdOutlineFileDownload className="text-xl" />
             </button>
-          </Link>
+          </a>
         </div>
         {/* <img
           src="/vision.png"
           alt="About AMVI Furniture"
           className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px] hidden sm:flex"
         /> */}
-        <lottie-player src="https://lottie.host/e37c7a5a-0684-4d82-b1be-4ff9d3fcca0f/fMWXrN3bCG.json" background="##FFFFFF" speed="1" style={{"width": "600px", "height": "500px"}} loop autoplay direction="1" mode="normal"></lottie-player>
+        <lottie-player
+          src="https://lottie.host/e37c7a5a-0684-4d82-b1be-4ff9d3fcca0f/fMWXrN3bCG.json"
+          background="##FFFFFF"
+          speed="1"
+          style={{ width: "600px", height: "400px" }}
+          loop
+          autoplay
+          direction="1"
+          mode="normal"
+        ></lottie-player>
       </div>
 
       {/* Banner */}
@@ -83,7 +93,7 @@ const AboutUs = () => {
         <img
           src="/Banner_Style-Photoroom.png"
           alt="Banner"
-          className="rounded-lg w-full md:w-[91%] lg:w-[90%]"
+          className="rounded-lg w-full md:w-[91%] lg:w-[90%] h-auto"
         />
       </div>
 
@@ -94,7 +104,18 @@ const AboutUs = () => {
           alt="Our Mission"
           className="rounded-lg w-[300px] md:w-[400px] lg:w-[450px] h-[300px] md:h-[400px] lg:h-[450px]"
         /> */}
-        <lottie-player src="https://lottie.host/f1afa1dc-ecc9-46d1-8088-614c622a641f/vrhYJkFtzr.json" background="##FFFFFF" speed="1" style={{"width": "700px", "height": "400px"}} loop autoplay direction="1" mode="normal"></lottie-player>
+        <div className="hidden sm:flex">
+        <lottie-player
+          src="https://lottie.host/f1afa1dc-ecc9-46d1-8088-614c622a641f/vrhYJkFtzr.json"
+          background="##FFFFFF"
+          speed="1"
+          style={{ width: "400px", height: "400px" }}
+          loop
+          autoplay
+          direction="1"
+          mode="normal"
+        ></lottie-player>
+        </div>
         <div className="flex flex-col gap-4 w-full items-start justify-center md:my-20 hiddenRight">
           <p className="text-4xl md:text-4xl lg:text-5xl font-bold text-[#ee4d37]">
             Mission
@@ -111,11 +132,11 @@ const AboutUs = () => {
             plastic furniture, enhancing everyday living with innovative design
             and environmental responsibility.
           </p>
-          <Link to="/contactus">
-            <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd]">
-              Connect Now
+          <a href="/brochure.pdf" download>
+            <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd] flex flex-row items-center gap-2">
+              Access Product Guide <MdOutlineFileDownload className="text-xl" />
             </button>
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -125,15 +146,15 @@ const AboutUs = () => {
           <img
             src="/AMVIOwner-Photoroom.png"
             alt="Owner"
-            className="w-96 h-60"
+            className="sm:w-96 h-56 w-auto"
           />
           <p className="text-2xl font-bold">Mr. Yogesh Goyal</p>
           <p className="text-lg font-semibold text-[#ee4d37]">Director/CEO</p>
         </div>
         <div className="flex flex-col items-center gap-3 w-full md:w-[90%] lg:w-[35%] text-center order-1 lg:order-2 hiddenblur">
-          <p className="p-1 bg-white shadow-2xl font-bold rounded-md px-3 text-gray-700">
+          {/* <p className="p-1 bg-white shadow-2xl font-bold rounded-md px-3 text-gray-700">
             YOUR PARTNER IN SUCCESS
-          </p>
+          </p> */}
           <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
             Message from <span className="text-[#ee4d37]"> Chairman ?</span>
           </p>
@@ -166,12 +187,10 @@ const AboutUs = () => {
       {/* Value for Money Section */}
       <div className="flex flex-col bg-[#2a2a2a] items-center justify-center py-8 px-5 md:py-12 md:px-8 lg:py-16 lg:px-10 lg:w-[91%] md:w-[90%] mx-auto rounded-md text-white h-auto gap-3 hiddenLeft">
         <p className="text-xl md:text-2xl lg:text-3xl font-bold text-center">
-          Value for Money
+        Crafting Comfort, Redefining Style
         </p>
         <p className="text-center text-sm md:text-base lg:text-lg">
-          With the aid of conscious designs, we have taken every effort to
-          prevent pain and health risks while educating our clients on the need
-          for good posture in order to address all issues.
+        Our commitment to quality and design ensures each piece is not only a visual delight but also a testament to functional excellence, enriching your everyday life with both beauty and support.
         </p>
       </div>
       <ClientStats />

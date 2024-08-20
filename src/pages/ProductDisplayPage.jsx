@@ -287,7 +287,8 @@ const ProductDisplayPage = () => {
                   width: "100%", // Ensure the card takes up the full width of the grid item
                   p: 2,
                   borderRadius: 5,
-                  backgroundColor: "#2a2a2a",
+                  backgroundColor: "#f8f8f8", // Off-white background color
+                border: "2px solid #ee4d37",
                   transition: "transform 0.3s ease, opacity 0.3s ease",
                   cursor: "pointer",
                   "&:hover": {
@@ -300,18 +301,17 @@ const ProductDisplayPage = () => {
                   src={img.src}
                   loading="lazy"
                   alt=""
-                  className="bg-[#2a2a2a]"
                 />
                 {/* </AspectRatio> */}
                 <div style={{ textAlign: "center" }}>
                   <Typography
-                    sx={{ color: "white", fontSize: "30px" }}
+                    sx={{ color: "black", fontSize: "30px" }}
                     variant="h6"
                   >
                     {img.src.split("/")[2].split("-")[1]}
                   </Typography>
                   <Typography
-                    sx={{ color: "white", mb: 1, fontSize: "14px" }}
+                    sx={{ color: "#ee4d37", mb: 1, fontSize: "14px" }}
                     variant="body2"
                   >
                     Dimensions :{" "}
@@ -339,7 +339,7 @@ const ProductDisplayPage = () => {
             justifyContent: "center",
             alignItems: "center",
             height: "100vh",
-            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            backgroundColor: "white",
             position: "relative",
           }}
         >
@@ -349,7 +349,7 @@ const ProductDisplayPage = () => {
               position: "absolute",
               top: "20px",
               right: "20px",
-              color: "white",
+              color: "black",
             }}
           >
             <CloseIcon />

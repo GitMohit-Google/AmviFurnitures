@@ -17,13 +17,9 @@ const ProductsSection = () => {
         <img
           src="/banners/Bannerr.png"
           alt=""
-          className="rounded-lg shadow-lg w-full h-96"
+          className="rounded-lg shadow-lg w-full h-auto"
         />
         {/* <img src="/Demo.png" alt="" className="rounded-lg shadow-lg"/> */}
-      </div>
-      
-      <div className="mt-8 mb-5">
-        <ClientTestimonials />
       </div>
     </div>
   );

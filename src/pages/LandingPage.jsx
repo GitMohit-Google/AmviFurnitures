@@ -4,6 +4,7 @@ import ProductsSection from "../sections/ProductsSection";
 import ContactPage from "./ContactPage";
 import IndiaMap from "../components/Maps";
 import ClientStats from "../sections/ClientStats";
+import ClientTestimonials from "../components/ClientTestimonial";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -98,7 +99,9 @@ const LandingPage = () => {
 
       {/* North India Info */}
       <div className="flex flex-col w-full items-center justify-center mt-8 gap-4">
-        <p className="text-4xl font-medium w-[90%] sm:w-[75%] lg:w-[25%] xl:w-[25%] text-center border-b-2 border-[#ee4d37] inline-block py-3">Territory Presence</p>
+        <p className="text-4xl font-medium w-[90%] sm:w-[75%] lg:w-[25%] xl:w-[40%] text-center border-b-2 border-[#ee4d37] inline-block py-3">
+          Territory Presence <span className="text-[#ee4d37]"> & USP's</span>{" "}
+        </p>
         <p className="w-[90%] sm:w-[75%] lg:w-[45%] text-center hiddenblur text-sm sm:text-base">
           Available throughout{" "}
           <span className="text-[#ee4d37]">North India</span>, serving over{" "}
@@ -109,12 +112,65 @@ const LandingPage = () => {
       </div>
 
       {/* India Map */}
-      <div className="flex w-full items-center justify-center mt-10">
+      <div className="flex flex-col gap-8 w-full items-center justify-evenly mt-10 sm:flex-row">
+        <div className="items-center gap-4 flex-row flex sm:hidden">
+          {/* <img src="/Premium.jpg" alt="Amvi Furniture" /> */}
+          <img src="/Since.jpg" alt="" className="w-16 h-16 rounded-full" />
+          <img src="/PriceLow.png" alt="" className="w-16 h-16" />
+          <img
+            src="/image 39.png"
+            alt="Amvi Furniture"
+            className="rounded-full w-16 h-16"
+          />
+          <img src="/image 40.png" alt="" className="w-16 h-16" />
+        </div>
+        <div className="items-center gap-10 flex-row sm:flex hidden">
+          <div className="flex flex-col items-center justify-center gap-2">
+            <img
+              src="/image 39.png"
+              alt="Amvi Furniture"
+              className="rounded-full"
+            />
+            <p className="text-sm text-center">
+              ISO Certified for Unmatched <br />
+              Quality and Reliability
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-2">
+            <img src="/image 40.png" alt="" />
+            <p className="text-sm text-center">
+              Recycle and Reuse <br />
+              for a Sustainable Tomorrow
+            </p>
+          </div>
+        </div>
         <img
           src="/IndiaMap.png"
           alt="India Map"
           className="max-w-[800px] w-full lg:w-[40%] rounded-lg"
         />
+        <div className="items-center gap-10 flex-row sm:flex hidden">
+          {/* <img src="/Premium.jpg" alt="Amvi Furniture" /> */}
+          <div className="flex flex-col items-center justify-center gap-2">
+            <img src="/Since.jpg" alt="" className="w-24 h-24 rounded-full" />
+            <p className="text-sm text-center">
+              Manufacturing with
+              <br />
+              Excellence Since 2008
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-2">
+            <img src="/PriceLow.png" alt="" className="w-24 h-24" />
+            <p className="text-sm text-center">
+              Priced Lower,
+              <br />
+              Quality Higher
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="my-8 mb-5">
+        <ClientTestimonials />
       </div>
 
       {/* Contact Section */}
