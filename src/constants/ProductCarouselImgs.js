@@ -37,8 +37,12 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Armless Chair",
-    src: "/productImages/armless/ArmLess-img1-Photoroom.jpg",
+    src: "public/productImages/armless/Screenshot 2024-08-20 180132.png",
   },
+  // {
+  //   title: "Armless Chair",
+  //   src: "public/productImages/armless/Screenshot 2024-08-20 175945.png",
+  // },
   {
     title: "Armless Chair",
     src: "/productImages/armless/ArmLess-img2-Photoroom.png",
@@ -49,7 +53,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Baby Chair",
-    src: "/productImages/baby/Baby-img1-Photoroom.jpg",
+    src: "/productImages/baby/Baby-img1-Photoroom.png",
   },
   {
     title: "Baby Chair",
@@ -61,11 +65,15 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Double-Top Table",
-    src: "/productImages/doubleTop/DoubleTop-img1-Photoroom.jpg",
+    src: "Double Top Table/Screenshot 2024-08-20 172731.png",
   },
   {
     title: "Double-Top Table",
     src: "/productImages/doubleTop/DoubleTop-img1-Photoroom.jpg",
+  },
+  {
+    title: "Plastic Dinner Table",
+    src: "Plastic Dining Table/Screenshot 2024-08-20 172528.png",
   },
   {
     title: "Plastic Dinner Table",
@@ -81,6 +89,10 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Plastic Stools",
+    src: "productImages/stool/Screenshot 2024-08-20 172624.png",
+  },
+  {
+    title: "Plastic Stools",
     src: "/productImages/stool/Stool-img1-Photoroom.png",
   },
   {
@@ -93,7 +105,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Multipurpose Stool",
-    src: "/productImages/multipurpose/Multipurpose-img1-Photoroom.jpg",
+    src: "productImages/multipurpose/Screenshot 2024-08-20 174817.png",
   },
   {
     title: "Multipurpose Stool",
@@ -105,7 +117,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Versatile Table and Chair Set",
-    src: "/productImages/setup/Setup-img1-Photoroom.jpg",
+    src: "public/productImages/setup/Screenshot 2024-08-20 174946.png",
   },
   {
     title: "Versatile Table and Chair Set",
