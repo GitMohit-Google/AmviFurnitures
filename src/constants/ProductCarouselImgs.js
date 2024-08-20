@@ -1,7 +1,7 @@
 export const ProductCarouselImgs = [
   {
     title: "Comfy Chair",
-    src: "/productImages/comfy/Comfy-img1-Photoroom.jpg",
+    src: "/comfy chairs/Comfy.jpeg",
   },
   {
     title: "Comfy Chair",
@@ -13,7 +13,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Premium Chair",
-    src: "/productImages/premium/Premium-img1-Photoroom.jpg",
+    src: "/Premium chairs/image.png",
   },
   {
     title: "Premium Chair",
@@ -25,7 +25,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Mid-Back Chair",
-    src: "/productImages/midBack/MidBack-img1-Photoroom.jpg",
+    src: "/Mid back chairs/Mid.jpeg",
   },
   {
     title: "Mid-Back Chair",
@@ -65,11 +65,11 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Double-Top Table",
-    src: "Double Top Table/Screenshot 2024-08-20 172731.png",
+    src: "Double Top Table/image.png",
   },
   {
     title: "Double-Top Table",
-    src: "/productImages/doubleTop/DoubleTop-img1-Photoroom.jpg",
+    src: "Double Top Table/image2.png",
   },
   {
     title: "Plastic Dinner Table",
