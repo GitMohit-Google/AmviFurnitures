@@ -22,7 +22,7 @@ const Mosaic = () => {
         spacing={{ xs: 1, sm: 2, md: 2 }}
       >
         {itemData.map((item, index) => (
-          <div key={index}>
+          <div key={index} className="bg-gray-200 p-6 rounded-lg">
             <img
               srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
               src={`${item.img}?w=162&auto=format`}
