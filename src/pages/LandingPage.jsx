@@ -96,12 +96,12 @@ const LandingPage = () => {
         <img
           src="/Frame 7.png"
           alt=""
-          className="rounded-lg shadow-lg w-full h-auto"
+          className="rounded-lg shadow-lg w-full sm:h-auto h-24"
         />
         <img
           src="/Frame 8.png"
           alt=""
-          className="rounded-lg shadow-lg w-full h-auto"
+          className="rounded-lg shadow-lg w-full sm:h-auto h-24"
         />
       </div>
       {/* Products Section */}

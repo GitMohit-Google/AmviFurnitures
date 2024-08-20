@@ -297,7 +297,7 @@ const ProductDisplayPage = () => {
                 }}
               >
                 {/* <AspectRatio minHeight="400px" maxHeight="500px" > */}
-                <img src={img.src} loading="lazy" alt="" />
+                <img src={img.src} loading="lazy" alt=""/>
                 {/* </AspectRatio> */}
                 <div style={{ textAlign: "center" }}>
                   <Typography

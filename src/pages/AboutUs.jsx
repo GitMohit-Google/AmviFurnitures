@@ -151,14 +151,14 @@ const AboutUs = () => {
           <p className="text-2xl font-bold">Mr. Yogesh Goyal</p>
           <p className="text-lg font-semibold text-[#ee4d37]">Director/CEO</p>
         </div>
-        <div className="flex flex-col items-center gap-3 w-full md:w-[90%] lg:w-[35%] text-center order-1 lg:order-2 hiddenblur">
+        <div className="flex flex-col items-center gap-3 w-full md:w-[90%] lg:w-[40%] text-center order-1 lg:order-2 hiddenblur">
           {/* <p className="p-1 bg-white shadow-2xl font-bold rounded-md px-3 text-gray-700">
             YOUR PARTNER IN SUCCESS
           </p> */}
           <p className="text-4xl md:text-5xl lg:text-6xl font-bold">
             Message from <span className="text-[#ee4d37]"> Chairman ?</span>
           </p>
-          <p className="w-full text-gray-600 text-sm md:text-base lg:text-lg">
+          <p className="w-full text-gray-700 text-sm md:text-base lg:text-lg">
             At AMVI FURNITURE, formerly known as Amul Polymer India Pvt Ltd, we
             are dedicated to establishing ourselves as leaders in the furniture
             industry by excelling in product categories, market penetration, and
