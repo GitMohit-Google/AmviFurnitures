@@ -89,13 +89,13 @@ const AboutUs = () => {
       </div>
 
       {/* Banner */}
-      <div className="w-full items-center justify-center mt-2 hidden sm:flex">
+      {/* <div className="w-full items-center justify-center mt-2 hidden sm:flex">
         <img
           src="/Banner_Style-Photoroom.png"
           alt="Banner"
           className="rounded-lg w-full md:w-[91%] lg:w-[90%] h-auto"
         />
-      </div>
+      </div> */}
 
       {/* Our Mission Section */}
       <div className="flex flex-col md:flex-row w-full items-center justify-between mt-2 md:pr-10 lg:pr-36 md:pl-10 lg:pl-24 p-2 gap-8">
@@ -116,7 +116,7 @@ const AboutUs = () => {
           mode="normal"
         ></lottie-player>
         </div>
-        <div className="flex flex-col gap-4 w-full items-start justify-center md:my-20 hiddenRight">
+        <div className="flex flex-col gap-4 w-full items-start justify-center md:my-10 md:mb-20 hiddenRight">
           <p className="text-4xl md:text-4xl lg:text-5xl font-bold text-[#ee4d37]">
             Mission
           </p>
@@ -132,11 +132,11 @@ const AboutUs = () => {
             plastic furniture, enhancing everyday living with innovative design
             and environmental responsibility.
           </p>
-          <a href="/brochure.pdf" download>
+          {/* <a href="/brochure.pdf" download>
             <button className="p-3 bg-[#ee4d37] rounded-full text-white px-5 hover:bg-[#ee4c37dd] flex flex-row items-center gap-2">
               Access Product Guide <MdOutlineFileDownload className="text-xl" />
             </button>
-          </a>
+          </a> */}
         </div>
       </div>
 

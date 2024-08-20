@@ -91,7 +91,7 @@ const ClientTestimonials = () => {
       }}
     >
       <div className="flex w-full items-center justify-center mb-10">
-        <p className="text-4xl border-b-2 border-[#ee4d37] inline-block py-3">Clients Testimonials</p>
+        <p className="text-4xl py-1">Clients Testimonials</p>
       </div>
       <Slider {...settings}>
         {testimonials.map((testimonial, index) => (

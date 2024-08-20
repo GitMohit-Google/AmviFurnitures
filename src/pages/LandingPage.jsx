@@ -53,7 +53,7 @@ const LandingPage = () => {
   return (
     <div className="overflow-auto p-5 sm:px-8">
       {/* Title Section */}
-      <div className="flex flex-col md:flex-row bg-[#f4f4f4] rounded-md shadow-lg w-full p-3 sm:px-5 hiddenblur">
+      <div className="flex flex-col md:flex-row bg-[#f4f4f4] rounded-md shadow-lg w-full p-3 sm:px-5 hiddenblur sm:h-[450px]">
         <div className="flex flex-col w-full p-6 sm:p-10 pt-8 sm:pt-16 gap-4">
           <p className="text-gray-500 text-base sm:text-lg">
             Transform and Redesign your Home
@@ -97,9 +97,21 @@ const LandingPage = () => {
       <ProductsSection />
       <ClientStats />
 
+      <div className="flex-col w-full px-1 sm:px-5 gap-10 mt-12 hidden sm:flex">
+        <img
+          src="/Bann.png"
+          alt=""
+          className="rounded-lg shadow-lg w-full h-auto hiddenLeft"
+        />
+        <img
+          src="/Bann2.png"
+          alt=""
+          className="rounded-lg shadow-lg w-full h-auto hiddenRight"
+        />
+      </div>
       {/* North India Info */}
       <div className="flex flex-col w-full items-center justify-center mt-8 gap-4">
-        <p className="text-4xl font-medium w-[90%] sm:w-[75%] lg:w-[25%] xl:w-[40%] text-center border-b-2 border-[#ee4d37] inline-block py-3">
+        <p className="text-4xl font-medium w-[90%] sm:w-[75%] lg:w-[25%] xl:w-[40%] text-center py-1">
           Territory Presence <span className="text-[#ee4d37]"> & USP's</span>{" "}
         </p>
         <p className="w-[90%] sm:w-[75%] lg:w-[45%] text-center hiddenblur text-sm sm:text-base">
