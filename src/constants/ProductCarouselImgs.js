@@ -37,11 +37,11 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Armless Chair",
-    src: "public/productImages/armless/Screenshot 2024-08-20 180132.png",
+    src: "productImages/armless/Screenshot 2024-08-20 180132.png",
   },
   // {
   //   title: "Armless Chair",
-  //   src: "public/productImages/armless/Screenshot 2024-08-20 175945.png",
+  //   src: "productImages/armless/Screenshot 2024-08-20 175945.png",
   // },
   {
     title: "Armless Chair",
@@ -117,7 +117,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Versatile Table and Chair Set",
-    src: "public/productImages/setup/Screenshot 2024-08-20 174946.png",
+    src: "productImages/setup/Screenshot 2024-08-20 174946.png",
   },
   {
     title: "Versatile Table and Chair Set",
