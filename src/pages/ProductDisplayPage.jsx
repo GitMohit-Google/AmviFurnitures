@@ -288,7 +288,7 @@ const ProductDisplayPage = () => {
                   p: 2,
                   borderRadius: 5,
                   backgroundColor: "#f8f8f8", // Off-white background color
-                border: "2px solid #ee4d37",
+                  border: "2px solid #ee4d37",
                   transition: "transform 0.3s ease, opacity 0.3s ease",
                   cursor: "pointer",
                   "&:hover": {
@@ -297,11 +297,7 @@ const ProductDisplayPage = () => {
                 }}
               >
                 {/* <AspectRatio minHeight="400px" maxHeight="500px" > */}
-                <img
-                  src={img.src}
-                  loading="lazy"
-                  alt=""
-                />
+                <img src={img.src} loading="lazy" alt="" />
                 {/* </AspectRatio> */}
                 <div style={{ textAlign: "center" }}>
                   <Typography
@@ -333,34 +329,37 @@ const ProductDisplayPage = () => {
           ))}
       </Grid>
       <Modal open={open} onClose={handleClose}>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "100vh",
-            backgroundColor: "white",
-            position: "relative",
-          }}
-        >
-          <IconButton
-            onClick={handleClose}
-            sx={{
-              position: "absolute",
-              top: "20px",
-              right: "20px",
-              color: "black",
+        <div className="flex w-screen h-screen justify-center items-center backdrop-blur-md">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              backgroundColor: "white",
+              position: "relative",
+              borderRadius: "10px",
             }}
+            className="h-[50vh] sm:h-[80vh] sm:w-[60vw] w-[80vw]"
           >
-            <CloseIcon />
-          </IconButton>
-          {selectedImage && (
-            <img
-              src={selectedImage.src}
-              alt="Selected"
-              style={{ maxWidth: "90%", maxHeight: "90%" }}
-            />
-          )}
+            <IconButton
+              onClick={handleClose}
+              sx={{
+                position: "absolute",
+                top: "20px",
+                right: "20px",
+                color: "black",
+              }}
+            >
+              <CloseIcon />
+            </IconButton>
+            {selectedImage && (
+              <img
+                src={selectedImage.src}
+                alt="Selected"
+                style={{ maxWidth: "90%", maxHeight: "90%" }}
+              />
+            )}
+          </div>
         </div>
       </Modal>
       <ContactPage />

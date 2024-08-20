@@ -92,7 +92,18 @@ const LandingPage = () => {
 
       {/* Stats Banner */}
       <StatsBanner />
-
+      <div className="flex-col w-full px-1 sm:px-5 gap-10 my-12 flex">
+        <img
+          src="/Frame 7.png"
+          alt=""
+          className="rounded-lg shadow-lg w-full h-auto"
+        />
+        <img
+          src="/Frame 8.png"
+          alt=""
+          className="rounded-lg shadow-lg w-full h-auto"
+        />
+      </div>
       {/* Products Section */}
       <ProductsSection />
       <ClientStats />

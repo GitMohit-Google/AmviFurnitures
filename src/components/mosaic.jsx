@@ -59,7 +59,7 @@ const itemData = [
   },
 
   {
-    img: "/News/Wipro.jpg",
+    img: "Logo-Wipro.jpg",
     title: "Wipro",
     desc: "Wipro to expand furniture business",
   },
@@ -71,7 +71,7 @@ const itemData = [
     desc: "Net Sales at Rs 783.08 crore in June 2023 up 5.83% from Rs. 739.94 crore in June 2022, Quarterly Net Profit at Rs. 32.43 crore in June 2023 up 13.15% from Rs. 28.66 crore in June 2022",
   },
   {
-    img: "/News/download.jpeg",
+    img: "/download.png",
     title: "Luxury furniture brand Stanley Lifestyles gains 30% on trade debut",
     desc: "Shares worth over Rs 1,300 crore changed hands on both the National Stock Exchange (NSE) and the BSE. The good listing day performance follows strong demand for Stanley Lifestyles’ shares during its Rs 537 crore initial public offering (IPO).",
   },

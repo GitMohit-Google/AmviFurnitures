@@ -3,7 +3,7 @@ import Typography from "@mui/joy/Typography";
 import React from "react";
 import { Link } from "react-router-dom";
 import VisibilityIcon from "@mui/icons-material/Visibility";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const cardData = [
   {
@@ -70,6 +70,9 @@ const Cards = () => {
                 border: "2px solid #ee4d37", // Border color
                 cursor: "pointer",
                 transition: "background-color 0.3s ease",
+                "&:hover": {
+                  border: "2px solid black", // Green border on hover
+                },
               }}
             >
               <div style={{ textAlign: "center", position: "relative" }}>
@@ -91,7 +94,7 @@ const Cards = () => {
                   transition: "transform 0.3s ease", // Add transition for smooth scaling
                   transform: "scale(1)",
                 }}
-                whileHover={{scale:1.08}}
+                whileHover={{ scale: 1.08 }}
               >
                 <img
                   src={card.imageUrl}
