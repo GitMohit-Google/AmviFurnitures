@@ -54,16 +54,14 @@ const itemData = [
   },
   {
     img: "/News/PepperFry.jpeg",
-    title: "Pepperfry cuts losses by 32% in 2017-18, ",
+    title: "Pepperfry cuts losses by 32% in 2017-18",
     desc: "The company plans to achieve overall profitability over the next 12-18 months",
   },
-
   {
     img: "Logo-Wipro.jpg",
     title: "Wipro",
     desc: "Wipro to expand furniture business",
   },
-
   {
     img: "/IPPO.avif",
     title: "Luxury furniture brand Stanley Lifestyles gains 30% on trade debut",
@@ -77,7 +75,55 @@ const itemData = [
   },
   {
     img: "/Fabb.jpg",
-    title: "Nick Scali outlines Fabb acquisition progress ",
+    title: "Nick Scali outlines Fabb acquisition progress",
     desc: "Australia's Nick Scali Ltd has reported its results for the year ended 30th June 2024, the period in which it acquired UK retail chain",
-  }
+  },
+  {
+    img: "public/News/blogs/image copy 3.png",
+    title:
+      "Ikea pilots same-day delivery in Hyderabad, hits 100% EV delivery goal",
+    desc: "As part of its sustainability strategy, Swedish furniture giant Ikea has committed to entering all new markets, including the Delhi-NCR region, with an EV-first approach",
+  },
+  {
+    img: "public/News/blogs/image copy 2.png",
+    title: "Barker and Stonehouse's 2024 outdoor furniture trends",
+    desc: "Lena Gierasinska, head of product and displays at retailer Barker and Stonehouse, looks at six trends making waves in the world of garden furniture design this year",
+  },
+  {
+    img: "public/News/blogs/image copy.png",
+    title: "IKEA announces next phase of drone technology implementation",
+    desc: "IKEA has announced the next phase in its drone technology – an upgraded AI-powered system capable of operating alongside staff around the clock.",
+  },
+  {
+    img: "public/News/blogs/image.png",
+    title: "ufurnish.com launches the Home Awards",
+    desc: "Furniture and furnishings shopping hub﻿ ufurnish.com has launched its consumer-facing Home Awards in conjunction with Stylist Magazine.",
+  },
+  {
+    img: "public/News/blogs/image copy 4.png",
+    title: "Bed Kingdom supports cancer charity with furniture donation",
+    desc: "Bed Kingdom, an online retailer of beds and bedroom furniture, recently donated two beds and mattresses to Candlelighters, a charity that supports families of children with cancer in Yorkshire.",
+  },
+  {
+    img: "public/News/blogs/image copy 5.png",
+    title: "Furniture sales 'squeezed out' by going out",
+    desc: "UK total retail sales may have increased by +0.5% YoY in July, against a growth of +1.5% in July 2023, but non-food sales were in decline, as shoppers opted for clothes and beauty products over home goods, says BRC-KPMG.",
+  },
+  {
+    img: "public/News/blogs/Screenshot 2024-08-21 010645.png",
+    title: "IFHS – supporting Ireland's dynamic furniture industry",
+    desc: "The IFHS, Ireland's premier furniture trade show, brings together all levels of the industry with a dedicated focus on enhancing its value.",
+  },
+  {
+    img: "public/News/blogs/image copy 7.png",
+    title:
+      "Warburg Pincus acquires majority stake in furniture fitting manufacturer Ebco",
+    desc: "Commenting on the acquisition, Anish Saraf, Managing Director, Warburg Pincus India said, “We believe that the Indian furniture fittings and architectural hardware industry is poised for significant growth over the next several years",
+  },
+  {
+    img: "public/News/blogs/image copy 6.png",
+    title:
+      "Layer and KFI Studios Transform Plastic Waste into Stylish, Sustainable Furniture",
+    desc: "London-based design studio Layer has partnered with US furniture brand KFI Studios to create the Vale Collection, a line of furniture wrapped in eco-friendly PET felt, revolutionizing sustainability and combating plastic waste",
+  },
 ];
