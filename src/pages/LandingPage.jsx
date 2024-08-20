@@ -110,7 +110,7 @@ const LandingPage = () => {
 
       <div className="flex-col w-full px-1 sm:px-5 gap-10 mt-12 hidden sm:flex">
         <img
-          src="/Bann.png"
+          src="/Bann3.png"
           alt=""
           className="rounded-lg shadow-lg w-full h-auto hiddenLeft"
         />
