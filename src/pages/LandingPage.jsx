@@ -51,7 +51,7 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div className="overflow-auto p-5 sm:px-8">
+    <div className="overflow-auto p-5 sm:px-8 overflowXhide">
       {/* Title Section */}
       <div className="flex flex-col md:flex-row bg-[#f4f4f4] rounded-md shadow-lg w-full p-3 sm:px-5 hiddenblur sm:h-[450px]">
         <div className="flex flex-col w-full p-6 sm:p-10 pt-8 sm:pt-16 gap-4">
@@ -130,7 +130,7 @@ const LandingPage = () => {
           <img src="/Since.jpg" alt="" className="w-16 h-16 rounded-full" />
           <img src="/PriceLow.png" alt="" className="w-16 h-16" />
           <img
-            src="/image 39.png"
+            src="/Premium.jpg"
             alt="Amvi Furniture"
             className="rounded-full w-16 h-16"
           />
@@ -139,13 +139,14 @@ const LandingPage = () => {
         <div className="items-center gap-10 flex-row sm:flex hidden">
           <div className="flex flex-col items-center justify-center gap-2">
             <img
-              src="/image 39.png"
+              src="/Premium.jpg"
               alt="Amvi Furniture"
-              className="rounded-full"
+              className="rounded-full w-20 h-20"
             />
             <p className="text-sm text-center">
-              ISO Certified for Unmatched <br />
-              Quality and Reliability
+            Uncompromising Quality,
+             <br />
+             Premium Excellence
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
