@@ -37,17 +37,6 @@ const testimonials = [
     comment:
       "The dining set I bought is fantastic! It’s durable, sleek, and surprisingly comfortable. It’s perfect for my small apartment, and I’m very happy with my purchase.",
   },
-  // {
-  //   name: "Neha Kapoor",
-  //   comment:
-  //     "I’m so impressed with the quality. The color hasn’t faded at all, even after months of outdoor use, and it still looks as good as new.",
-  // },
-  // {
-  //   name: "Anjali Menon",
-  //   comment:
-  //     "I was looking for affordable yet stylish furniture, and this company delivered! The chairs and tables are perfect for my patio, and they’ve held up beautifully against the elements.",
-  // },
-  // Add more testimonials as needed
 ];
 
 const ClientTestimonials = () => {
@@ -57,9 +46,6 @@ const ClientTestimonials = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true, // Enable auto-scroll
-    autoplaySpeed: 1500, // Auto-scroll every 2 seconds
-    pauseOnHover: true, 
     responsive: [
       {
         breakpoint: 1024,
