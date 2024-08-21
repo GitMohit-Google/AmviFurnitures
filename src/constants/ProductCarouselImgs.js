@@ -1,19 +1,19 @@
 export const ProductCarouselImgs = [
   {
     title: "Comfy Chair",
-    src: "/comfy chairs/Comfy.jpeg",
+    src: "/comfy chairs/Comfy.jpg",
   },
   {
     title: "Comfy Chair",
-    src: "/productImages/comfy/Comfy-img2-Photoroom.png",
+    src: "/comfy chairs/Comfy1.jpg",
   },
   {
     title: "Comfy Chair",
-    src: "/productImages/comfy/Comfy-img3-Photoroom.png",
+    src: "/comfy chairs/King1.jpg",
   },
   {
     title: "Premium Chair",
-    src: "/Premium chairs/image.png",
+    src: "/Premium chairs/Jumbo.jpg",
   },
   {
     title: "Premium Chair",
@@ -37,7 +37,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Armless Chair",
-    src: "productImages/armless/Screenshot 2024-08-20 180132.png",
+    src: "/ArmLess chairs/Armless1.jpg",
   },
   // {
   //   title: "Armless Chair",
@@ -45,7 +45,7 @@ export const ProductCarouselImgs = [
   // },
   {
     title: "Armless Chair",
-    src: "/productImages/armless/ArmLess-img2-Photoroom.png",
+    src: "/ArmLess chairs/Armless2.jpg",
   },
   {
     title: "Armless Chair",
@@ -53,16 +53,17 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Baby Chair",
-    src: "/productImages/baby/Baby-img1-Photoroom.png",
+    src: "/Baby chairs/Baby1.jpg",
+  },
+  {
+    title: "Baby Chair",
+    src: "/Baby chairs/Baby2.jpg",
   },
   {
     title: "Baby Chair",
     src: "/productImages/baby/Baby-img2-Photoroom.png",
   },
-  {
-    title: "Baby Chair",
-    src: "/productImages/baby/Baby-img3-Photoroom.png",
-  },
+
   {
     title: "Double-Top Table",
     src: "Double Top Table/image3.png",
@@ -73,11 +74,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Plastic Dinner Table",
-    src: "Plastic Dining Table/Screenshot 2024-08-20 172528.png",
-  },
-  {
-    title: "Plastic Dinner Table",
-    src: "/productImages/dinnerTable/DinnerTable-img1-Photoroom.jpg",
+    src: "/Plastic Dining Table/Table.jpg",
   },
   {
     title: "Plastic Dinner Table",
@@ -89,7 +86,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Plastic Stools",
-    src: "productImages/stool/Screenshot 2024-08-20 172624.png",
+    src: "productImages/stool/Stool.jpg",
   },
   {
     title: "Plastic Stools",
@@ -105,7 +102,7 @@ export const ProductCarouselImgs = [
   },
   {
     title: "Multipurpose Stool",
-    src: "productImages/multipurpose/Screenshot 2024-08-20 174817.png",
+    src: "productImages/multipurpose/Stool1.jpg",
   },
   {
     title: "Multipurpose Stool",

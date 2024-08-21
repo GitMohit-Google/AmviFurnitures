@@ -9,35 +9,33 @@ import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 const testimonials = [
   {
     name: "Sunil Goyal",
-    firm:"Goyal Distributor, Agra",
-    comment:
-      "I was amazed by the quality and durability of the furniture I purchased. It’s lightweight, easy to move around, and looks fantastic in my garden.",
+    firm: "Goyal Distributor, Agra",
+    comment: "The high-quality furniture provided has significantly boosted our sales and enhanced customer satisfaction. It's been a win-win partnership.",
   },
   {
     name: "Vinod",
-    firm:"VK Enterprises, Ghaziabad",
-    comment:
-      "The chairs and table I bought are perfect for my balcony. They’re stylish, comfortable, and weather-resistant. I couldn’t have asked for a better set!",
+    firm: "VK Enterprises, Ghaziabad",
+    comment: "Our collaboration has been a great success. The stylish and durable products have elevated our store's reputation and driven repeat business.",
   },
   {
     name: "Anil Sahu",
-    firm:"Citizen Sales, Allahabad",
-    comment:
-      "I was initially skeptical, but this company has completely changed my mind. The designs are modern, and the material is surprisingly sturdy. Great value for money!",
+    firm: "Citizen Sales, Allahabad",
+    comment: "Offering these modern designs has added tremendous value to our product range. The response from customers has been overwhelmingly positive.",
   },
   {
     name: "Ramesh Dua",
-    firm:"Dua Steel furniture, Palwal",
-    comment:
-      "The furniture is both functional and attractive. It’s perfect for both indoor and outdoor use, and I love how easy it is to clean and maintain.",
+    firm: "Dua Steel Furniture, Palwal",
+    comment: "We've seen a significant improvement in our offerings thanks to the versatile and low-maintenance furniture. It’s greatly appreciated by our customers.",
   },
   {
     name: "Gaurav Jasval",
-    firm:"Rangoli furniture, Banaras",
-    comment:
-      "The dining set I bought is fantastic! It’s durable, sleek, and surprisingly comfortable. It’s perfect for my small apartment, and I’m very happy with my purchase.",
+    firm: "Rangoli Furniture, Banaras",
+    comment: "The durable and attractive furniture has been a major hit. Our customers are thrilled, and it has noticeably increased our sales.",
   },
 ];
+
+
+
 
 const ClientTestimonials = () => {
   const settings = {
