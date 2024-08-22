@@ -14,7 +14,7 @@ const LandingPage = () => {
     // Show the video loader for 3 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3150);
+    }, 3180);
 
     return () => clearTimeout(timer); // Cleanup on component unmount
   }, []);

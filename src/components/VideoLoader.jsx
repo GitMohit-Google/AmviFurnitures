@@ -8,7 +8,7 @@ const VideoLoader = () => {
         autoPlay
         muted
         loop
-        className="w-72 h-72 object-cover sm:w-full sm:h-full"
+        className="w-72 h-72 object-cover sm:w-96 sm:h-96"
       ></video>
     </div>
   );
