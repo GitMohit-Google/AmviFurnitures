@@ -35,10 +35,10 @@ export const ProductCarouselImgs = [
     title: "Mid-Back Chair",
     src: "/productImages/midBack/MidBack-img3-Photoroom.png",
   },
-  {
-    title: "Armless Chair",
-    src: "/ArmLess chairs/Armless1.jpg",
-  },
+  // {
+  //   title: "Armless Chair",
+  //   src: "/ArmLess chairs/Armless1.jpg",
+  // },
   // {
   //   title: "Armless Chair",
   //   src: "productImages/armless/Screenshot 2024-08-20 175945.png",
