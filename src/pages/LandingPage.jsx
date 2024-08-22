@@ -169,10 +169,11 @@ const LandingPage = () => {
           </div>
         </div>
         <img
-          src="/IndiaMap.png"
+          src="/map-Photoroom.png"
           alt="India Map"
           className="max-w-[800px] w-full lg:w-[40%] rounded-lg"
         />
+        {/* <IndiaMap/> */}
         <div className="items-center gap-10 flex-row sm:flex hidden">
           {/* <img src="/Premium.jpg" alt="Amvi Furniture" /> */}
           <div className="flex flex-col items-center justify-center gap-2">

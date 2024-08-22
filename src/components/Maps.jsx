@@ -55,6 +55,11 @@ const IndiaMap = () => {
           <FaMapMarkerAlt className="text-red-800" />
         </Marker>
       ))}
+      {markers?.map(({ name, coordinates }) => (
+        <Marker key={name} coordinates={coordinates} onMouseOver={() => handleMouseOver(name)}>
+          <FaMapMarkerAlt className="text-orange-700" />
+        </Marker>
+      ))}
       <Tooltip content={content} />
     </ComposableMap>
   );
