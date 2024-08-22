@@ -57,6 +57,7 @@ const HomeState = ({ children }) => {
     setContactNumber("");
     setMessageLoading(false);
   }
+  const [loading, setLoading] = useState(true);
   return (
     <HomeContext.Provider
       value={{
@@ -71,7 +72,8 @@ const HomeState = ({ children }) => {
         setMessage,
         messageLoading,
         setMessageLoading,
-        showMessage
+        showMessage,
+        loading, setLoading
       }}
     >
       {children}

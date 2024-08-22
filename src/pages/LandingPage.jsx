@@ -1,12 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import StatsBanner from "../components/StatsBanner";
 import ProductsSection from "../sections/ProductsSection";
 import ContactPage from "./ContactPage";
 import IndiaMap from "../components/Maps";
 import ClientStats from "../sections/ClientStats";
 import ClientTestimonials from "../components/ClientTestimonial";
+import VideoLoader from "../components/VideoLoader";
+import HomeContext from "../context/Home/HomeContext";
 
 const LandingPage = () => {
+  const {loading, setLoading } = useContext(HomeContext);
+  useEffect(() => {
+    // Show the video loader for 3 seconds
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3150);
+
+    return () => clearTimeout(timer); // Cleanup on component unmount
+  }, []);
+
   useEffect(() => {
     const observerX = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -50,6 +62,9 @@ const LandingPage = () => {
     };
   }, []);
 
+  if (loading) {
+    return <VideoLoader />;
+  }
   return (
     <div className="overflow-auto p-5 sm:px-8 overflowXhide">
       {/* Title Section */}
@@ -155,9 +170,9 @@ const LandingPage = () => {
               className="rounded-full w-20 h-20"
             />
             <p className="text-sm text-center">
-            Uncompromising Quality,
-             <br />
-             Premium Excellence
+              Uncompromising Quality,
+              <br />
+              Premium Excellence
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">

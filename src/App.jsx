@@ -4,29 +4,40 @@ import { AboutUs, BlogPage, ContactPage, LandingPage } from "./pages";
 import HomeState from "./context/Home/HomeState";
 import ProductDisplayPage from "./pages/ProductDisplayPage";
 import Footer from "./components/Footer";
-import { useEffect } from "react";
+import { useContext } from "react";
+import HomeContext from "./context/Home/HomeContext";
 
 const App = () => {
-  // Empty dependency array ensures this effect runs only once
+  return (
+    <HomeState>
+      <div
+        className="overflow-hidden"
+        style={{ background: "linear-gradient(to bottom, #ffffff, #f0f0f0)" }}
+      >
+        <AppContent />
+      </div>
+    </HomeState>
+  );
+};
+
+const AppContent = () => {
+  const { loading } = useContext(HomeContext);
 
   return (
-    <div
-      className="overflow-hidden"
-      style={{ background: "linear-gradient(to bottom, #ffffff, #f0f0f0)" }}
-    >
-      <HomeState>
-        <NavBar />
-        <div style={{ marginTop: "100px" }}>
-          <Routes>
-            <Route path="/home" element={<LandingPage />} />
-            <Route path="/aboutus" element={<AboutUs />} />
-            <Route path="/contactus" element={<ContactPage />} />
-            <Route path="/blogs" element={<BlogPage />} />
-            <Route path="/:productName" element={<ProductDisplayPage />} />
-            <Route path="*" element={<Navigate to="/home" replace />} />
-          </Routes>
-        </div>
-        <Footer />
+    <>
+      {!loading && <NavBar />}
+      <div style={{ marginTop: "100px" }}>
+        <Routes>
+          <Route path="/home" element={<LandingPage />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contactus" element={<ContactPage />} />
+          <Route path="/blogs" element={<BlogPage />} />
+          <Route path="/:productName" element={<ProductDisplayPage />} />
+          <Route path="*" element={<Navigate to="/home" replace />} />
+        </Routes>
+      </div>
+      <Footer />
+      {!loading && (
         <a
           href="/AMVI CATALOGUE.pdf"
           download
@@ -47,8 +58,8 @@ const App = () => {
         >
           Download Catalogue
         </a>
-      </HomeState>
-    </div>
+      )}
+    </>
   );
 };
 

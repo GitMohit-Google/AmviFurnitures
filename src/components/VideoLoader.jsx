@@ -1,0 +1,17 @@
+import React from "react";
+
+const VideoLoader = () => {
+  return (
+    <div className="fixed top-0 left-0 w-full h-full bg-white z-50 flex items-center justify-center">
+      <video
+        src="/Loader.mp4"
+        autoPlay
+        muted
+        loop
+        className="w-72 h-72 object-cover sm:w-full sm:h-full"
+      ></video>
+    </div>
+  );
+};
+
+export default VideoLoader;
