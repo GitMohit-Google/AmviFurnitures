@@ -85,31 +85,23 @@ export const ProductCarouselImgs = [
     src: "/productImages/dinnerTable/DinnerTable-img3-Photoroom.png",
   },
   {
-    title: "Plastic Stools",
+    title: "Stools",
     src: "productImages/stool/Stool.jpg",
   },
   {
-    title: "Plastic Stools",
-    src: "/productImages/stool/Stool-img1-Photoroom.png",
-  },
-  {
-    title: "Plastic Stools",
-    src: "/productImages/stool/Stool-img2-Photoroom.png",
-  },
-  {
-    title: "Plastic Stools",
-    src: "/productImages/stool/Stool-img3-Photoroom.png",
-  },
-  {
-    title: "Multipurpose Stool",
+    title: "Stools",
     src: "productImages/multipurpose/Stool1.jpg",
   },
   {
-    title: "Multipurpose Stool",
+    title: "Stools",
+    src: "/productImages/stool/Stool-img1-Photoroom.png",
+  },
+  {
+    title: "Stools",
     src: "/productImages/multipurpose/Multipurpose-img2-Photoroom.png",
   },
   {
-    title: "Multipurpose Stool",
+    title: "Stools",
     src: "/productImages/multipurpose/Multipurpose-img3-Photoroom.png",
   },
   {

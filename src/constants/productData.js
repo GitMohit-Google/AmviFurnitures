@@ -260,7 +260,7 @@ export const products = [
     ],
   },
   {
-    title: "Plastic Stools",
+    title: "Stools",
     description:
       "Our plastic stools are durable, versatile, and compact, ideal for any setting. Available in various designs and colors, they offer stability and ease of movement for everyday use.",
     benefits: [
@@ -294,46 +294,46 @@ export const products = [
       },
     ],
   },
-  {
-    title: "Multipurpose Stool",
-    description:
-      "Our multipurpose stool offers both seating and hidden storage in one elegant design. Combining style with practicality, it's an affordable solution for organized and comfortable living.",
-    benefits: [
-      "Elegant and sophisticated design",
-      "Hidden storage compartment for extra organization",
-      "Affordable pricing without compromising on quality",
-      "Comfortable seating with good support",
-      "Classy appearance that complements various decors",
-      "Strong and stable construction",
-    ],
-    additional_info: [
-      {
-        title: "Desirable and Loveable Design",
-        content:
-          "The multipurpose stool features sleek edges and a refined texture that enhances its overall look. The design is so seamlessly integrated that the storage compartment remains discreet, providing an attractive and functional piece of furniture for any room.",
-      },
-      {
-        title: "Hidden Storage Space",
-        content:
-          "A unique feature of this stool is its hidden storage compartment. Simply lift the top to access the storage area and keep your items organized out of sight. This feature makes the stool an excellent choice for maintaining a clutter-free environment.",
-      },
-      {
-        title: "Pocket-Friendly and Affordable",
-        content:
-          "Despite its stylish and regal appearance, this stool is offered at an affordable price. It's a cost-effective solution for adding both seating and storage to your home, making it a great choice for any room.",
-      },
-      {
-        title: "Uncompromising Comfort Level",
-        content:
-          "Our multipurpose stools provide exceptional comfort, supporting good posture and spine health. The combination of traditional and modern design elements ensures that the stool is both functional and aesthetically pleasing.",
-      },
-      {
-        title: "Highly Durable and Strong",
-        content:
-          "Crafted from high-quality plastic, this stool is built to last. It withstands various environmental conditions, maintaining its durability and functionality over time. It's a reliable choice for long-term use.",
-      },
-    ],
-  },
+  // {
+  //   title: "Multipurpose Stool",
+  //   description:
+  //     "Our multipurpose stool offers both seating and hidden storage in one elegant design. Combining style with practicality, it's an affordable solution for organized and comfortable living.",
+  //   benefits: [
+  //     "Elegant and sophisticated design",
+  //     "Hidden storage compartment for extra organization",
+  //     "Affordable pricing without compromising on quality",
+  //     "Comfortable seating with good support",
+  //     "Classy appearance that complements various decors",
+  //     "Strong and stable construction",
+  //   ],
+  //   additional_info: [
+  //     {
+  //       title: "Desirable and Loveable Design",
+  //       content:
+  //         "The multipurpose stool features sleek edges and a refined texture that enhances its overall look. The design is so seamlessly integrated that the storage compartment remains discreet, providing an attractive and functional piece of furniture for any room.",
+  //     },
+  //     {
+  //       title: "Hidden Storage Space",
+  //       content:
+  //         "A unique feature of this stool is its hidden storage compartment. Simply lift the top to access the storage area and keep your items organized out of sight. This feature makes the stool an excellent choice for maintaining a clutter-free environment.",
+  //     },
+  //     {
+  //       title: "Pocket-Friendly and Affordable",
+  //       content:
+  //         "Despite its stylish and regal appearance, this stool is offered at an affordable price. It's a cost-effective solution for adding both seating and storage to your home, making it a great choice for any room.",
+  //     },
+  //     {
+  //       title: "Uncompromising Comfort Level",
+  //       content:
+  //         "Our multipurpose stools provide exceptional comfort, supporting good posture and spine health. The combination of traditional and modern design elements ensures that the stool is both functional and aesthetically pleasing.",
+  //     },
+  //     {
+  //       title: "Highly Durable and Strong",
+  //       content:
+  //         "Crafted from high-quality plastic, this stool is built to last. It withstands various environmental conditions, maintaining its durability and functionality over time. It's a reliable choice for long-term use.",
+  //     },
+  //   ],
+  // },
 
   {
     title: "Versatile Table and Chair Set",

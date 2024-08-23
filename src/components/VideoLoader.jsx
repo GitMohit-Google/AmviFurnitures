@@ -4,7 +4,7 @@ const VideoLoader = () => {
   return (
     <div className="fixed top-0 left-0 w-full h-full bg-white z-50 flex items-center justify-center">
       <video
-        src="/Loader.mp4"
+        src="https://amvifurniture.com/Loader.mp4"
         autoPlay
         muted
         loop
