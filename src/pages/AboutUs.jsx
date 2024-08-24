@@ -149,7 +149,7 @@ const AboutUs = () => {
             className="sm:w-96 h-56 w-auto"
           />
           <p className="text-2xl font-bold">Mr. Yogesh Goyal</p>
-          <p className="text-lg font-semibold text-[#ee4d37]">Director/CEO</p>
+          <p className="text-lg font-semibold text-[#ee4d37]">Founder / CEO</p>
         </div>
         <div className="flex flex-col items-center gap-8 w-full md:w-[90%] lg:w-[40%] text-center order-1 lg:order-2 hiddenblur">
           {/* <p className="p-1 bg-white shadow-2xl font-bold rounded-md px-3 text-gray-700">

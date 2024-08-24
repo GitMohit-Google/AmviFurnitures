@@ -16,8 +16,7 @@ const Footer = () => {
           <div className="flex flex-col gap-3">
             <img src="/ambi logo.png" alt="" className="w-40 h-[80px]" />
             <p className="text-gray-600 w-56">
-              <span className="text-[#ee4d37]">AMVI India Limited <br /></span>
-              {`(Amul Polymer India Pvt. Ltd.)`}
+              <span className="text-[#ee4d37]">Amul Polymer India Pvt. Ltd.</span>
             </p>
           </div>
         </Link>
@@ -79,22 +78,20 @@ const Footer = () => {
         <div className="bg-gray-300 h-0.5 w-full"></div>
       </div>
       <div className="flex w-full flex-row justify-center items-center bg-[#f4f4f4] pb-6 text-2xl gap-3">
-        <FaFacebook />
         <Link
           to="https://www.instagram.com/amvi_ltd?igsh=MWdjdzllZmNiZmE4bA=="
           target="_blank"
         >
           <FaInstagram />
         </Link>
-        <FaLinkedin />
       </div>
 
       {/* Foot */}
       <div className="w-full h-full bg-[#2E2E2E] p-2 flex justify-between items-center">
         <p className="text-white w-full flex justify-center sm:justify-end items-center gap-1 sm:text-base text-sm">
-          @ 2024 <span className="text-[#ee4d37]"> Amvi India Ltd.</span>
+          @ 2024 <span className="text-[#ee4d37]"> Amul Polymer India Pvt. Ltd.</span>
         </p>
-        <div className="sm:flex sm:flex-row hidden w-[80%] justify-end items-center gap-5 p-1">
+        <div className="sm:flex sm:flex-row hidden w-[70%] justify-end items-center gap-5 p-1">
           <RiVisaLine className="text-white text-xl" />
           <FaPaypal className="text-white text-xl" />
           <SiMastercard className="text-white text-xl" />
